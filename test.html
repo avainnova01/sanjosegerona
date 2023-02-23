@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#seccion1">Sección 1</a></li>
+    <li><a href="#seccion2">Sección 2</a></li>
+    <li><a href="#seccion3">Sección 3</a></li>
+  </ul>
+</nav>
+
+<div id="seccion1" style="height: 600px;">
+  <h2>Sección 1</h2>
+  <p>Contenido de la sección 1.</p>
+</div>
+
+<div id="seccion2" style="height: 600px;">
+  <h2>Sección 2</h2>
+  <p>Contenido de la sección 2.</p>
+</div>
+
+<div id="seccion3" style="height: 600px;">
+  <h2>Sección 3</h2>
+  <p>Contenido de la sección 3.</p>
+</div>
+</body>
+
+<script>
+
+const menuLinks = document.querySelectorAll('nav a');
+
+menuLinks.forEach(link => {
+  link.addEventListener('click', scrollToSection);
+});
+
+function scrollToSection(event) {
+  event.preventDefault();
+  const targetId = this.getAttribute('href');
+  const targetSection = document.querySelector(targetId);
+  targetSection.scrollIntoView({behavior: 'smooth'});
+}
+
+</script>
+</html>
+

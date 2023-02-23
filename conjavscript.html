@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="#seccion1">Sección 1</a></li>
+          <li><a href="#seccion2">Sección 2</a></li>
+          <li><a href="#seccion3">Sección 3</a></li>
+        </ul>
+      </nav>
+
+      <div id="seccion1" style="height: 600px;">
+        <h2>Sección 1</h2>
+        <p>Contenido de la sección 1.</p>
+      </div>
+
+      <div id="seccion2" style="height: 600px;">
+        <h2>Sección 2</h2>
+        <p>Contenido de la sección 2.</p>
+      </div>
+
+      <div id="seccion3" style="height: 600px;">
+        <h2>Sección 3</h2>
+        <p>Contenido de la sección 3.</p>
+      </div>
+
+      <script>
+        const menuLinks = document.querySelectorAll('nav a');
+
+        menuLinks.forEach(link => {
+          link.addEventListener('click', scrollToSection);
+        });
+
+        function scrollToSection(event) {
+          event.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetSection = document.querySelector(targetId);
+          const targetOffsetTop = targetSection.offsetTop;
+          const currentPosition = window.pageYOffset;
+          const distance = targetOffsetTop - currentPosition;
+          const duration = 1000;
+          let start = null;
+
+          function animation(currentTime) {
+            if (start === null) {
+              start = currentTime;
+            }
+            const elapsedTime = currentTime - start;
+            const progress = Math.min(elapsedTime / duration, 1);
+            const ease = easeInOutQuad(progress);
+            const newPosition = currentPosition + (distance * ease);
+            window.scrollTo(0, newPosition);
+            if (progress < 1) {
+              requestAnimationFrame(animation);
+            }
+          }
+
+          function easeInOutQuad(t) {
+            return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+          }
+
+          requestAnimationFrame(animation);
+        }
+      </script>
+
+</body>
+</html>
