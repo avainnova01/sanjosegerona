@@ -5,9 +5,34 @@ const upath = require('upath');
 
 module.exports = function renderHtml() {
 
-    const sourcePathHtml = upath.resolve(upath.dirname(__filename), '../src/index.html');
-    const destPathHtml = upath.resolve(upath.dirname(__filename), '../dist/index.html');
+    // const sourcePathHtml = upath.resolve(upath.dirname(__filename), '../src/index.html');
+    // const destPathHtml = upath.resolve(upath.dirname(__filename), '../dist/index.html');
 
-    const scriptsJS = fs.readFileSync(sourcePathHtml);
-    fs.writeFileSync(destPathHtml, scriptsJS);
+    // const scriptsJS = fs.readFileSync(sourcePathHtml);
+    // fs.writeFileSync(destPathHtml, scriptsJS);
+
+
+    // const sourcePathHtmlPages = upath.resolve(upath.dirname(__filename), '../src/pages/institucional.html');
+    // const destPathHtmlPages = upath.resolve(upath.dirname(__filename), '../dist/institucional.html');
+
+    // const scriptsJSPages = fs.readFileSync(sourcePathHtmlPages);
+    // fs.writeFileSync(destPathHtmlPages, scriptsJSPages);
+
+    // Crear un array con información de origen y destino
+    var links = [
+        { origen: "../src/index.html", destino: "../dist/index.html" },
+        { origen: "../src/pages/institucional.html", destino: "../dist/institucional.html" },
+        { origen: "../src/pages/galeria.html", destino: "../dist/galeria.html" }
+    ];
+
+    // Recorrer el array y hacer algo con cada elemento
+    for (var i = 0; i < links.length; i++) {
+
+        let sourcePathHtmlPages = upath.resolve(upath.dirname(__filename), links[i].origen);
+        let destPathHtmlPages = upath.resolve(upath.dirname(__filename), links[i].destino);
+
+        let scriptsJSPages = fs.readFileSync(sourcePathHtmlPages);
+        fs.writeFileSync(destPathHtmlPages, scriptsJSPages);
+    }
+
 };
