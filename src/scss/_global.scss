@@ -128,7 +128,15 @@ p{
     margin-top:13px;
   }
 
+  .pic1{
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
 
+  .jardinesWidth{
+    width: 190px;
+  }
 
   @media (max-width: 991px) {
      .section-image-ppal{
@@ -148,11 +156,21 @@ p{
       .serviciosleftimage{
         padding-right: 0rem !important;
       }
+
+      .jardinesWidth{
+        width: 150px;
+      }
   }
 
 
 
   @media (max-width: 575px) {
+
+
+    .jardinesWidth{
+        width: 100px;
+      }
+
     .footer-content {
       flex-direction: column;
     }
