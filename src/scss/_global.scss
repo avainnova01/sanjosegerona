@@ -138,6 +138,12 @@ p{
     width: 190px;
   }
 
+  .styleintitucional{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+
   @media (max-width: 991px) {
      .section-image-ppal{
         height: 36vh;
@@ -146,6 +152,13 @@ p{
       .habilitadosmargin{
         margin-left: 0px;
         margin-right: 0px;
+      }
+      .styleintitucional{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .buttoninstitucional{
+        color: #6c757d;
       }
 
   }

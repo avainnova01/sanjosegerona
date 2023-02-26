@@ -25,26 +25,24 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">
+                <a class="navbar-brand link" href="#page-top">
                     <img src="assets/img/logo.svg" alt="logo" class="logo">
                 </a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#inicio">INICIO</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#somos">QUIENES SOMOS</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#servicios">SERVICIOS</a></li>
-                        <!-- <li class="nav-item"><a class="nav-link" href="#institucional">INSTITUCIONAL</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#galery">GALERÍA</a></li> -->
-                        <li class="nav-item dropdown" style="
+                        <li class="nav-item"><a class="nav-link link" href="#inicio">INICIO</a></li>
+                        <li class="nav-item"><a class="nav-link link" href="#somos">QUIENES SOMOS</a></li>
+                        <li class="nav-item"><a class="nav-link link" href="#servicios">SERVICIOS</a></li>
+                        <li class="nav-item dropdown styleintitucional" style="
                             display: flex;
                             align-items: center;
                         ">
-                            <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="--bs-btn-padding-y: none;padding-left: 9px;font-family: century-gothic;font-weight: 700;font-size: 0.9rem;border: none;">
+                            <button class="btn dropdown-toggle buttoninstitucional" data-bs-toggle="dropdown" aria-expanded="false" style="--bs-btn-padding-y: none;padding-left: 9px;font-family: century-gothic;font-weight: 700;font-size: 0.9rem;border: none;">
                                 INSTITUCIONAL
                             </button>
                             <ul class="dropdown-menu" style="top: 43px;">
-                                <li><a class="dropdown-item" href="institucional.html">Politica de tratamiento</a></li>
+                                <li><a class="dropdown-item" href="assets/pdf/TratamientoSI.pdf" target="_blank">Politica de tratamiento</a></li>
                                 <li><a class="dropdown-item" href="institucional.html">Nuestra Historia</a></li>
                             </ul>
                         </li>
@@ -381,9 +379,9 @@
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
-<!--
+
         <script>
-            const menuLinks = document.querySelectorAll('nav a');
+            const menuLinks = document.querySelectorAll('nav .link');
 
             menuLinks.forEach(link => {
               link.addEventListener('click', scrollToSection);
@@ -395,7 +393,7 @@
               const targetSection = document.querySelector(targetId);
               const targetOffsetTop = targetSection.offsetTop;
               const currentPosition = window.pageYOffset;
-              const distance = targetOffsetTop - currentPosition;
+              const distance = targetOffsetTop - currentPosition - 70;
               const duration = 1000;
               let start = null;
 
@@ -420,7 +418,7 @@
               requestAnimationFrame(animation);
             }
           </script>
- -->
+
 
     </body>
 </html>
