@@ -20,6 +20,52 @@
         <!-- WhatsApp Icon -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+        <style>
+
+                .slide {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    opacity: 0;
+                    transition: opacity 1s ease;
+                }
+
+                .slide.active {
+                    opacity: 1;
+                }
+
+                .image {
+                    width: 100%;
+                    height: 100%;
+                    background-repeat: round;
+                    background-attachment: scroll;
+                    background-size: cover;
+                }
+
+                .prev, .next {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 50px;
+                    height: 50px;
+                    background: transparent;
+                    border: none;
+                    color: white;
+                    font-size: 40px;
+                    cursor: pointer;
+                }
+
+                .prev {
+                    left: 20px;
+                }
+
+                .next {
+                    right: 20px;
+                }
+        </style>
     </head>
     <body id="page-top" class="gothicFont">
         <!-- Navigation-->
@@ -56,8 +102,24 @@
 
         <div class="container1">
         <!-- Inicio-->
-        <section class="section-image-ppal" id="inicio" >
-        </section>
+        <div class="carousel section_banner" id="inicio">
+            <div class="slide active">
+              <div class="image" style="background-image: url('assets/img/banner1.jpg')"></div>
+            </div>
+            <div class="slide">
+              <div class="image" style="background-image: url('assets/img/banner2.jpg')"></div>
+            </div>
+            <div class="slide">
+              <div class="image" style="background-image: url('assets/img/banner3.jpg')"></div>
+            </div>
+            <div class="slide">
+                <div class="image" style="background-image: url('assets/img/banner4.jpg')"></div>
+              </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+        <!-- <section class="section-image-ppal" id="inicio" >
+        </section> -->
 
 
         <!-- Quienes somos-->
@@ -417,6 +479,33 @@
 
               requestAnimationFrame(animation);
             }
+
+
+            const carousel = document.querySelector(".carousel");
+            const slides = Array.from(carousel.querySelectorAll(".slide"));
+            const prevButton = carousel.querySelector(".prev");
+            const nextButton = carousel.querySelector(".next");
+
+            let currentSlide = 0;
+            let slideInterval = setInterval(nextSlide, 7000);
+
+            function nextSlide() {
+            goToSlide(currentSlide + 1);
+            }
+
+            function previousSlide() {
+            goToSlide(currentSlide - 1);
+            }
+
+            function goToSlide(n) {
+            slides[currentSlide].classList.remove("active");
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add("active");
+            }
+
+            prevButton.addEventListener("click", previousSlide);
+            nextButton.addEventListener("click", nextSlide);
+
           </script>
 
 
