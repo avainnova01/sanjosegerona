@@ -21,7 +21,8 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
         <!-- Vue and Libraries-->
-        <script src="https://unpkg.com/vue@next"></script>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+        <script src="https://unpkg.com/vue@3"></script>
         <script src="https://unpkg.com/vue-easy-lightbox@next/dist/vue-easy-lightbox.umd.min.js"></script>
 
     </head>
@@ -38,9 +39,8 @@
                         <li class="nav-item"><a class="nav-link" href="index.html#inicio">INICIO</a></li>
                         <li class="nav-item"><a class="nav-link" href="index.html#somos">QUIENES SOMOS</a></li>
                         <li class="nav-item"><a class="nav-link" href="index.html#servicios">SERVICIOS</a></li>
-                        <!-- <li class="nav-item"><a class="nav-link" href="#institucional">INSTITUCIONAL</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#galery">GALERÍA</a></li> -->
-                        <li class="nav-item dropdown styleintitucional" style="
+                        <li class="nav-item"><a class="nav-link link" href="index.html#galery">HABITACIONES</a></li>
+                        <!-- <li class="nav-item dropdown styleintitucional" style="
                             display: flex;
                             align-items: center;
                             margin-right: 5px;
@@ -52,7 +52,7 @@
                                 <li><a class="dropdown-item" href="institucional.html">Nuestra Historia</a></li>
                                 <li><a class="dropdown-item" href="assets/pdf/TratamientoSI.pdf" target="_blank">Politica de tratamiento</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link active" href="galeria.html">GALERIA</a>
                         </li>
@@ -79,35 +79,36 @@
 
                     <vue-easy-lightbox :visible="visibleRef" :imgs="imgsShow" :index="indexRef" @hide="onHide"></vue-easy-lightbox>
 
-
                     <h1  class='font-weight-title' style="margin-top: 110px; font-size: 2.3rem; margin-bottom: 71px; "> Galería </h1>
                     <div class="row g-0">
                         <div class="col-lg-6 col-md-6" style="margin-bottom: 50px;">
                             <div>
-                                <h4>Espacios y jardines</h4>
+                                <h4>Zonas comunes</h4>
                                 <div style="display: flex; flex-wrap: wrap; justify-content: center;">
-                                  <div v-for="(src, index) in imgs.jardines" :key="index" class="pic1" @click="() => showImg(imgs.jardines , index)" >
+                                  <div v-for="(src, index) in imgs.zonascomunes" :key="index" class="pic1" @click="() => showImg(imgs.zonascomunes , index)" >
                                      <img class="jardinesWidth" :src="src" />
                                   </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6" style="margin-bottom: 50px;">
+
                             <div class="col-lg-12 col-md-12" style="display: flex;flex-direction: column;justify-content: space-between; margin-bottom: 50px;">
-                            <div >
-                                <h4>Piscina</h4>
-                                <div style="display: flex; flex-wrap: wrap;">
-                                  <div v-for="(src, index) in imgs.piscina" :key="index" class="pic1" @click="() => showImg(imgs.piscina,index)">
-                                    <img style="width: 150px;" :src="src" />
-                                  </div>
+                                <div >
+                                    <h4>Recepción</h4>
+                                    <div style="display: flex; flex-wrap: wrap;">
+                                      <div v-for="(src, index) in imgs.recepcion" :key="index" class="pic1" @click="() => showImg(imgs.recepcion,index)">
+                                        <img style="width: 150px;" :src="src" />
+                                      </div>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6" style="margin-bottom: 50px;">
+
                             <div class="col-lg-12 col-md-12" style="display: flex;flex-direction: column;justify-content: space-between; margin-bottom: 50px;">
                             <div  >
-                                <h4 style="display: flex; flex-wrap: wrap;">Comedor</h4>
+                                <h4 style="display: flex; flex-wrap: wrap;">Habitaciones</h4>
                                 <div style="display: flex; flex-wrap: wrap; ">
-                                  <div v-for="(src, index) in imgs.comedor" :key="index" class="pic1" @click="() => showImg(imgs.comedor, index)">
+                                  <div v-for="(src, index) in imgs.habitaciones" :key="index" class="pic1" @click="() => showImg(imgs.habitaciones, index)">
                                     <img style="width: 150px;" :src="src" />
                                   </div>
                                 </div>
@@ -115,19 +116,30 @@
                             </div>
                             <div class="col-lg-12 col-md-12" style="display: flex;flex-direction: column;justify-content: space-between; margin-bottom: 50px;">
                             <div>
-                                <h4 style="display: flex; flex-wrap: wrap;">Sala de juegos</h4>
+                                <h4 style="display: flex; flex-wrap: wrap;">Gimnasio</h4>
                                 <div style="display: flex; flex-wrap: wrap;">
-                                  <div v-for="(src, index) in imgs.juegos" :key="index" class="pic1" @click="() => showImg(imgs.juegos, index)">
+                                  <div v-for="(src, index) in imgs.gimnasio" :key="index" class="pic1" @click="() => showImg(imgs.gimnasio, index)">
                                     <img style="width: 150px;" :src="src" />
                                   </div>
                                 </div>
                             </div>
                             </div>
+
                             <div class="col-lg-12 col-md-12" style="display: flex;flex-direction: column;justify-content: space-between; margin-bottom: 50px;">
                                 <div>
-                                    <h4>Habitaciones</h4>
+                                    <h4 style="display: flex; flex-wrap: wrap;">Comedor</h4>
                                     <div style="display: flex; flex-wrap: wrap;">
-                                      <div v-for="(src, index) in imgs.habitaciones" :key="index" class="pic1" @click="() => showImg(imgs.habitaciones, index)">
+                                      <div v-for="(src, index) in imgs.comedor" :key="index" class="pic1" @click="() => showImg(imgs.comedor ,index)">
+                                        <img style="width: 150px;" :src="src" />
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12" style="display: flex;flex-direction: column;justify-content: space-between; margin-bottom: 50px;">
+                                <div>
+                                    <h4>Capilla</h4>
+                                    <div style="display: flex; flex-wrap: wrap;">
+                                      <div v-for="(src, index) in imgs.capilla" :key="index" class="pic1" @click="() => showImg(imgs.capilla, index)">
                                         <img style="width: 150px;" :src="src" />
                                       </div>
                                     </div>
@@ -136,19 +148,9 @@
 
                             <div class="col-lg-12 col-md-12" style="display: flex;flex-direction: column;justify-content: space-between; margin-bottom: 50px;">
                                 <div>
-                                    <h4 style="display: flex; flex-wrap: wrap;">Estación enfermería</h4>
+                                    <h4>Actividades</h4>
                                     <div style="display: flex; flex-wrap: wrap;">
-                                      <div v-for="(src, index) in imgs.enfermeria" :key="index" class="pic1" @click="() => showImg(imgs.enfermeria ,index)">
-                                        <img style="width: 150px;" :src="src" />
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12" style="display: flex;flex-direction: column;justify-content: space-between; margin-bottom: 50px;">
-                                <div>
-                                    <h4>Area de alimentos</h4>
-                                    <div style="display: flex; flex-wrap: wrap;">
-                                      <div v-for="(src, index) in imgs.alimentos" :key="index" class="pic1" @click="() => showImg(imgs.alimentos, index)">
+                                      <div v-for="(src, index) in imgs.actividades" :key="index" class="pic1" @click="() => showImg(imgs.actividades, index)">
                                         <img style="width: 150px;" :src="src" />
                                       </div>
                                     </div>
@@ -251,95 +253,66 @@
                     const indexRef = ref(0)
 
                     const imgs = {
-                        jardines : [
-                        'assets/img/gallery/jardines/gal1.jpg' ,
-						'assets/img/gallery/jardines/gal2.jpg' ,
-						//'assets/img/gallery/jardines/gal3.jpg' ,
-						//'assets/img/gallery/jardines/gal4.jpg' ,
-						'assets/img/gallery/jardines/gal5.jpg' ,
-						'assets/img/gallery/jardines/gal6.jpg' ,
-						'assets/img/gallery/jardines/gal7.jpg' ,
-						'assets/img/gallery/jardines/gal8.jpg' ,
-						'assets/img/gallery/jardines/gal9.jpg' ,
-						'assets/img/gallery/jardines/gal10.jpg',
-						'assets/img/gallery/jardines/gal11.jpg',
-						//'assets/img/gallery/jardines/gal12.jpg',
-						// 'assets/img/gallery/jardines/gal13.jpg',
-						// 'assets/img/gallery/jardines/gal14.jpg',
-						// 'assets/img/gallery/jardines/gal15.jpg',
-						// 'assets/img/gallery/jardines/gal17.jpg',
-						// 'assets/img/gallery/jardines/gal18.jpg',
-						// 'assets/img/gallery/jardines/gal19.jpg',
-						// 'assets/img/gallery/jardines/gal20.jpg',
-						// 'assets/img/gallery/jardines/gal21.jpg',
-						// 'assets/img/gallery/jardines/gal22.jpg',
-						// 'assets/img/gallery/jardines/gal23.jpg',
-						// 'assets/img/gallery/jardines/gal24.jpg',
-						//'assets/img/gallery/jardines/gal25.jpg',
-						'assets/img/gallery/jardines/gal26.jpg',
-						'assets/img/gallery/jardines/gal27.jpg',
-						'assets/img/gallery/jardines/gal28.jpg',
-						// 'assets/img/gallery/jardines/gal29.jpg',
-						// 'assets/img/gallery/jardines/gal30.jpg',
-						//'assets/img/gallery/jardines/gal31.jpg',
-						'assets/img/gallery/jardines/gal32.jpg',
-                        'assets/img/gallery/jardines/gal33.jpg',
-                        'assets/img/gallery/jardines/gal34.jpg',
-                        'assets/img/gallery/jardines/gal35.jpg'
+                        zonascomunes : [
+                            'assets/img/gallery/zonascomunes/gal1.jpg' ,
+                            'assets/img/gallery/zonascomunes/gal2.jpg' ,
+                            'assets/img/gallery/zonascomunes/gal3.jpg' ,
+                            'assets/img/gallery/zonascomunes/gal4.jpg' ,
+                            'assets/img/gallery/zonascomunes/gal5.jpg' ,
+                            'assets/img/gallery/zonascomunes/gal6.jpg' ,
+                            'assets/img/gallery/zonascomunes/gal7.jpg' ,
+                            'assets/img/gallery/zonascomunes/gal8.jpg' ,
+                            'assets/img/gallery/zonascomunes/gal9.jpg' ,
+                            'assets/img/gallery/zonascomunes/gal10.jpg'
                         ],
-                        piscina : [
-                        'assets/img/gallery/piscina/gal1.jpg' ,
-						'assets/img/gallery/piscina/gal2.jpg' ,
-						'assets/img/gallery/piscina/gal3.jpg' ,
-						'assets/img/gallery/piscina/gal4.jpg',
-						'assets/img/gallery/piscina/gal5.jpg' ,
-						// 'assets/img/gallery/piscina/gal6.jpg'
+                        recepcion : [
+                            'assets/img/gallery/recepcion/gal1.jpg' ,
+                            'assets/img/gallery/recepcion/gal2.jpg' ,
+                            'assets/img/gallery/recepcion/gal3.jpg' ,
+                            'assets/img/gallery/recepcion/gal4.jpg',
+                            'assets/img/gallery/recepcion/gal5.jpg'
                         ],
                         habitaciones : [
-                        'assets/img/gallery/habitaciones/gal1.jpg' ,
-						'assets/img/gallery/habitaciones/gal2.jpg' ,
-						'assets/img/gallery/habitaciones/gal3.jpg' ,
-						'assets/img/gallery/habitaciones/gal4.jpg',
-                        'assets/img/gallery/habitaciones/gal5.jpg',
-                        'assets/img/gallery/habitaciones/gal6.jpg',
-                        'assets/img/gallery/habitaciones/gal7.jpg',
-                        'assets/img/gallery/habitaciones/gal8.jpg'
+                            'assets/img/gallery/habitaciones/gal1.jpg' ,
+                            'assets/img/gallery/habitaciones/gal2.jpg' ,
+                            'assets/img/gallery/habitaciones/gal3.jpg' ,
+                            'assets/img/gallery/habitaciones/gal4.jpg' ,
+                            'assets/img/gallery/habitaciones/gal5.jpg'
+                        ],
+                        gimnasio : [
+                            'assets/img/gallery/gimnasio/gal1.jpg' ,
+                            'assets/img/gallery/gimnasio/gal2.jpg' ,
+                            'assets/img/gallery/gimnasio/gal3.jpg' ,
+                            'assets/img/gallery/gimnasio/gal4.jpg' ,
+                            'assets/img/gallery/gimnasio/gal5.jpg' ,
+                            'assets/img/gallery/gimnasio/gal6.jpg' ,
+                            'assets/img/gallery/gimnasio/gal7.jpg' ,
+                            'assets/img/gallery/gimnasio/gal8.jpg' ,
+                            'assets/img/gallery/gimnasio/gal9.jpg'
                         ],
                         comedor : [
-                        'assets/img/gallery/comedor/gal1.jpg' ,
-						'assets/img/gallery/comedor/gal2.jpg' ,
-						'assets/img/gallery/comedor/gal3.jpg' ,
-						'assets/img/gallery/comedor/gal4.jpg' ,
-						'assets/img/gallery/comedor/gal5.jpg' ,
-						'assets/img/gallery/comedor/gal6.jpg' ,
-						'assets/img/gallery/comedor/gal7.jpg' ,
-						'assets/img/gallery/comedor/gal8.jpg'
+                            'assets/img/gallery/comedor/gal1.jpg' ,
+                            'assets/img/gallery/comedor/gal2.jpg' ,
+                            'assets/img/gallery/comedor/gal3.jpg' ,
+                            'assets/img/gallery/comedor/gal4.jpg' ,
+                            'assets/img/gallery/comedor/gal5.jpg' ,
+                            'assets/img/gallery/comedor/gal6.jpg'
                         ],
-                        juegos : [
-                           'assets/img/gallery/juegos/gal1.jpg' ,
-                           'assets/img/gallery/juegos/gal2.jpg' ,
-                           'assets/img/gallery/juegos/gal3.jpg' ,
-                           'assets/img/gallery/juegos/gal4.jpg' ,
-                           'assets/img/gallery/juegos/gal5.jpg' ,
-                           'assets/img/gallery/juegos/gal6.jpg',
-                           'assets/img/gallery/juegos/gal7.jpg',
-                           'assets/img/gallery/juegos/gal8.jpg',
-                           'assets/img/gallery/juegos/gal9.jpg'
+                        capilla : [
+                           'assets/img/gallery/capilla/gal1.jpg' ,
+                           'assets/img/gallery/capilla/gal2.jpg' ,
+                           'assets/img/gallery/capilla/gal3.jpg' ,
+                           'assets/img/gallery/capilla/gal4.jpg'
                         ],
-                        enfermeria : [
-                        'assets/img/gallery/enfermeria/gal3.jpg' ,
-                        'assets/img/gallery/enfermeria/gal4.jpg' ,
-                        'assets/img/gallery/enfermeria/gal5.jpg',
-                        'assets/img/gallery/enfermeria/gal1.jpg' ,
-                        'assets/img/gallery/enfermeria/gal2.jpg'
-
-                        ],
-                        alimentos : [
-                        'assets/img/gallery/alimentos/gal1.jpg' ,
-						'assets/img/gallery/alimentos/gal2.jpg' ,
-						'assets/img/gallery/alimentos/gal3.jpg',
-                        'assets/img/gallery/alimentos/gal4.jpg'
-                        ],
+                        actividades : [
+                            'assets/img/gallery/actividades/gal1.jpg' ,
+                            'assets/img/gallery/actividades/gal2.jpg' ,
+                            'assets/img/gallery/actividades/gal3.jpg' ,
+                            'assets/img/gallery/actividades/gal4.jpg' ,
+                            'assets/img/gallery/actividades/gal5.jpg' ,
+                            'assets/img/gallery/actividades/gal6.jpg' ,
+                            'assets/img/gallery/actividades/gal7.jpg'
+                        ]
                     }
 
                     const imgsShow = ref([])
