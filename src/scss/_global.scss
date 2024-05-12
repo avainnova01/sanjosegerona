@@ -20,7 +20,7 @@ body {
 
 
 p{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 //- Page section styling
@@ -155,6 +155,14 @@ p{
     margin-bottom: 0;
   }
 
+  a.hidden-link {
+    text-decoration: none; /* Eliminar subrayado */
+    color: inherit; /* Heredar el color del texto */
+  }
+
+  .ul-v2 > li {
+    margin-bottom: 18px !important;
+  }
 
   @media (max-width: 991px) {
      .section-image-ppal{
@@ -194,6 +202,13 @@ p{
 
   @media (max-width: 575px) {
 
+    p{
+        font-size: 1.0rem;
+    }
+
+    .logo{
+        height: 40px;
+     }
 
     .jardinesWidth{
         width: 100px;
