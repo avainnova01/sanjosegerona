@@ -148,6 +148,7 @@ p{
 
   .jardinesWidth{
     width: 190px;
+    max-height: 126px;
   }
 
   .styleintitucional{
@@ -163,6 +164,21 @@ p{
   .ul-v2 > li {
     margin-bottom: 18px !important;
   }
+
+  a.video-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1a73e8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+a.video-link:hover {
+    background-color: #0c50b6;
+}
 
   @media (max-width: 991px) {
      .section-image-ppal{
