@@ -34,8 +34,6 @@
                         <li class="nav-item"><a class="nav-link" href="index.html#inicio">INICIO</a></li>
                         <li class="nav-item"><a class="nav-link" href="index.html#somos">QUIENES SOMOS</a></li>
                         <li class="nav-item"><a class="nav-link" href="index.html#servicios">SERVICIOS</a></li>
-                        <!-- <li class="nav-item"><a class="nav-link" href="#institucional">INSTITUCIONAL</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#galery">GALERÍA</a></li> -->
                         <li class="nav-item dropdown styleintitucional" style="
                             display: flex;
                             align-items: center;
@@ -169,21 +167,6 @@
                 background-size: cover;
                 transform: scaleY(-1);
                 ">
-            <!-- <div class="container px-4 px-lg-5" style="display: flex; justify-content: center; transform: scaleY(-1);">
-                <div class="footer-content" >
-                    <div style="margin-bottom: 20px;">
-                      <img src="assets/img/logoHSI.png" alt="">
-                    </div>
-                    <div class="vr showhorizontal" style="margin-left: 15px; margin-right: 15px; width: 3px;  background-color: #1AA3E7;"></div>
-                    <div style="color: white;">
-                        <p style="margin-bottom: 5px;" >PBX: 524 6318  <i class="fa fa-whatsapp whatsapp-icon" style="margin-left: 18px;"></i> Cel: 314 897 9207 - 321 898 9937</p>
-                        <p style="margin-bottom: 5px;"><i class="fa fa-map-marker map-marker-icon"></i> Calle 7 No. 29 - 43 B./ El Cedro</p>
-                        <p style="margin-bottom: 5px;"> <i class="fa fa-envelope envelope-icon"></i> direccion.hogarsantaines@irsjg.org</p>
-                        <p style="margin-bottom: 5px;"> <i class="fa fa-edge edge-icon"></i> www.hogarsantaines.com</p>
-                        <p style="margin-bottom: 5px;"> <i class="fa fa-facebook facebook-icon"></i>  <i class="fa fa-instagram instagram-icon"></i>  Hogar Santa Ines Geriátrico</p>
-                    </div>
-                </div>
-            </div> -->
         </footer>
 
         <!-- Bootstrap core JS-->
@@ -197,47 +180,6 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-
-<!--
-        <script>
-            const menuLinks = document.querySelectorAll('nav a');
-
-            menuLinks.forEach(link => {
-              link.addEventListener('click', scrollToSection);
-            });
-
-            function scrollToSection(event) {
-              event.preventDefault();
-              const targetId = this.getAttribute('href');
-              const targetSection = document.querySelector(targetId);
-              const targetOffsetTop = targetSection.offsetTop;
-              const currentPosition = window.pageYOffset;
-              const distance = targetOffsetTop - currentPosition;
-              const duration = 1000;
-              let start = null;
-
-              function animation(currentTime) {
-                if (start === null) {
-                  start = currentTime;
-                }
-                const elapsedTime = currentTime - start;
-                const progress = Math.min(elapsedTime / duration, 1);
-                const ease = easeInOutQuad(progress);
-                const newPosition = currentPosition + (distance * ease);
-                window.scrollTo(0, newPosition);
-                if (progress < 1) {
-                  requestAnimationFrame(animation);
-                }
-              }
-
-              function easeInOutQuad(t) {
-                return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-              }
-
-              requestAnimationFrame(animation);
-            }
-          </script>
- -->
 
     </body>
 </html>
