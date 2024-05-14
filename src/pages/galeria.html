@@ -98,6 +98,18 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="col-lg-12 col-md-12" style="display: flex;flex-direction: column;justify-content: space-between; margin-bottom: 50px;">
+                                <div>
+                                    <h4>Actividades</h4>
+                                    <div style="display: flex; flex-wrap: wrap;">
+                                      <div v-for="(src, index) in imgs.actividades" :key="index" class="pic1" @click="() => showImg(imgs.actividades, index)">
+                                        <img style="width: 150px;" :src="src" />
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                         <div class="col-lg-6 col-md-6" style="margin-bottom: 50px;">
 
@@ -137,17 +149,6 @@
                                     <h4>Capilla</h4>
                                     <div style="display: flex; flex-wrap: wrap;">
                                       <div v-for="(src, index) in imgs.capilla" :key="index" class="pic1" @click="() => showImg(imgs.capilla, index)">
-                                        <img style="width: 150px;" :src="src" />
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-12 col-md-12" style="display: flex;flex-direction: column;justify-content: space-between; margin-bottom: 50px;">
-                                <div>
-                                    <h4>Actividades</h4>
-                                    <div style="display: flex; flex-wrap: wrap;">
-                                      <div v-for="(src, index) in imgs.actividades" :key="index" class="pic1" @click="() => showImg(imgs.actividades, index)">
                                         <img style="width: 150px;" :src="src" />
                                       </div>
                                     </div>
