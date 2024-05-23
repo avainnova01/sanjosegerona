@@ -24,7 +24,8 @@ module.exports = function renderHtml() {
         { origen: "../src/pages/institucional.html", destino: "../dist/institucional.html" },
         { origen: "../src/pages/galeria.html", destino: "../dist/galeria.html" },
         { origen: "../src/pages/hogar.html", destino: "../dist/hogar.html" },
-        { origen: "../src/pages/ideario.html", destino: "../dist/ideario.html" }
+        { origen: "../src/pages/ideario.html", destino: "../dist/ideario.html" },
+        { origen: "../src/pages/contacto.html", destino: "../dist/contacto.html" }
     ];
 
     // Recorrer el array y hacer algo con cada elemento
