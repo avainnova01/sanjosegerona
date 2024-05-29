@@ -153,6 +153,8 @@ p{
   .styleintitucional{
     margin-top: 0;
     margin-bottom: 0;
+    display: flex;
+    align-items: center;
   }
 
   a.hidden-link {
@@ -179,6 +181,7 @@ a.video-link:hover {
     background-color: #0c50b6;
 }
 
+
   @media (max-width: 991px) {
      .section-image-ppal{
         height: 36vh;
@@ -191,7 +194,9 @@ a.video-link:hover {
       .styleintitucional{
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
+        display: block !important;
       }
+
       .buttoninstitucional{
         color: #6c757d;
       }
@@ -255,4 +260,19 @@ a.video-link:hover {
         height: 26vh;
       }
 
+    .styleintitucional{
+        display: block !important;
+    }
   }
+
+  @media (max-width: 380px) {
+
+    .styleintitucional a {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 323px !important; /* Ajusta el ancho según tus necesidades */
+    }
+  }
+
+
