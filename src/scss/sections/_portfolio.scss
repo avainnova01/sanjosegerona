@@ -58,10 +58,16 @@
     gap: 20px; /* Espacio entre las columnas */
 }
 
-.container-contacto {
+.container-galeria-main {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Divide en dos columnas de igual ancho */
     gap: 20px; /* Espacio entre las columnas */
+  }
+
+.container-contacto {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Divide en dos columnas de igual ancho */
+    gap: 10px; /* Espacio entre las columnas */
   }
 
   .columna-izquierda {
@@ -97,6 +103,10 @@
     }
 
     .container-contacto {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+      }
+
+      .container-galeria-main {
         grid-template-columns: 1fr; /* Cambia a una sola columna */
       }
 }
