@@ -80,20 +80,23 @@
     padding: 20px;
   }
 
-  .mapa-responsive {
+.mapa-responsive {
     overflow: hidden;
     padding-bottom: 56.25%; /* Proporción de aspecto 16:9 */
     position: relative;
     height: 0;
+    max-height: 390px; /* Altura máxima de 300px */
 }
-
 .mapa-responsive iframe {
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
     position: absolute;
+    max-height: 390px; /* Asegura que el iframe nunca supere los 300px de altura */
 }
+
+
 
 
 /* Media query para pantallas menores a 768px */
