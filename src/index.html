@@ -66,6 +66,23 @@
                 .next {
                     right: 20px;
                 }
+
+                .container_image {
+                max-width: 100%;
+                height: auto;
+                overflow: hidden;
+                }
+
+                .img_banner {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                    min-height : 190px;
+                }
+
+                .slide_new {
+                    display: none;
+                }
         </style>
     </head>
     <body id="page-top" class="gothicFont">
@@ -108,31 +125,42 @@
                 </div>
             </div>
         </nav>
+        <div class="top_banner" ></div>
 
         <div class="container1">
+
         <!-- Inicio-->
-        <div class="carousel section_banner" id="inicio">
-            <div class="slide active">
-              <div class="image" style="background-image: url('assets/img/banner1.jpg')"></div>
+        <section  id="inicio" >
+            <div id="slides">
+                <div class="slide_new" style="display: block;">
+                    <div class="container_image">
+                        <img class="img_banner" src="assets/img/banner1.jpg" >
+                    </div>
+                </div>
+                <div class="slide_new">
+                    <div class="container_image">
+                        <img class="img_banner" src="assets/img/banner2.jpg">
+                    </div>
+                </div>
+                <!-- <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button> -->
+                <!-- <div>
+                    <div>
+                        <button class="prev1" onclick="prevSlide()">&#10094;</button>
+                    </div>
+                    <div>
+                        <button class="next1" onclick="nextSlide()">&#10095;</button>
+                    </div>
+                </div> -->
             </div>
-            <div class="slide">
-              <div class="image" style="background-image: url('assets/img/banner2.jpg')"></div>
-            </div>
-            <div class="slide">
-              <div class="image" style="background-image: url('assets/img/banner3.jpg')"></div>
-            </div>
-            <div class="slide">
-                <div class="image" style="background-image: url('assets/img/banner4.jpg')"></div>
-              </div>
-            <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
-        </div>
-        <!-- <section class="section-image-ppal" id="inicio" >
-        </section> -->
+
+
+
+        </section>
 
 
         <!-- Quienes somos-->
-        <section class="page-section" id="somos">
+        <section class="page-section"  id="somos">
             <div class="container px-4 px-lg-5 text-center" style="padding-bottom: 3em;">
                 <p class="text-muted mb-0">
                     En el Hogar Sagrada Familia, del <a href="https://www.irsjg.org" target="_blank"> Instituto de Religiosas de San José de Gerona </a> , llevamos más de 35 años cuidando de forma integral, humana y profesional, a personas mayores con o sin limitaciones funcionales o cognitivas
@@ -601,8 +629,8 @@
             slides[currentSlide].classList.add("active");
             }
 
-            prevButton.addEventListener("click", previousSlide);
-            nextButton.addEventListener("click", nextSlide);
+            // prevButton.addEventListener("click", previousSlide);
+            // nextButton.addEventListener("click", nextSlide);
 
           </script>
 
@@ -630,6 +658,42 @@
         }
     </script>
 
+<script>
+    var _slides = document.querySelectorAll('.slide_new');
+    var _currentSlide = 0;
+
+    function showSlide(index) {
+        _slides.forEach(function(slide, i) {
+        if (i === index) {
+          slide.style.display = 'block';
+        } else {
+          slide.style.display = 'none';
+        }
+      });
+    }
+
+    function nextSlide() {
+        _currentSlide++;
+      if (_currentSlide >= _slides.length) {
+        _currentSlide = 0;
+      }
+      showSlide(_currentSlide);
+    }
+
+    function prevSlide() {
+        _currentSlide--;
+      if (_currentSlide < 0) {
+        _currentSlide = _slides.length - 1;
+      }
+      showSlide(_currentSlide);
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        _slides = document.querySelectorAll('.slide_new');
+      showSlide(_currentSlide);
+      setInterval(nextSlide, 8000); // Cambiar de slide cada 2 segundos
+    });
+  </script>
 
     </body>
 </html>
