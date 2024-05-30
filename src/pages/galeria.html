@@ -80,37 +80,46 @@
 
                     <h1  class='font-weight-title' style="margin-top: 110px; font-size: 2.3rem; margin-bottom: 71px; "> Galería </h1>
                     <div class="row g-0">
-                        <div class="col-lg-12" style="margin-bottom: 50px;">
+                        <div class="col-lg-6" style="margin-bottom: 50px;">
+                            <div  style="margin-bottom: 50px;">
+                                <h4>Recepción</h4>
+                                <div style="display: flex; flex-wrap: wrap;" class="galery">
+                                  <div v-for="(src, index) in imgs.recepcion" :key="index" class="pic1" @click="() => showImg(imgs.recepcion,index)">
+                                    <img style="width: 150px;" :src="src" />
+                                  </div>
+                                </div>
+                            </div>
 
-                                <div  style="margin-bottom: 50px;">
-                                    <h4>Zonas comunes</h4>
-                                    <!-- <div style="display: flex; flex-wrap: wrap; justify-content: center;"> -->
-                                    <div style="display: flex; flex-wrap: wrap;" class="galery">
-                                        <div v-for="(src, index) in imgs.zonascomunes" :key="index" class="pic1" @click="() => showImg(imgs.zonascomunes , index)" >
-                                            <img class="jardinesWidth" :src="src" />
-                                        </div>
+                            <div  style="margin-bottom: 50px;">
+                                <h4>Zonas comunes</h4>
+                                <!-- <div style="display: flex; flex-wrap: wrap; justify-content: center;"> -->
+                                <div style="display: flex; flex-wrap: wrap;" class="galery">
+                                    <div v-for="(src, index) in imgs.zonascomunes" :key="index" class="pic1" @click="() => showImg(imgs.zonascomunes , index)" >
+                                        <img class="jardinesWidth" :src="src" />
                                     </div>
                                 </div>
+                            </div>
 
-
-                                <div  style="margin-bottom: 50px;">
-                                    <h4>Recepción</h4>
-                                    <div style="display: flex; flex-wrap: wrap;" class="galery">
-                                      <div v-for="(src, index) in imgs.recepcion" :key="index" class="pic1" @click="() => showImg(imgs.recepcion,index)">
-                                        <img style="width: 150px;" :src="src" />
-                                      </div>
-                                    </div>
+                            <div  style="margin-bottom: 50px;">
+                                <h4>Actividades</h4>
+                                <div style="display: flex; flex-wrap: wrap;" class="galery">
+                                  <div v-for="(src, index) in imgs.actividades" :key="index" class="pic1" @click="() => showImg(imgs.actividades, index)">
+                                    <img style="width: 150px;" :src="src" />
+                                  </div>
                                 </div>
+                            </div>
 
-
-                                <div  style="margin-bottom: 50px;">
-                                    <h4>Actividades</h4>
-                                    <div style="display: flex; flex-wrap: wrap;" class="galery">
-                                      <div v-for="(src, index) in imgs.actividades" :key="index" class="pic1" @click="() => showImg(imgs.actividades, index)">
-                                        <img style="width: 150px;" :src="src" />
-                                      </div>
-                                    </div>
+                            <div >
+                                <h4>Capilla</h4>
+                                <div style="display: flex; flex-wrap: wrap;" class="galery">
+                                  <div v-for="(src, index) in imgs.capilla" :key="index" class="pic1" @click="() => showImg(imgs.capilla, index)">
+                                    <img style="width: 150px;" :src="src" />
+                                  </div>
                                 </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6" style="margin-bottom: 50px;">
 
                                 <div  style="margin-bottom: 50px;">
                                     <h4>Habitaciones</h4>
@@ -139,14 +148,6 @@
                                     </div>
                                 </div>
 
-                                <div >
-                                    <h4>Capilla</h4>
-                                    <div style="display: flex; flex-wrap: wrap;" class="galery">
-                                      <div v-for="(src, index) in imgs.capilla" :key="index" class="pic1" @click="() => showImg(imgs.capilla, index)">
-                                        <img style="width: 150px;" :src="src" />
-                                      </div>
-                                    </div>
-                                </div>
                         </div>
                     </div>
                 </div>
