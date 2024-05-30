@@ -22,6 +22,67 @@ body {
     margin-top: 77px;
 }
 
+// Estilos para el banner
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+.container_image {
+max-width: 100%;
+height: auto;
+overflow: hidden;
+}
+
+.img_banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.slide_new {
+    display: none;
+}
+
+#banner {
+    position: relative;
+}
+
+#slides {
+    width: 100%;
+    background-color: lightgrey; /* Solo para visualizar mejor */
+}
+
+#button_slides {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+// End Estilos banner
+
 p{
     font-size: 1.2rem;
 }
@@ -46,6 +107,11 @@ p{
 
 .imgservices{
     height: 100%;
+}
+
+.imgservices_movil{
+    height: 100%;
+    display: none;
 }
 
 .text-justify{
@@ -101,9 +167,14 @@ p{
     height: 70vh;
   }
 
+
+  .titulos_size {
+    font-size: 30px !important;
+}
 //   .serviciosleftimage{
 //     padding-right: 1rem !important;
 //   }
+
 
 
   .habilitadoscenter{
@@ -173,7 +244,7 @@ p{
   a.video-link {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #1a73e8;
+    background-color: #19337a;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -220,6 +291,18 @@ a.video-link:hover {
       .jardinesWidth{
         width: 150px;
       }
+
+      .prev, .next {
+        font-size: 34px;
+      }
+
+    .imgservices{
+        display: none;
+    }
+
+    .imgservices_movil{
+        display: block;
+    }
   }
 
 
@@ -271,7 +354,29 @@ a.video-link:hover {
     .styleintitucional{
         display: block !important;
     }
+
+    .prev, .next {
+        font-size: 27px;
+    }
+    #button_slides {
+      display: none;
+    }
+
+    .galery{
+        justify-content: center;
+    }
+
   }
+
+
+  @media (max-width: 548px) {
+
+    .titulos_size {
+        font-size: 24px !important;
+    }
+
+  }
+
 
   @media (max-width: 414px) {
 
@@ -281,6 +386,16 @@ a.video-link:hover {
         text-overflow: ellipsis;
         width: 323px !important; /* Ajusta el ancho según tus necesidades */
     }
+
+    .titulos_size {
+        font-size: 19px !important;
+    }
+
+    .visitas_familiares
+    {
+        font-size: 17px !important;
+    }
+
   }
 
 

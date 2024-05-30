@@ -21,69 +21,7 @@
         <!-- WhatsApp Icon -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
-        <style>
 
-                .slide {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    opacity: 0;
-                    transition: opacity 1s ease;
-                }
-
-                .slide.active {
-                    opacity: 1;
-                }
-
-                .image {
-                    width: 100%;
-                    height: 100%;
-                    background-repeat: round;
-                    background-attachment: scroll;
-                    background-size: cover;
-                }
-
-                .prev, .next {
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    width: 50px;
-                    height: 50px;
-                    background: transparent;
-                    border: none;
-                    color: white;
-                    font-size: 40px;
-                    cursor: pointer;
-                }
-
-                .prev {
-                    left: 20px;
-                }
-
-                .next {
-                    right: 20px;
-                }
-
-                .container_image {
-                max-width: 100%;
-                height: auto;
-                overflow: hidden;
-                }
-
-                .img_banner {
-                    width: 100%;
-                    height: auto;
-                    display: block;
-                    min-height : 190px;
-                }
-
-                .slide_new {
-                    display: none;
-                }
-        </style>
     </head>
     <body id="page-top" class="gothicFont">
         <!-- Navigation-->
@@ -131,27 +69,39 @@
 
         <!-- Inicio-->
         <section  id="inicio" >
-            <div id="slides">
-                <div class="slide_new" style="display: block;">
-                    <div class="container_image">
-                        <img class="img_banner" src="assets/img/banner1.jpg" >
+            <div id="banner">
+                <div id="slides">
+                    <div class="slide_new" style="display: block;">
+                        <div class="container_image">
+                            <img class="img_banner" src="assets/img/banner1.jpg" />
+                        </div>
+                    </div>
+                    <div class="slide_new">
+                        <div class="container_image">
+                            <img class="img_banner" src="assets/img/banner2.jpg">
+                        </div>
+                    </div>
+                    <div class="slide_new">
+                        <div class="container_image">
+                            <img class="img_banner" src="assets/img/banner3.jpg">
+                        </div>
+                    </div>
+                    <div class="slide_new">
+                        <div class="container_image">
+                            <img class="img_banner" src="assets/img/banner4.jpg">
+                        </div>
+                    </div>
+
+                    <div id="button_slides">
+                        <div>
+                            <button class="prev" onclick="prevSlide()">&#10094;</button>
+                        </div>
+                        <div>
+                            <button class="next" onclick="nextSlide()">&#10095;</button>
+                        </div>
                     </div>
                 </div>
-                <div class="slide_new">
-                    <div class="container_image">
-                        <img class="img_banner" src="assets/img/banner2.jpg">
-                    </div>
-                </div>
-                <!-- <button class="prev" onclick="prevSlide()">&#10094;</button>
-                <button class="next" onclick="nextSlide()">&#10095;</button> -->
-                <!-- <div>
-                    <div>
-                        <button class="prev1" onclick="prevSlide()">&#10094;</button>
-                    </div>
-                    <div>
-                        <button class="next1" onclick="nextSlide()">&#10095;</button>
-                    </div>
-                </div> -->
+
             </div>
 
 
@@ -267,15 +217,16 @@
             <div class="container container-fluid p-0">
                 <div class="row g-0">
                     <img src="assets/img/servicios.jpg" alt="logo"  class="imgservices">
+                    <img src="assets/img/servicios_movil.jpg" alt="logo"  class="imgservices_movil">
                 </div>
                 <div>
                     <div class="row g-0">
                         <div class="col-lg-6 col-md-6" style="background: #d0e7f7; display: flex;flex-direction: column;justify-content: space-between;">
                             <div class="mt-5 text-justify px-5">
-                                <h2 class="h4 mb-2 font-weight-title" style="font-size: 30px;">
+                                <h2 class="h4 mb-2 font-weight-title titulos_size"  >
                                     ESTANCIAS
                                 </h2>
-                                <h2 class="h4 mb-2 font-weight-title" style="font-size: 30px;">
+                                <h2 class="h4 mb-2 font-weight-title titulos_size"   >
                                         PERMANENTES O TEMPORALES
                                 </h2>
                                 <p class="text-muted mb-0">
@@ -320,7 +271,7 @@
                                 </span>
                                 <br>
                                 <br>
-                                <h5 class='font-weight-title'> HORARIO DE VISITAS FAMILIARES:</h5>
+                                <h5 class='font-weight-title visitas_familiares'> HORARIO DE VISITAS FAMILIARES:</h5>
                                 <div>
                                     Lunes a domingo
                                 </div>
@@ -332,10 +283,10 @@
                         </div>
                         <div class="col-lg-6 col-md-6" style="display: flex;flex-direction: column;justify-content: space-between;">
                             <div class="mt-5  px-4">
-                                <h2 class="h4 mb-2 font-weight-title" style="font-size: 30px;">
+                                <h2 class="h4 mb-2 font-weight-title titulos_size" >
                                     CENTRO DE DÍA
                                 </h2>
-                                <h2 class="h4 mb-2 font-weight-title" style="font-size: 30px;">
+                                <h2 class="h4 mb-2 font-weight-title titulos_size" >
                                     JORNADA COMPLETA O PARCIAL
                                 </h2>
                                 <p class="text-muted mb-0">
@@ -394,7 +345,7 @@
                                         <h4 style="margin-top: 5px; text-align: center; font-weight: bolder;">Contáctanos y te informamos sin compromiso</h4>
                                         <div style="display: flex; justify-content: center;">
                                             <div style="max-width: 254px;">
-                                                <p style="font-size: 1.1rem; text-align: center;">
+                                                <p style="font-size: 1.0rem; text-align: center;">
                                                     <span style="font-weight: 100;"> Llama al  </span>
                                                     <a href="tel:3208298546"
                                                     style="color: white; text-decoration: none; font-weight: bolder; font-size: larger;">3208298546</a>
@@ -439,8 +390,12 @@
                     <br>
                 </div>
 
-                <div class="row g-0">
+                <div class="row g-0" style="padding-left: 11px; padding-right: 11px;">
                     <img src="assets/img/bienestar_mapa.png" alt="logo"  class="imgservices">
+
+                        <img src="assets/img/bienestar_mapa_movil1.png" alt="logo"  class="imgservices_movil">
+                        <img src="assets/img/bienestar_mapa_movil2.png" alt="logo"  class="imgservices_movil">
+
                 </div>
                 <br>
             </div>
@@ -468,7 +423,7 @@
                         </div>
                         <div class="columna-derecha" style="padding: 17px;">
                             <!-- Contenido de la columna derecha -->
-                            <img style="max-width: 100%;" src="assets/img/habitaciones/HPP_0240.jpg" alt="..." />
+                            <img style="max-width: 96%;" src="assets/img/habitaciones/HPP_0240.jpg" alt="..." />
                         </div>
                     </div>
 
