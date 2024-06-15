@@ -256,6 +256,12 @@ a.video-link:hover {
     background-color: #0c50b6;
 }
 
+.titulo_main {
+    margin-top: 36px;
+    margin-bottom: 26px;
+}
+
+
 
   @media (max-width: 991px) {
      .section-image-ppal{
@@ -369,11 +375,21 @@ a.video-link:hover {
   }
 
 
+
   @media (max-width: 548px) {
 
     .titulos_size {
         font-size: 24px !important;
     }
+
+    .titulo_h1{
+        font-size: 1.5rem !important;
+    }
+
+    .titulo_main {
+        margin-bottom: 0px;
+    }
+
 
   }
 
@@ -395,6 +411,11 @@ a.video-link:hover {
     {
         font-size: 17px !important;
     }
+
+    .text-justify{
+        text-align: left !important;
+    }
+
 
   }
 
