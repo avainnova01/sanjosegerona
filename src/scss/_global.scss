@@ -287,6 +287,10 @@ a.video-link:hover {
     margin-bottom: 26px;
 }
 
+.margen_linea_etica{
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
 
   @media (max-width: 991px) {
@@ -414,6 +418,11 @@ a.video-link:hover {
 
     .titulo_main {
         margin-bottom: 0px;
+    }
+
+    .margen_linea_etica{
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
 
