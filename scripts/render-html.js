@@ -22,7 +22,8 @@ module.exports = function renderHtml() {
     var links = [
         { origen: "../src/index.html", destino: "../dist/index.html" },
         { origen: "../src/pages/institucional.html", destino: "../dist/institucional.html" },
-        { origen: "../src/pages/galeria.html", destino: "../dist/galeria.html" }
+        { origen: "../src/pages/galeria.html", destino: "../dist/galeria.html" },
+        { origen: "../src/pages/ptee.html", destino: "../dist/ptee.html" }
     ];
 
     // Recorrer el array y hacer algo con cada elemento

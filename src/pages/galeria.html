@@ -51,6 +51,7 @@
                             <ul class="dropdown-menu" style="top: 43px;">
                                 <li><a class="dropdown-item" href="institucional.html">Nuestra Historia</a></li>
                                 <li><a class="dropdown-item" href="assets/pdf/TratamientoSI.pdf" target="_blank">Politica de tratamiento</a></li>
+                                <li><a class="dropdown-item"  href="ptee.html" >PTEE</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -198,46 +199,6 @@
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
-<!--
-        <script>
-            const menuLinks = document.querySelectorAll('nav a');
-
-            menuLinks.forEach(link => {
-              link.addEventListener('click', scrollToSection);
-            });
-
-            function scrollToSection(event) {
-              event.preventDefault();
-              const targetId = this.getAttribute('href');
-              const targetSection = document.querySelector(targetId);
-              const targetOffsetTop = targetSection.offsetTop;
-              const currentPosition = window.pageYOffset;
-              const distance = targetOffsetTop - currentPosition;
-              const duration = 1000;
-              let start = null;
-
-              function animation(currentTime) {
-                if (start === null) {
-                  start = currentTime;
-                }
-                const elapsedTime = currentTime - start;
-                const progress = Math.min(elapsedTime / duration, 1);
-                const ease = easeInOutQuad(progress);
-                const newPosition = currentPosition + (distance * ease);
-                window.scrollTo(0, newPosition);
-                if (progress < 1) {
-                  requestAnimationFrame(animation);
-                }
-              }
-
-              function easeInOutQuad(t) {
-                return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-              }
-
-              requestAnimationFrame(animation);
-            }
-          </script>
- -->
             <script>
                 const { ref, computed } = Vue
                 const app = Vue.createApp({
