@@ -267,6 +267,35 @@ p{
         color: #0D4285;
     }
 
+   .custom-ol {
+    counter-reset: list-counter;
+    padding-left: 11px;
+}
+
+.custom-ol li {
+    position: relative;
+    margin-bottom: 32px;
+    list-style: none; /* Elimina las viñetas predeterminadas */
+    padding-left: 40px; /* Espacio para el círculo numerado */
+}
+
+.custom-ol li:before {
+    content: counter(list-counter);
+    counter-increment: list-counter;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #2b487f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
   a.video-link {
     display: inline-block;
     padding: 10px 20px;
@@ -292,6 +321,19 @@ a.video-link:hover {
     margin-right: 20px;
 }
 
+.link-container {
+    display: flex;
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    align-items: center;     /* Centra los elementos verticalmente */
+    gap: 20px;               /* Espacio entre las imágenes */
+    padding: 20px;           /* Espacio alrededor del contenedor */
+}
+
+.link-container img {
+    max-width: 150px;        /* Ajusta el tamaño máximo de las imágenes */
+    height: auto;            /* Mantiene la proporción de las imágenes */
+    cursor: pointer;         /* Cambia el cursor a "mano" sobre la imagen */
+}
 
   @media (max-width: 991px) {
      .section-image-ppal{
@@ -320,6 +362,14 @@ a.video-link:hover {
 
   @media (max-width: 767px) {
 
+    .link-container {
+        flex-direction: column; /* Coloca los elementos en una columna */
+        gap: 10px; /* Espacio entre las imágenes en modo columna */
+    }
+
+    .link-container img {
+        max-width: 80%; /* Ajusta el tamaño de las imágenes en pantallas pequeñas */
+    }
       .serviciosleftimage{
         padding-right: 0rem !important;
       }
