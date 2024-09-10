@@ -335,7 +335,19 @@ a.video-link:hover {
     cursor: pointer;         /* Cambia el cursor a "mano" sobre la imagen */
 }
 
-  @media (max-width: 991px) {
+.margin_left_pse{
+    margin-left: 4px;
+}
+
+  @media (max-width: 991.2px) {
+
+    .margin_left_pse{
+        margin-left: 0px;
+        margin-top: 5px;
+        max-width: 166px;
+    }
+
+
      .section-image-ppal{
         height: 36vh;
       }
@@ -361,6 +373,11 @@ a.video-link:hover {
 
 
   @media (max-width: 767px) {
+
+   .margin_left_pse{
+        margin-left: 0px;
+        margin-top: 5px;
+    }
 
     .link-container {
         flex-direction: column; /* Coloca los elementos en una columna */
