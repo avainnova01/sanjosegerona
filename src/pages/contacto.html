@@ -120,10 +120,30 @@
         </div>
 
         <!-- Icono WhatsApp-->
-        <a href="https://wa.me/573148387523?text=Quisiera%20recibir%20información%20sobre%20sus%20servicios" class="whatsapp" target="_blank">
+        <a href="#" id="whatsapp-link" class="whatsapp" target="_blank">
             <i class="fa fa-whatsapp whatsapp-icon"></i>
         </a>
+
          <!-- Bootstrap core JS-->
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+         <script>
+            // Detectar si es un dispositivo móvil
+            function isMobile() {
+                    return /Mobi|Android/i.test(navigator.userAgent);
+            }
+
+            const whatsappLink = document.getElementById('whatsapp-link');
+            const phoneNumber = '573148387523';
+            const message = 'Quisiera%20recibir%20información%20sobre%20sus%20servicios';
+
+            if (isMobile()) {
+                // Enlace para móviles
+                whatsappLink.href = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+            } else {
+                // Enlace para escritorio
+                whatsappLink.href = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+            }
+
+         </script>
     </body>
 </html>

@@ -358,7 +358,9 @@
                 </section>
 
         <!-- Icono WhatsApp-->
-        <a href="https://web.whatsapp.com/send?phone=573148387523&text=Quisiera%20recibir%20información%20sobre%20sus%20servicios" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+        <a href="#" id="whatsapp-link" class="whatsapp" target="_blank">
+            <i class="fa fa-whatsapp whatsapp-icon"></i>
+        </a>
 
         </div>
         <br>
@@ -378,46 +380,24 @@
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
-<!--
         <script>
-            const menuLinks = document.querySelectorAll('nav a');
-
-            menuLinks.forEach(link => {
-              link.addEventListener('click', scrollToSection);
-            });
-
-            function scrollToSection(event) {
-              event.preventDefault();
-              const targetId = this.getAttribute('href');
-              const targetSection = document.querySelector(targetId);
-              const targetOffsetTop = targetSection.offsetTop;
-              const currentPosition = window.pageYOffset;
-              const distance = targetOffsetTop - currentPosition;
-              const duration = 1000;
-              let start = null;
-
-              function animation(currentTime) {
-                if (start === null) {
-                  start = currentTime;
-                }
-                const elapsedTime = currentTime - start;
-                const progress = Math.min(elapsedTime / duration, 1);
-                const ease = easeInOutQuad(progress);
-                const newPosition = currentPosition + (distance * ease);
-                window.scrollTo(0, newPosition);
-                if (progress < 1) {
-                  requestAnimationFrame(animation);
-                }
-              }
-
-              function easeInOutQuad(t) {
-                return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-              }
-
-              requestAnimationFrame(animation);
+             // Detectar si es un dispositivo móvil
+             function isMobile() {
+                return /Mobi|Android/i.test(navigator.userAgent);
             }
-          </script>
- -->
+
+            const whatsappLink = document.getElementById('whatsapp-link');
+            const phoneNumber = '573148387523';
+            const message = 'Quisiera%20recibir%20información%20sobre%20sus%20servicios';
+
+            if (isMobile()) {
+                // Enlace para móviles
+                whatsappLink.href = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+            } else {
+                // Enlace para escritorio
+                whatsappLink.href = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+            }
+        </script>
 
     </body>
 </html>

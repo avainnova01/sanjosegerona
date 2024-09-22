@@ -248,8 +248,11 @@
                 </section>
 
         <!-- Icono WhatsApp-->
-        <a href="https://web.whatsapp.com/send?phone=573148387523&text=Quisiera%20recibir%20información%20sobre%20sus%20servicios" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
-        </div>
+        <a href="#" id="whatsapp-link" class="whatsapp" target="_blank">
+            <i class="fa fa-whatsapp whatsapp-icon"></i>
+        </a>
+
+       </div>
         <!-- Footer-->
 
 
@@ -261,7 +264,26 @@
         <script src="js/scripts.js"></script>
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
+
             <script>
+
+                // Detectar si es un dispositivo móvil
+                function isMobile() {
+                    return /Mobi|Android/i.test(navigator.userAgent);
+                }
+
+                const whatsappLink = document.getElementById('whatsapp-link');
+                const phoneNumber = '573148387523';
+                const message = 'Quisiera%20recibir%20información%20sobre%20sus%20servicios';
+
+                if (isMobile()) {
+                    // Enlace para móviles
+                    whatsappLink.href = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+                } else {
+                    // Enlace para escritorio
+                    whatsappLink.href = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+                }
+
                 const { ref, computed } = Vue
                 const app = Vue.createApp({
                 setup() {
