@@ -159,7 +159,11 @@
         </section>
 
         <!-- Icono WhatsApp-->
-        <a href="https://wa.me/573218989937?text=Quisiera%20recibir%20información%20sobre%20sus%20servicios" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+        <a href="#" id="whatsapp-link" class="whatsapp" target="_blank">
+            <i class="fa fa-whatsapp whatsapp-icon"></i>
+        </a>
+
         </div>
         <!-- Footer-->
         <footer
@@ -322,6 +326,28 @@
                 app.use(VueEasyLightbox)
                 app.mount('#app')
             </script>
+
+            <script>
+
+                // Detectar si es un dispositivo móvil
+                function isMobile() {
+                    return /Mobi|Android/i.test(navigator.userAgent);
+                }
+
+                const whatsappLink = document.getElementById('whatsapp-link');
+                const phoneNumber = '573218989937';
+                const message = 'Quisiera%20recibir%20información%20sobre%20sus%20servicios';
+
+                if (isMobile()) {
+                    // Enlace para móviles
+                    whatsappLink.href = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+                } else {
+                    // Enlace para escritorio
+                    whatsappLink.href = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+                }
+
+            </script>
+
 
     </body>
 </html>
