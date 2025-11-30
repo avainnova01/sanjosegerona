@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-behavior: auto;">
+<html lang="es" style="scroll-behavior: auto;">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -12,9 +12,6 @@
         <link rel="icon" sizes="192x192" href="assets/icon.png" type="image/png">
         <!-- Bootstrap Icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Google fonts-->
-        <!-- <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" /> -->
         <!-- SimpleLightbox plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -24,10 +21,15 @@
         <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
 
         <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        <script>
+            (function(w,d,s,l,i){
+                w[l]=w[l]||[];
+                w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+                var f=d.getElementsByTagName(s)[0],
+                    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+                j.async=true;
+                j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+                f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-5739866R');
         </script>
         <!-- End Google Tag Manager -->
@@ -35,65 +37,154 @@
     <body id="page-top" class="gothicFont">
 
         <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5739866R"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5739866R"
+                    height="0"
+                    width="0"
+                    style="display:none;visibility:hidden"
+                    title="Google Tag Manager">
+            </iframe>
+        </noscript>
         <!-- End Google Tag Manager (noscript) -->
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-M0MJPPMPGY"></script>
         <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-M0MJPPMPGY');
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-M0MJPPMPGY');
         </script>
         <!-- End Google Tag (gtag.js) -->
 
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/img/logo.png" alt="logo" class="logo">
+                <a class="navbar-brand"
+                   href="index.html"
+                   title="Ir a la página de inicio del Hogar Sagrada Familia">
+                    <img src="assets/img/logo.png"
+                         alt="Logo Hogar Sagrada Familia"
+                         class="logo">
                 </a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <button class="navbar-toggler navbar-toggler-right"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarResponsive"
+                        aria-controls="navbarResponsive"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="index.html#inicio">INICIO</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html#somos">QUIENES SOMOS</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html#servicios">SERVICIOS</a></li>
-                        <!-- <li class="nav-item"><a class="nav-link" href="#institucional">INSTITUCIONAL</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#galery">GALERÍA</a></li> -->
-                        <li class="nav-item dropdown styleintitucional" style="
-                            display: flex;
-                            align-items: center;
-                        ">
-                            <button class="btn dropdown-toggle buttoninstitucional" data-bs-toggle="dropdown" aria-expanded="false" style="--bs-btn-padding-y: none;padding-left: 9px;font-family: century-gothic;font-weight: 700;font-size: 0.9rem;border: none;">
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="index.html#inicio"
+                               title="Ir a la sección Inicio">
+                                INICIO
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="index.html#somos"
+                               title="Ir a la sección Quiénes somos">
+                                QUIÉNES SOMOS
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="index.html#servicios"
+                               title="Ir a la sección Servicios">
+                                SERVICIOS
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown styleintitucional" style="display: flex; align-items: center;">
+                            <button class="btn dropdown-toggle buttoninstitucional"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    style="--bs-btn-padding-y: none;padding-left: 9px;font-family: century-gothic;font-weight: 700;font-size: 0.9rem;border: none;">
                                 INSTITUCIONAL
                             </button>
                             <ul class="dropdown-menu" style="top: 43px;">
-                                <li><a class="dropdown-item" href="hogar.html">Hogar Sagrada Familia</a></li>
-                                <li><a class="dropdown-item" href="institucional.html">Instituto de Religiosas de San José de Gerona</a></li>
-                                <li><a class="dropdown-item"  href="ideario.html" >Ideario, misión, visión, valores </a></li>
-                                <li><a class="dropdown-item"  href="assets/pdf/IRSJG-Colombia-Politica-Tratamiento-Datos-Personales-2024.pdf" target="_blank">Política de tratamiento de datos</a></li>
-                                <li><a class="dropdown-item"  href="assets/pdf/IRSJG-Colombia-Aviso-Privacidad-2024.pdf" target="_blank">Aviso de privacidad</a></li>
-                                <li><a class="dropdown-item"  href="ptee.html" >PTEE</a></li>
+                                <li>
+                                    <a class="dropdown-item"
+                                       href="hogar.html"
+                                       title="Ver información del Hogar Sagrada Familia">
+                                        Hogar Sagrada Familia
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item"
+                                       href="institucional.html"
+                                       title="Ver información del Instituto de Religiosas de San José de Gerona">
+                                        Instituto de Religiosas de San José de Gerona
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item"
+                                       href="ideario.html"
+                                       title="Ver ideario, misión, visión y valores">
+                                        Ideario, misión, visión, valores
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item"
+                                       href="assets/pdf/IRSJG-Colombia-Politica-Tratamiento-Datos-Personales-2024.pdf"
+                                       target="_blank"
+                                       title="Ver Política de tratamiento de datos personales (PDF)">
+                                        Política de tratamiento de datos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item"
+                                       href="assets/pdf/IRSJG-Colombia-Aviso-Privacidad-2024.pdf"
+                                       target="_blank"
+                                       title="Ver Aviso de privacidad (PDF)">
+                                        Aviso de privacidad
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item"
+                                       href="ptee.html"
+                                       title="Ver Programa de Transparencia y Ética Empresarial (PTEE)">
+                                        PTEE
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="galeria.html">GALERIA</a>
+                            <a class="nav-link"
+                               href="galeria.html"
+                               title="Ver galería del Hogar Sagrada Familia">
+                                GALERÍA
+                            </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">CONTACTO</a>
+                            <a class="nav-link"
+                               href="contacto.html"
+                               title="Ir a la página de contacto">
+                                CONTACTO
+                            </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="assets/pdf/Comunicado_proveedores_alimentos.pdf"  target="_blank">COMUNICADOS</a>
+                            <a class="nav-link"
+                               href="assets/pdf/Comunicado_proveedores_alimentos.pdf"
+                               target="_blank"
+                               title="Ver comunicados para proveedores de alimentos (PDF)">
+                                COMUNICADOS
+                            </a>
                         </li>
 
-                        <li class="nav-item margin_left_pse" >
-                            <a class="nav-link" href="pse.html" style="color: white !important;background: #2b487f !important;">PAGO EN LÍNEA</a>
+                        <li class="nav-item margin_left_pse">
+                            <a class="nav-link"
+                               href="pse.html"
+                               style="color: white !important;background: #2b487f !important;"
+                               title="Ir a la página de pago en línea PSE">
+                                PAGO EN LÍNEA
+                            </a>
                         </li>
 
                     </ul>
@@ -101,112 +192,121 @@
             </div>
         </nav>
 
-
-        <div class="top_banner" ></div>
+        <div class="top_banner"></div>
 
         <div class="container1">
 
-        <!-- Inicio-->
-        <section  id="inicio" >
-            <div id="banner">
-                <div id="slides">
-                    <div class="slide_new" style="display: block;">
-                        <div class="container_image">
-                            <img class="img_banner" src="assets/img/banner_ptee.jpg" />
+            <!-- Inicio-->
+            <section id="inicio">
+                <div id="banner">
+                    <div id="slides">
+                        <div class="slide_new" style="display: block;">
+                            <div class="container_image">
+                                <img class="img_banner"
+                                     src="assets/img/banner_ptee.jpg"
+                                     alt="Banner del Programa de Transparencia y Ética Empresarial (PTEE)"
+                                     loading="lazy" />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
+            <!-- Contenido PTEE-->
+            <section id="historia">
+                <div class="container container-fluid p-0">
 
-        <!-- Servicios-->
-        <section id="historia" >
-            <div class="container container-fluid p-0">
+                    <div class="text-center" style="margin-top: 36px; margin-bottom: 26px;">
+                        <h1>
+                            Programa de Transparencia y Ética Empresarial (PTEE)
+                        </h1>
+                    </div>
 
-                <div class="text-center" style="margin-top: 36px; margin-bottom: 26px;">
-                    <h1>
-                        Programa de Transparencia y Ética Empresarial (PTEE)
-                    </h1>
-                </div>
-                <div>
-                    <div class="row g-0">
-                        <div class="col-lg-12 col-md-12" style="display: flex;flex-direction: column;justify-content: space-between;">
-                            <div class="mt-3 text-justify px-5">
-                                <h2 class="h4 mb-2 font-weight-title" style="margin-bottom: 20px;" ></h2>
+                    <div>
+                        <div class="row g-0">
+                            <div class="col-lg-12 col-md-12" style="display: flex;flex-direction: column;justify-content: space-between;">
+                                <div class="mt-3 text-justify px-5">
+                                    <h2 class="h4 mb-2 font-weight-title" style="margin-bottom: 20px;"></h2>
 
-                                <div class="row">
-
-                                    <div class="col-lg-12">
-                                        <p class="text-muted mb-0">
-                                            Este programa del Instituto de Religiosas de San José de Gerona (IRSJG) se deriva del
-                                            <a href="https://www.irsjg.org/sites/default/files/CORP-GG-POL-E-01-01-CODIGO-ETICO-IRSJG.pdf" target="_blank"> Código Ético Corporativo </a>
-                                            de su casa matriz en España. Tiene como finalidad establecer los principios,
-                                            valores y normas de conducta que han de regir el comportamiento de todas las personas,
-                                            entidades y sociedades que forman parte del IRSJG en lo que respecta a las relacionades e
-                                            interacciones que mantienen todos sus grupos de interés.
-                                        </p>
-                                        <br>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="row">
-                                    <div>
-                                        <h2 class="h4 mb-2 font-weight-title"  style="margin-bottom: 20px;">
-                                            Línea ética
-                                        </h2>
-                                        <br>
-                                        <p class="text-muted mb-0">
-                                            La línea ética es un canal de comunicación habilitado por el Instituto de Religiosas de San José de
-                                            Gerona para sus Centros y/o entidades vinculadas en Colombia (en adelante tratados
-                                            conjuntamente como la “Organización”), para poder informar, rápida y confidencialmente, sobre
-                                            comportamientos irregulares, ilícitos o constitutivos de una infracción grave o muy grave,
-                                            producidos en el ámbito de gestión de la Organización.
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <p class="text-muted mb-0">
+                                                Este programa del Instituto de Religiosas de San José de Gerona (IRSJG) se deriva del
+                                                <a href="https://www.irsjg.org/sites/default/files/CORP-GG-POL-E-01-01-CODIGO-ETICO-IRSJG.pdf"
+                                                   target="_blank"
+                                                   rel="noopener noreferrer"
+                                                   title="Ver Código Ético Corporativo del IRSJG (PDF)">
+                                                    Código Ético Corporativo
+                                                </a>
+                                                de su casa matriz en España. Tiene como finalidad establecer los principios,
+                                                valores y normas de conducta que han de regir el comportamiento de todas las personas,
+                                                entidades y sociedades que forman parte del IRSJG en lo que respecta a las relaciones e
+                                                interacciones que mantienen todos sus grupos de interés.
+                                            </p>
                                             <br>
-                                            Antes de utilizar el canal, le recomendamos la lectura de las siguientes condiciones de uso, ya
-                                            que el acceso y utilización de este supone su aceptación plena y sin reservas. Al utilizarlo, se
-                                            compromete a hacer un uso diligente y correcto del mismo, conforme al ordenamiento jurídico, a
-                                            las condiciones de uso y a las exigencias de la buena fe.
-                                        </p>
-                                            <br>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <br>
-                                <div class="margen_linea_etica">
+                                    <br>
+
                                     <div class="row">
                                         <div>
-                                            <h2 class="h4 mb-2 font-weight-title"  style="margin-bottom: 20px;">
-                                              1. Quien puede usarlo
+                                            <h2 class="h4 mb-2 font-weight-title" style="margin-bottom: 20px;">
+                                                Línea ética
                                             </h2>
                                             <br>
                                             <p class="text-muted mb-0">
-                                                <ul class="ul-v3">
+                                                La línea ética es un canal de comunicación habilitado por el Instituto de Religiosas de San José de
+                                                Gerona para sus Centros y/o entidades vinculadas en Colombia (en adelante tratados
+                                                conjuntamente como la “Organización”), para poder informar, rápida y confidencialmente, sobre
+                                                comportamientos irregulares, ilícitos o constitutivos de una infracción grave o muy grave,
+                                                producidos en el ámbito de gestión de la Organización.
+                                                <br><br>
+                                                Antes de utilizar el canal, le recomendamos la lectura de las siguientes condiciones de uso, ya
+                                                que el acceso y utilización de este supone su aceptación plena y sin reservas. Al utilizarlo, se
+                                                compromete a hacer un uso diligente y correcto del mismo, conforme al ordenamiento jurídico, a
+                                                las condiciones de uso y a las exigencias de la buena fe.
+                                            </p>
+                                            <br>
+                                        </div>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="margen_linea_etica">
+
+                                        <div class="row">
+                                            <div>
+                                                <h2 class="h4 mb-2 font-weight-title" style="margin-bottom: 20px;">
+                                                    1. Quién puede usarlo
+                                                </h2>
+                                                <br>
+                                                <ul class="ul-v3 text-muted">
                                                     <li>Colaboradores en general pertenecientes a la Organización del Instituto de Religiosas San José de Gerona</li>
                                                     <li>Clientes</li>
                                                     <li>Proveedores</li>
                                                     <li>Usuarios/as</li>
                                                     <li>Pacientes</li>
                                                     <li>Público en general</li>
-                                                  </ul>
-                                            </p>
-                                            <br>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <div class="row">
-                                        <div>
-                                            <h2 class="h4 mb-2 font-weight-title"  style="margin-bottom: 20px;">
-                                                2. Qué hechos se pueden comunicar
-                                            </h2>
-                                            <br>
-                                            <p class="text-muted mb-0">
-                                                Nuestra Línea ética es un canal de comunicación confidencial el cual permite informar sobre
-                                                presuntos hechos irregulares dentro de nuestra Organización tales como:
+                                                </ul>
                                                 <br>
-                                            </p>
-                                            <p class="text-muted mb-0">
-                                                <ul class="ul-v3">
+                                            </div>
+                                        </div>
+
+                                        <br>
+
+                                        <div class="row">
+                                            <div>
+                                                <h2 class="h4 mb-2 font-weight-title" style="margin-bottom: 20px;">
+                                                    2. Qué hechos se pueden comunicar
+                                                </h2>
+                                                <br>
+                                                <p class="text-muted mb-0">
+                                                    Nuestra Línea ética es un canal de comunicación confidencial el cual permite informar sobre
+                                                    presuntos hechos irregulares dentro de nuestra Organización tales como:
+                                                </p>
+                                                <br>
+                                                <ul class="ul-v3 text-muted">
                                                     <li>Situaciones inusuales relacionadas con delitos de lavado de activos</li>
                                                     <li>Situaciones inusuales relacionadas con delitos de soborno, corrupción, opacidad, violación a
                                                         la seguridad de la información
@@ -215,51 +315,57 @@
                                                     <li>Conflicto de intereses</li>
                                                     <li>Tráfico de influencias</li>
                                                     <li>Competencia desleal</li>
-                                                    <li>Situaciones que afectan los programas ambientales y sociales llevados a cabo por la compañía
-                                                    </li>
-                                                    <li>Situaciones de sabotaje o vandalismo
-                                                    </li>
+                                                    <li>Situaciones que afectan los programas ambientales y sociales llevados a cabo por la compañía</li>
+                                                    <li>Situaciones de sabotaje o vandalismo</li>
                                                     <li>Vulneración de los derechos humanos</li>
-                                                  </ul>
-                                            </p>
+                                                </ul>
                                                 <br>
-                                        </div>
-                                    </div>
-
-                                    <br>
-                                    <div class="row">
-                                        <div>
-                                            <h2 class="h4 mb-2 font-weight-title"  style="margin-bottom: 20px;">
-                                              3. Cómo comunicar un hecho irregular
-                                            </h2>
-                                            <br>
-                                            <p class="text-muted mb-0">
-                                                Puede remitir su comunicación escrita, identificándose o de forma anónima, a través de:
-                                            </p>
-                                            <div>
-                                                <a href="https://desqubrapp.com.co/denuncias/responder_denuncias/188" target="_blank">
-                                                    <img src="assets/img/ptee/denuncia_ptee.png" alt="denuncia" style="height: 63px;">
-                                                </a>
                                             </div>
-                                            <br>
                                         </div>
-                                    </div>
 
-                                    <br>
-                                    <div class="row">
-                                        <div>
-                                            <h2 class="h4 mb-2 font-weight-title"  style="margin-bottom: 20px;">
-                                                4. Los siguientes tipos de comunicaciones NO serán objeto del Canal:
-                                            </h2>
-                                            <br>
-                                            <p class="text-muted mb-0">
-                                                <ul class="ul-v3">
-                                                    <li>Quejas o sugerencias de usuarios y/o pacientes y/o terceros, debiendo acudir a los canales
+                                        <br>
+
+                                        <div class="row">
+                                            <div>
+                                                <h2 class="h4 mb-2 font-weight-title" style="margin-bottom: 20px;">
+                                                    3. Cómo comunicar un hecho irregular
+                                                </h2>
+                                                <br>
+                                                <p class="text-muted mb-2">
+                                                    Puede remitir su comunicación escrita, identificándose o de forma anónima, a través de:
+                                                </p>
+                                                <div>
+                                                    <a href="https://desqubrapp.com.co/denuncias/responder_denuncias/188"
+                                                       target="_blank"
+                                                       rel="noopener noreferrer"
+                                                       title="Acceder al canal de denuncias del PTEE">
+                                                        <img src="assets/img/ptee/denuncia_ptee.png"
+                                                             alt="Botón para realizar denuncia en la línea ética"
+                                                             style="height: 63px;"
+                                                             loading="lazy">
+                                                    </a>
+                                                </div>
+                                                <br>
+                                            </div>
+                                        </div>
+
+                                        <br>
+
+                                        <div class="row">
+                                            <div>
+                                                <h2 class="h4 mb-2 font-weight-title" style="margin-bottom: 20px;">
+                                                    4. Los siguientes tipos de comunicaciones NO serán objeto del Canal:
+                                                </h2>
+                                                <br>
+                                                <ul class="ul-v3 text-muted">
+                                                    <li>
+                                                        Quejas o sugerencias de usuarios y/o pacientes y/o terceros, debiendo acudir a los canales
                                                         específicos habilitados en los puntos de atención de la Organización y/o a través de los
                                                         formularios habilitados en la web de cada Centro.
                                                     </li>
-                                                    <li>Solicitudes de información, las cuales deberán tramitarse por los canales habilitados por la
-                                                        Organización
+                                                    <li>
+                                                        Solicitudes de información, las cuales deberán tramitarse por los canales habilitados por la
+                                                        Organización.
                                                     </li>
                                                     <li>
                                                         Reclamaciones de usuarios y/o pacientes enmarcadas en el ámbito de protección al
@@ -268,110 +374,130 @@
                                                         efectuarse en el área de admisión/recepción de la Clínica y Centros de la Organización y
                                                         presentarse en el formato habilitado por la Administración correspondiente.
                                                     </li>
-                                                  </ul>
-                                            </p>
-                                            <br>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <div class="row">
-                                        <div>
-                                            <h2 class="h4 mb-2 font-weight-title"  style="margin-bottom: 20px;">
-                                                Descarga el PROGRAMA DE TRANSPARENCIA Y ÈTICA EMPRESARIAL (PTEE)
-                                            </h2>
-                                            <div>
-                                                <a href="assets/pdf/IRSJG-PTEE-COLOMBIA-30042024-v02.pdf" download="IRSJG-PTEE-COLOMBIA-30042024-v02.pdf">
-                                                    <img src="assets/img/ptee/descarga_ptee.png" alt="download ptee" style="height: 63px;">
-                                                </a>
+                                                </ul>
+                                                <br>
                                             </div>
-                                            <br>
                                         </div>
-                                    </div>
+
+                                        <br>
+
+                                        <div class="row">
+                                            <div>
+                                                <h2 class="h4 mb-2 font-weight-title" style="margin-bottom: 20px;">
+                                                    Descarga el PROGRAMA DE TRANSPARENCIA Y ÉTICA EMPRESARIAL (PTEE)
+                                                </h2>
+                                                <div>
+                                                    <a href="assets/pdf/IRSJG-PTEE-COLOMBIA-30042024-v02.pdf"
+                                                       download="IRSJG-PTEE-COLOMBIA-30042024-v02.pdf"
+                                                       title="Descargar Programa de Transparencia y Ética Empresarial (PTEE) en PDF">
+                                                        <img src="assets/img/ptee/descarga_ptee.png"
+                                                             alt="Botón para descargar el documento del PTEE"
+                                                             style="height: 63px;"
+                                                             loading="lazy">
+                                                    </a>
+                                                </div>
+                                                <br>
+                                            </div>
+                                        </div>
+
+                                    </div> <!-- /.margen_linea_etica -->
+
                                 </div>
-
-
-
-
-
                             </div>
+                        </div>
+                    </div>
 
+                </div>
+            </section>
+
+            <!-- Contacto-->
+            <section id="contacto">
+                <div class="container page-section" style="padding-bottom:0px; padding-top: 25px;">
+
+                    <div class="container-contacto">
+                        <div class="columna-izquierda">
+                            <div class="mapa-responsive">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7910314980422!2d-74.06584558899795!3d4.631336442234605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a2676f951cf%3A0xa59f490ccd038d20!2sCra.%206%20%2345-22%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1714364424734!5m2!1ses-419!2sco"
+                                    width="600"
+                                    height="450"
+                                    style="border:0;"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                    title="Mapa de ubicación del Hogar Sagrada Familia en Bogotá">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="columna-derecha" style="padding-top: 0px;">
+                            <img src="assets/img/logo.png"
+                                 alt="Logo del Hogar Sagrada Familia"
+                                 class="logo"
+                                 style="margin-bottom: 20px;"
+                                 loading="lazy">
+                            <br>
+                            <p style="font-size: 1.0rem;">
+                                <span style="font-weight: bolder;">PBX:</span>  745 19 19 - 288 31 14
+                                <br>
+                                <i class="fa fa-phone phone-icon" style="margin-right: 3px;"></i>
+                                <a href="tel:3208298546"
+                                   class="hidden-link"
+                                   title="Llamar al número celular del Hogar Sagrada Familia">
+                                    3208298546
+                                </a>
+                                <br>
+                                <i class="fa fa-envelope envelope-icon" style="margin-right: 3px;"></i>
+                                direccion.hogarsfamilia@irsjg.org
+                                <br>
+                                <i class="fa fa-map-marker map-marker-icon" style="margin-right: 3px;"></i>
+                                Carrera 6 # 45-22, Bogotá D.C. – Colombia
+                            </p>
+                            <br>
+                            <div>
+                                <a href="https://www.irsjg.org/es"
+                                   target="_blank"
+                                   title="Ir al sitio web del Instituto de Religiosas de San José de Gerona">
+                                    <img src="assets/img/IRSJG-logo-transparente.png"
+                                         alt="Logo del Instituto de Religiosas de San José de Gerona"
+                                         style="width: 270px;"
+                                         loading="lazy">
+                                </a>
+
+                                <p style="font-size: 1.0rem;">
+                                    <br>
+                                    © Instituto de Religiosas de San José de Gerona 2024
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid p-0">
+                        <div class="row g-0">
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="habilitadosmargingallegyright"></div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6"
+                                 style="display: flex; align-items: center; justify-content: center;">
+                                <div class="habilitadosmargingallegyleft"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
 
-            </div>
-        </section>
-
-
-                <!-- Contacto-->
-                <section id="contacto">
-
-                    <div class="container page-section" style="padding-bottom:0px; padding-top: 25px;">
-
-                        <div class="container-contacto">
-                            <div class="columna-izquierda">
-                              <!-- Contenido de la columna izquierda -->
-                              <div class="mapa-responsive">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7910314980422!2d-74.06584558899795!3d4.631336442234605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a2676f951cf%3A0xa59f490ccd038d20!2sCra.%206%20%2345-22%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1714364424734!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7910314980422!2d-74.06584558899795!3d4.631336442234605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a2676f951cf%3A0xa59f490ccd038d20!2sCra.%206%20%2345-22%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1714364424734!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-                            </div>
-                            <div class="columna-derecha" style="padding-top: 0px;">
-                                <img src="assets/img/logo.png" alt="logo" class="logo" style="margin-bottom: 20px;">
-                                <br>
-                                <p style="font-size: 1.0rem;">
-                                    <span style="font-weight: bolder;">PBX:</span>  745 19 19 - 288 31 14
-                                    <br>                             <!-- Enlace para llamar -->
-                                    <i class="fa fa-phone phone-icon" style="margin-right: 3px;"></i> <a href="tel:3208298546" class="hidden-link">3208298546</a>
-                                    <br>
-                                    <i class="fa fa-envelope envelope-icon" style="margin-right: 3px;"></i> direccion.hogarsfamilia@irsjg.org
-                                    <br>
-                                    <i class="fa fa-map-marker map-marker-icon" style="margin-right: 3px;"></i>  Carrera 6 # 45-22, Bogotá D.C. – Colombia
-                                </p>
-                                <br>
-                                <div>
-                                   <a href="https://www.irsjg.org/es" target="_blank"> <img src="assets/img/IRSJG-logo-transparente.png" alt="logo" style="width: 270px;" > </a>
-
-                                   <p style="font-size: 1.0rem;">
-                                        <br>
-                                        © Instituto de Religiosas de San José de Gerona 2024
-                                   </p>
-                                </div>
-                            </div>
-                          </div>
-
-                        <div class="container-fluid p-0">
-
-
-                            <div class="row g-0">
-                                <div class="col-lg-6 col-sm-6">
-                                    <div class="habilitadosmargingallegyright">
-
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-sm-6" style="display: flex; align-items: center;  justify-content: center;">
-                                    <div class="habilitadosmargingallegyleft">
-
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </section>
-
-        <!-- Icono WhatsApp-->
-        <a href="#" id="whatsapp-link" class="whatsapp" target="_blank">
-            <i class="fa fa-whatsapp whatsapp-icon"></i>
-        </a>
+            <!-- Icono WhatsApp-->
+            <a href="#"
+               id="whatsapp-link"
+               class="whatsapp"
+               target="_blank"
+               title="Contactar al Hogar Sagrada Familia por WhatsApp">
+                <i class="fa fa-whatsapp whatsapp-icon" aria-hidden="true"></i>
+            </a>
 
         </div>
-        <br>
-        <br>
-        <!-- Footer-->
 
+        <br>
+        <br>
 
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -379,15 +505,12 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- SB Forms JS-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
         <script>
-             // Detectar si es un dispositivo móvil
-             function isMobile() {
+            // Detectar si es un dispositivo móvil
+            function isMobile() {
                 return /Mobi|Android/i.test(navigator.userAgent);
             }
 
