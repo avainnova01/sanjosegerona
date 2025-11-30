@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" style="scroll-behavior: auto;">
+<html lang="en" style="scroll-behavior: auto;">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -12,7 +12,7 @@
         <link rel="icon" sizes="192x192" href="assets/icon.png" type="image/png">
         <!-- Bootstrap Icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- SimpleLightbox plugin CSS-->
+         <!-- SimpleLightbox plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
@@ -21,18 +21,14 @@
         <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
         <!-- Vue and Libraries-->
         <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+        <script src="https://unpkg.com/vue@3"></script>
         <script src="https://unpkg.com/vue-easy-lightbox@next/dist/vue-easy-lightbox.umd.min.js"></script>
 
         <!-- Google Tag Manager -->
-        <script>
-            (function(w,d,s,l,i){
-                w[l]=w[l]||[];
-                w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
-                var f=d.getElementsByTagName(s)[0],
-                    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
-                j.async=true;
-                j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-                f.parentNode.insertBefore(j,f);
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-5739866R');
         </script>
         <!-- End Google Tag Manager -->
@@ -41,154 +37,64 @@
     <body id="page-top" class="gothicFont">
 
         <!-- Google Tag Manager (noscript) -->
-        <noscript>
-            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5739866R"
-                    height="0" width="0"
-                    style="display:none;visibility:hidden"
-                    title="Google Tag Manager">
-            </iframe>
-        </noscript>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5739866R"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-M0MJPPMPGY"></script>
         <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-M0MJPPMPGY');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-M0MJPPMPGY');
         </script>
         <!-- End Google Tag (gtag.js) -->
 
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand"
-                   href="index.html"
-                   title="Ir a la página de inicio del Hogar Sagrada Familia">
-                    <img src="assets/img/logo.png"
-                         alt="Logo Hogar Sagrada Familia"
-                         class="logo">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/webp/logo.webp" alt="Hogar Sagrada Familia - Logo" class="logo">
                 </a>
-                <button class="navbar-toggler navbar-toggler-right"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarResponsive"
-                        aria-controls="navbarResponsive"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link"
-                               href="index.html#inicio"
-                               title="Ir a la sección Inicio">
-                                INICIO
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"
-                               href="index.html#somos"
-                               title="Ir a la sección Quiénes somos">
-                                QUIÉNES SOMOS
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link"
-                               href="index.html#servicios"
-                               title="Ir a la sección Servicios">
-                                SERVICIOS
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown styleintitucional"
-                            style="display: flex; align-items: center; margin-right: 5px;">
-                            <button class="btn dropdown-toggle buttoninstitucional"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                    style="--bs-btn-padding-y: none;padding-left: 9px;font-family: century-gothic;font-weight: 700;font-size: 0.9rem;border: none;">
+                        <li class="nav-item"><a class="nav-link" href="index.html#inicio">INICIO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#somos">QUIÉNES SOMOS</a></li>
+                        <li class="nav-item"><a class="nav-link link" href="index.html#servicios">SERVICIOS</a></li>
+                        <li class="nav-item dropdown styleintitucional" style="
+                            display: flex;
+                            align-items: center;
+                            margin-right: 5px;
+                        ">
+                            <button class="btn dropdown-toggle buttoninstitucional" data-bs-toggle="dropdown" aria-expanded="false" style="--bs-btn-padding-y: none;padding-left: 9px;font-family: century-gothic;font-weight: 700;font-size: 0.9rem;border: none;">
                                 INSTITUCIONAL
                             </button>
                             <ul class="dropdown-menu" style="top: 43px;">
-                                <li>
-                                    <a class="dropdown-item"
-                                       href="hogar.html"
-                                       title="Ver información del Hogar Sagrada Familia">
-                                        Hogar Sagrada Familia
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item"
-                                       href="institucional.html"
-                                       title="Ver información del Instituto de Religiosas de San José de Gerona">
-                                        Instituto de Religiosas de San José de Gerona
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item"
-                                       href="ideario.html"
-                                       title="Ver ideario, misión, visión y valores">
-                                        Ideario, misión, visión, valores
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item"
-                                       href="assets/pdf/IRSJG-Colombia-Politica-Tratamiento-Datos-Personales-2024.pdf"
-                                       target="_blank"
-                                       title="Ver Política de tratamiento de datos personales (PDF)">
-                                        Política de tratamiento de datos
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item"
-                                       href="assets/pdf/IRSJG-Colombia-Aviso-Privacidad-2024.pdf"
-                                       target="_blank"
-                                       title="Ver Aviso de privacidad (PDF)">
-                                        Aviso de privacidad
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item"
-                                       href="ptee.html"
-                                       title="Ver Programa de Transparencia y Ética Empresarial">
-                                        PTEE
-                                    </a>
-                                </li>
+                                <li><a class="dropdown-item" href="hogar.html">Hogar Sagrada Familia</a></li>
+                                <li><a class="dropdown-item" href="institucional.html">Instituto de Religiosas de San José de Gerona</a></li>
+                                <li><a class="dropdown-item"  href="ideario.html" >Ideario, misión, visión, valores </a></li>
+                                <li><a class="dropdown-item"  href="assets/pdf/IRSJG-Colombia-Politica-Tratamiento-Datos-Personales-2024.pdf" target="_blank">Política de tratamiento de datos</a></li>
+                                <li><a class="dropdown-item"  href="assets/pdf/IRSJG-Colombia-Aviso-Privacidad-2024.pdf" target="_blank">Aviso de privacidad</a></li>
+                                <li><a class="dropdown-item"  href="ptee.html" >PTEE</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active"
-                               href="galeria.html"
-                               title="Ver galería fotográfica del Hogar Sagrada Familia">
-                                GALERÍA
-                            </a>
+                            <a class="nav-link active" href="galeria.html">GALERÍA</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link"
-                               href="contacto.html"
-                               title="Ir a la página de contacto">
-                                CONTACTO
-                            </a>
+                            <a class="nav-link" href="contacto.html">CONTACTO</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link"
-                               href="assets/pdf/Comunicado_proveedores_alimentos.pdf"
-                               target="_blank"
-                               title="Ver comunicados para proveedores de alimentos (PDF)">
-                                COMUNICADOS
-                            </a>
+                            <a class="nav-link" href="assets/pdf/Comunicado_proveedores_alimentos.pdf"  target="_blank">COMUNICADOS</a>
                         </li>
 
-                        <li class="nav-item margin_left_pse">
-                            <a class="nav-link"
-                               href="pse.html"
-                               style="color: white !important;background: #2b487f !important;"
-                               title="Ir a la página de pago en línea PSE">
-                                PAGO EN LÍNEA
-                            </a>
+                        <li class="nav-item margin_left_pse" >
+                            <a class="nav-link" href="pse.html" style="color: white !important;background: #2b487f !important;">PAGO EN LÍNEA</a>
                         </li>
 
                     </ul>
@@ -198,221 +104,161 @@
 
         <div class="container">
 
-            <!-- Galería -->
-            <section id="galeria" style="margin-top: 71px;">
-                <div class="container container-fluid p-0">
-                    <div id="app">
-                        <vue-easy-lightbox
-                            :visible="visibleRef"
-                            :imgs="imgsShow"
-                            :index="indexRef"
-                            @hide="onHide">
-                        </vue-easy-lightbox>
 
-                        <h1 class="font-weight-title"
-                            style="margin-top: 110px; font-size: 2.3rem; margin-bottom: 71px;">
-                            Galería
-                        </h1>
-                        <div class="row g-0">
-                            <div class="col-lg-6" style="margin-bottom: 50px;">
-                                <div style="margin-bottom: 50px;">
-                                    <h4>Recepción</h4>
-                                    <div style="display: flex; flex-wrap: wrap;" class="galery">
-                                        <div v-for="(src, index) in imgs.recepcion"
-                                             :key="index"
-                                             class="pic1"
-                                             @click="() => showImg(imgs.recepcion,index)">
-                                            <img style="width: 150px;"
-                                                 :src="src"
-                                                 :alt="`Foto de la recepción del Hogar Sagrada Familia ${index + 1}`"
-                                                 loading="lazy" />
-                                        </div>
-                                    </div>
+        <!-- Servicios-->
+        <section id="galeria" style="margin-top: 71px;">
+
+
+            <div class="container container-fluid p-0">
+
+                <div id="app">
+
+                    <vue-easy-lightbox :visible="visibleRef" :imgs="imgsShow" :index="indexRef" @hide="onHide"></vue-easy-lightbox>
+
+                    <h1  class='font-weight-title' style="margin-top: 110px; font-size: 2.3rem; margin-bottom: 71px; "> Galería </h1>
+                    <div class="row g-0">
+                        <div class="col-lg-6" style="margin-bottom: 50px;">
+                            <div  style="margin-bottom: 50px;">
+                                <h4>Recepción</h4>
+                                <div style="display: flex; flex-wrap: wrap;" class="galery">
+                                  <div v-for="(src, index) in imgs.recepcion" :key="index" class="pic1" @click="() => showImg(imgs.recepcion,index)">
+                                    <img style="width: 150px;" :src="src" alt="Recepción Hogar Sagrada Familia" />
+                                  </div>
                                 </div>
-
-                                <div style="margin-bottom: 50px;">
-                                    <h4>Zonas comunes</h4>
-                                    <div style="display: flex; flex-wrap: wrap;" class="galery">
-                                        <div v-for="(src, index) in imgs.zonascomunes"
-                                             :key="index"
-                                             class="pic1"
-                                             @click="() => showImg(imgs.zonascomunes , index)">
-                                            <img class="jardinesWidth"
-                                                 :src="src"
-                                                 :alt="`Foto de zonas comunes del Hogar Sagrada Familia ${index + 1}`"
-                                                 loading="lazy" />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div style="margin-bottom: 50px;">
-                                    <h4>Actividades</h4>
-                                    <div style="display: flex; flex-wrap: wrap;" class="galery">
-                                        <div v-for="(src, index) in imgs.actividades"
-                                             :key="index"
-                                             class="pic1"
-                                             @click="() => showImg(imgs.actividades, index)">
-                                            <img style="width: 150px;"
-                                                 :src="src"
-                                                 :alt="`Foto de actividades recreativas del Hogar Sagrada Familia ${index + 1}`"
-                                                 loading="lazy" />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <h4>Capilla</h4>
-                                    <div style="display: flex; flex-wrap: wrap;" class="galery">
-                                        <div v-for="(src, index) in imgs.capilla"
-                                             :key="index"
-                                             class="pic1"
-                                             @click="() => showImg(imgs.capilla, index)">
-                                            <img style="width: 150px;"
-                                                 :src="src"
-                                                 :alt="`Foto de la capilla del Hogar Sagrada Familia ${index + 1}`"
-                                                 loading="lazy" />
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
-                            <div class="col-lg-6" style="margin-bottom: 50px;">
 
-                                <div style="margin-bottom: 50px;">
+                            <div  style="margin-bottom: 50px;">
+                                <h4>Zonas comunes</h4>
+                                <div style="display: flex; flex-wrap: wrap;" class="galery">
+                                    <div v-for="(src, index) in imgs.zonascomunes" :key="index" class="pic1" @click="() => showImg(imgs.zonascomunes , index)" >
+                                        <img class="jardinesWidth" :src="src" alt="Zonas comunes Hogar Sagrada Familia" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div  style="margin-bottom: 50px;">
+                                <h4>Actividades</h4>
+                                <div style="display: flex; flex-wrap: wrap;" class="galery">
+                                  <div v-for="(src, index) in imgs.actividades" :key="index" class="pic1" @click="() => showImg(imgs.actividades, index)">
+                                    <img style="width: 150px;" :src="src" alt="Actividades Hogar Sagrada Familia" />
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div >
+                                <h4>Capilla</h4>
+                                <div style="display: flex; flex-wrap: wrap;" class="galery">
+                                  <div v-for="(src, index) in imgs.capilla" :key="index" class="pic1" @click="() => showImg(imgs.capilla, index)">
+                                    <img style="width: 150px;" :src="src" alt="Capilla Hogar Sagrada Familia" />
+                                  </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6" style="margin-bottom: 50px;">
+
+                                <div  style="margin-bottom: 50px;">
                                     <h4>Habitaciones</h4>
                                     <div style="display: flex; flex-wrap: wrap;" class="galery">
-                                        <div v-for="(src, index) in imgs.habitaciones"
-                                             :key="index"
-                                             class="pic1"
-                                             @click="() => showImg(imgs.habitaciones, index)">
-                                            <img style="width: 150px;"
-                                                 :src="src"
-                                                 :alt="`Foto de habitación para personas mayores ${index + 1}`"
-                                                 loading="lazy" />
-                                        </div>
+                                      <div v-for="(src, index) in imgs.habitaciones" :key="index" class="pic1" @click="() => showImg(imgs.habitaciones, index)">
+                                        <img style="width: 150px;" :src="src" alt="Habitaciones Hogar Sagrada Familia" />
+                                      </div>
                                     </div>
                                 </div>
 
-                                <div style="margin-bottom: 50px;">
+                                <div  style="margin-bottom: 50px;">
                                     <h4>Gimnasio</h4>
                                     <div style="display: flex; flex-wrap: wrap;" class="galery">
-                                        <div v-for="(src, index) in imgs.gimnasio"
-                                             :key="index"
-                                             class="pic1"
-                                             @click="() => showImg(imgs.gimnasio, index)">
-                                            <img style="width: 150px;"
-                                                 :src="src"
-                                                 :alt="`Foto del gimnasio del Hogar Sagrada Familia ${index + 1}`"
-                                                 loading="lazy" />
-                                        </div>
+                                      <div v-for="(src, index) in imgs.gimnasio" :key="index" class="pic1" @click="() => showImg(imgs.gimnasio, index)">
+                                        <img style="width: 150px;" :src="src" alt="Gimnasio Hogar Sagrada Familia" />
+                                      </div>
                                     </div>
                                 </div>
 
-                                <div style="margin-bottom: 50px;">
+                                <div  style="margin-bottom: 50px;">
                                     <h4>Comedor</h4>
                                     <div style="display: flex; flex-wrap: wrap;" class="galery">
-                                        <div v-for="(src, index) in imgs.comedor"
-                                             :key="index"
-                                             class="pic1"
-                                             @click="() => showImg(imgs.comedor ,index)">
-                                            <img style="width: 150px;"
-                                                 :src="src"
-                                                 :alt="`Foto del comedor del Hogar Sagrada Familia ${index + 1}`"
-                                                 loading="lazy" />
-                                        </div>
+                                      <div v-for="(src, index) in imgs.comedor" :key="index" class="pic1" @click="() => showImg(imgs.comedor ,index)">
+                                        <img style="width: 150px;" :src="src" alt="Comedor Hogar Sagrada Familia" />
+                                      </div>
                                     </div>
                                 </div>
 
-                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Contacto-->
-            <section id="contacto">
-                <div class="container page-section" style="padding-bottom:0px; padding-top: 25px;">
-                    <div class="container-contacto">
-                        <div class="columna-izquierda">
-                            <div class="mapa-responsive">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7910314980422!2d-74.06584558899795!3d4.631336442234605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a2676f951cf%3A0xa59f490ccd038d20!2sCra.%206%20%2345-22%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1714364424734!5m2!1ses-419!2sco"
-                                    width="600"
-                                    height="450"
-                                    style="border:0;"
-                                    allowfullscreen=""
-                                    loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"
-                                    title="Mapa de ubicación del Hogar Sagrada Familia en Bogotá">
-                                </iframe>
+
+                <!-- Contacto-->
+                <section id="contacto">
+
+                    <div class="container page-section" style="padding-bottom:0px; padding-top: 25px;">
+
+                        <div class="container-contacto">
+                            <div class="columna-izquierda">
+                              <!-- Contenido de la columna izquierda -->
+                              <div class="mapa-responsive">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7910314980422!2d-74.06584558899795!3d4.631336442234605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a2676f951cf%3A0xa59f490ccd038d20!2sCra.%206%20%2345-22%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1714364424734!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación Hogar Sagrada Familia"></iframe>
                             </div>
-                        </div>
-                        <div class="columna-derecha" style="padding-top: 0px;">
-                            <img src="assets/img/logo.png"
-                                 alt="Logo del Hogar Sagrada Familia"
-                                 class="logo"
-                                 style="margin-bottom: 20px;"
-                                 loading="lazy">
-                            <br>
-                            <p style="font-size: 1.0rem;">
-                                <span style="font-weight: bolder;">PBX:</span>  745 19 19 - 288 31 14
+                            </div>
+                            <div class="columna-derecha" style="padding-top: 0px;">
+                                <img src="assets/img/webp/logo.webp" alt="Hogar Sagrada Familia - Logo" class="logo" style="margin-bottom: 20px;">
                                 <br>
-                                <i class="fa fa-phone phone-icon" style="margin-right: 3px;"></i>
-                                <a href="tel:3208298546"
-                                   class="hidden-link"
-                                   title="Llamar al número celular del Hogar Sagrada Familia">
-                                    3208298546
-                                </a>
-                                <br>
-                                <i class="fa fa-envelope envelope-icon" style="margin-right: 3px;"></i>
-                                direccion.hogarsfamilia@irsjg.org
-                                <br>
-                                <i class="fa fa-map-marker map-marker-icon" style="margin-right: 3px;"></i>
-                                Carrera 6 # 45-22, Bogotá D.C. – Colombia
-                            </p>
-                            <br>
-                            <div>
-                                <a href="https://www.irsjg.org/es"
-                                   target="_blank"
-                                   title="Ir al sitio web del Instituto de Religiosas de San José de Gerona">
-                                    <img src="assets/img/IRSJG-logo-transparente.png"
-                                         alt="Logo del Instituto de Religiosas de San José de Gerona"
-                                         style="width: 270px;"
-                                         loading="lazy">
-                                </a>
-
                                 <p style="font-size: 1.0rem;">
+                                    <span style="font-weight: bolder;">PBX:</span>  745 19 19 - 288 31 14
                                     <br>
-                                    © Instituto de Religiosas de San José de Gerona 2024
+                                    <i class="fa fa-phone phone-icon" style="margin-right: 3px;"></i> <a href="tel:3208298546" class="hidden-link">3208298546</a>
+                                    <br>
+                                    <i class="fa fa-envelope envelope-icon" style="margin-right: 3px;"></i> direccion.hogarsfamilia@irsjg.org
+                                    <br>
+                                    <i class="fa fa-map-marker map-marker-icon" style="margin-right: 3px;"></i>  Carrera 6 # 45-22, Bogotá D.C. – Colombia
                                 </p>
+                                <br>
+                                <div>
+                                   <a href="https://www.irsjg.org/es" target="_blank">
+                                       <img src="assets/img/webp/IRSJG-logo-transparente.webp" alt="Instituto de Religiosas de San José de Gerona" style="width: 270px;">
+                                   </a>
+
+                                   <p style="font-size: 1.0rem;">
+                                        <br>
+                                        © Instituto de Religiosas de San José de Gerona 2024
+                                   </p>
+                                </div>
                             </div>
+                          </div>
+
+                        <div class="container-fluid p-0">
+
+
+                            <div class="row g-0">
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="habilitadosmargingallegyright">
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6" style="display: flex; align-items: center;  justify-content: center;">
+                                    <div class="habilitadosmargingallegyleft">
+
+
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
-                    <div class="container-fluid p-0">
-                        <div class="row g-0">
-                            <div class="col-lg-6 col-sm-6">
-                                <div class="habilitadosmargingallegyright"></div>
-                            </div>
-                            <div class="col-lg-6 col-sm-6"
-                                 style="display: flex; align-items: center;  justify-content: center;">
-                                <div class="habilitadosmargingallegyleft"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                </section>
 
-            <!-- Icono WhatsApp-->
-            <a href="#"
-               id="whatsapp-link"
-               class="whatsapp"
-               target="_blank"
-               title="Contactar al Hogar Sagrada Familia por WhatsApp">
-                <i class="fa fa-whatsapp whatsapp-icon" aria-hidden="true"></i>
-            </a>
+        <!-- Icono WhatsApp-->
+        <a href="#" id="whatsapp-link" class="whatsapp" target="_blank">
+            <i class="fa fa-whatsapp whatsapp-icon"></i>
+        </a>
 
-        </div>
+       </div>
+        <!-- Footer-->
+
 
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -422,120 +268,119 @@
         <script src="js/scripts.js"></script>
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
-        <script>
-            // Detectar si es un dispositivo móvil
-            function isMobile() {
-                return /Mobi|Android/i.test(navigator.userAgent);
-            }
 
-            const whatsappLink = document.getElementById('whatsapp-link');
-            const phoneNumber = '573148387523';
-            const message = 'Quisiera%20recibir%20información%20sobre%20sus%20servicios';
+            <script>
 
-            if (isMobile()) {
-                // Enlace para móviles
-                whatsappLink.href = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
-            } else {
-                // Enlace para escritorio
-                whatsappLink.href = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
-            }
+                // Detectar si es un dispositivo móvil
+                function isMobile() {
+                    return /Mobi|Android/i.test(navigator.userAgent);
+                }
 
-            const { ref } = Vue;
-            const app = Vue.createApp({
+                const whatsappLink = document.getElementById('whatsapp-link');
+                const phoneNumber = '573148387523';
+                const message = 'Quisiera%20recibir%20información%20sobre%20sus%20servicios';
+
+                if (isMobile()) {
+                    // Enlace para móviles
+                    whatsappLink.href = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+                } else {
+                    // Enlace para escritorio
+                    whatsappLink.href = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+                }
+
+                const { ref, computed } = Vue
+                const app = Vue.createApp({
                 setup() {
-                    const visibleRef = ref(false);
-                    const indexRef = ref(0);
+                    const visibleRef = ref(false)
+                    const indexRef = ref(0)
 
                     const imgs = {
                         zonascomunes : [
-                            'assets/img/gallery/zonascomunes/gal1.jpg' ,
-                            'assets/img/gallery/zonascomunes/gal2.jpg' ,
-                            'assets/img/gallery/zonascomunes/gal3.jpg' ,
-                            'assets/img/gallery/zonascomunes/gal4.jpg' ,
-                            'assets/img/gallery/zonascomunes/gal6.jpg' ,
-                            'assets/img/gallery/zonascomunes/gal7.jpg' ,
-                            'assets/img/gallery/zonascomunes/gal8.jpg' ,
-                            'assets/img/gallery/zonascomunes/gal9.jpg' ,
-                            'assets/img/gallery/zonascomunes/gal10.jpg',
-                            'assets/img/gallery/zonascomunes/gal5.jpg'
+                            'assets/img/gallery/zonascomunes/webp/gal1.webp',
+                            'assets/img/gallery/zonascomunes/webp/gal2.webp',
+                            'assets/img/gallery/zonascomunes/webp/gal3.webp',
+                            'assets/img/gallery/zonascomunes/webp/gal4.webp',
+                            'assets/img/gallery/zonascomunes/webp/gal6.webp',
+                            'assets/img/gallery/zonascomunes/webp/gal7.webp',
+                            'assets/img/gallery/zonascomunes/webp/gal8.webp',
+                            'assets/img/gallery/zonascomunes/webp/gal9.webp',
+                            'assets/img/gallery/zonascomunes/webp/gal10.webp',
+                            'assets/img/gallery/zonascomunes/webp/gal5.webp'
                         ],
                         recepcion : [
-                            'assets/img/gallery/recepcion/gal1.jpg' ,
-                            'assets/img/gallery/recepcion/gal2.jpg' ,
-                            'assets/img/gallery/recepcion/gal3.jpg' ,
-                            'assets/img/gallery/recepcion/gal4.jpg',
-                            'assets/img/gallery/recepcion/gal5.jpg'
+                            'assets/img/gallery/recepcion/webp/gal1.webp',
+                            'assets/img/gallery/recepcion/webp/gal2.webp',
+                            'assets/img/gallery/recepcion/webp/gal3.webp',
+                            'assets/img/gallery/recepcion/webp/gal4.webp',
+                            'assets/img/gallery/recepcion/webp/gal5.webp'
                         ],
                         habitaciones : [
-                            'assets/img/gallery/habitaciones/gal1.jpg' ,
-                            'assets/img/gallery/habitaciones/gal2.jpg' ,
-                            'assets/img/gallery/habitaciones/gal3.jpg' ,
-                            'assets/img/gallery/habitaciones/gal4.jpg' ,
-                            'assets/img/gallery/habitaciones/gal5.jpg'
+                            'assets/img/gallery/habitaciones/webp/gal1.webp',
+                            'assets/img/gallery/habitaciones/webp/gal2.webp',
+                            'assets/img/gallery/habitaciones/webp/gal3.webp',
+                            'assets/img/gallery/habitaciones/webp/gal4.webp',
+                            'assets/img/gallery/habitaciones/webp/gal5.webp'
                         ],
                         gimnasio : [
-                            'assets/img/gallery/gimnasio/gal1.jpg' ,
-                            'assets/img/gallery/gimnasio/gal2.jpg' ,
-                            'assets/img/gallery/gimnasio/gal3.jpg' ,
-                            'assets/img/gallery/gimnasio/gal4.jpg' ,
-                            'assets/img/gallery/gimnasio/gal5.jpg' ,
-                            'assets/img/gallery/gimnasio/gal6.jpg' ,
-                            'assets/img/gallery/gimnasio/gal7.jpg' ,
-                            'assets/img/gallery/gimnasio/gal8.jpg' ,
-                            'assets/img/gallery/gimnasio/gal9.jpg'
+                            'assets/img/gallery/gimnasio/webp/gal1.webp',
+                            'assets/img/gallery/gimnasio/webp/gal2.webp',
+                            'assets/img/gallery/gimnasio/webp/gal3.webp',
+                            'assets/img/gallery/gimnasio/webp/gal4.webp',
+                            'assets/img/gallery/gimnasio/webp/gal5.webp',
+                            'assets/img/gallery/gimnasio/webp/gal6.webp',
+                            'assets/img/gallery/gimnasio/webp/gal7.webp',
+                            'assets/img/gallery/gimnasio/webp/gal8.webp',
+                            'assets/img/gallery/gimnasio/webp/gal9.webp'
                         ],
                         comedor : [
-                            'assets/img/gallery/comedor/gal1.jpg' ,
-                            'assets/img/gallery/comedor/gal2.jpg' ,
-                            'assets/img/gallery/comedor/gal3.jpg' ,
-                            'assets/img/gallery/comedor/gal4.jpg' ,
-                            'assets/img/gallery/comedor/gal5.jpg' ,
-                            'assets/img/gallery/comedor/gal6.jpg'
+                            'assets/img/gallery/comedor/webp/gal1.webp',
+                            'assets/img/gallery/comedor/webp/gal2.webp',
+                            'assets/img/gallery/comedor/webp/gal3.webp',
+                            'assets/img/gallery/comedor/webp/gal4.webp',
+                            'assets/img/gallery/comedor/webp/gal5.webp',
+                            'assets/img/gallery/comedor/webp/gal6.webp'
                         ],
                         capilla : [
-                            'assets/img/gallery/capilla/gal1.jpg' ,
-                            'assets/img/gallery/capilla/gal2.jpg' ,
-                            'assets/img/gallery/capilla/gal3.jpg' ,
-                            'assets/img/gallery/capilla/gal4.jpg'
+                           'assets/img/gallery/capilla/webp/gal1.webp',
+                           'assets/img/gallery/capilla/webp/gal2.webp',
+                           'assets/img/gallery/capilla/webp/gal3.webp',
+                           'assets/img/gallery/capilla/webp/gal4.webp'
                         ],
                         actividades : [
-                            'assets/img/gallery/actividades/gal1.jpg' ,
-                            'assets/img/gallery/actividades/gal2.jpg' ,
-                            'assets/img/gallery/actividades/gal3.jpg' ,
-                            'assets/img/gallery/actividades/gal4.jpg' ,
-                            'assets/img/gallery/actividades/gal5.jpg' ,
-                            'assets/img/gallery/actividades/gal6.jpg' ,
-                            'assets/img/gallery/actividades/gal7.jpg'
+                            'assets/img/gallery/actividades/webp/gal1.webp',
+                            'assets/img/gallery/actividades/webp/gal2.webp',
+                            'assets/img/gallery/actividades/webp/gal3.webp',
+                            'assets/img/gallery/actividades/webp/gal4.webp',
+                            'assets/img/gallery/actividades/webp/gal5.webp',
+                            'assets/img/gallery/actividades/webp/gal6.webp',
+                            'assets/img/gallery/actividades/webp/gal7.webp'
                         ]
-                    };
+                    }
 
-                    const imgsShow = ref([]);
+                    const imgsShow = ref([])
 
-                    const showImg = (arr, index) => {
-                        imgsShow.value = arr;
-                        indexRef.value = index;
-                        visibleRef.value = true;
-                    };
+                    const showImg = (arr ,index) => {
+                        imgsShow.value = arr
+                        indexRef.value = index
+                        visibleRef.value = true
+                    }
 
-                    const onHide = () => {
-                        visibleRef.value = false;
-                    };
 
+                    const onHide = () => visibleRef.value = false
                     return {
-                        visibleRef,
-                        indexRef,
-                        imgs,
-                        showImg,
-                        onHide,
-                        imgsShow
-                    };
+                    visibleRef,
+                    indexRef,
+                    imgs,
+                    showImg,
+                    onHide,
+                    imgsShow
+                    }
                 }
-            });
-
-            // Registrar VueEasyLightbox
-            app.use(VueEasyLightbox);
-            app.mount('#app');
-        </script>
+                })
+                // Registering VueEasyLightbox for your VueApp.
+                app.use(VueEasyLightbox)
+                app.mount('#app')
+            </script>
 
     </body>
 </html>
