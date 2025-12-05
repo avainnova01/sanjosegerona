@@ -8,15 +8,42 @@
     />
     <meta
       name="description"
-      content="Realiza pagos en línea de forma segura a través de PSE. Instrucciones para pagar servicios del Hogar Sagrada Familia con tu banco. Envía el comprobante para validación."
+      content="Realiza pagos en línea de forma segura a través de PSE para el Hogar Sagrada Familia. Consulta el manual de pago, ingresa a la plataforma AvalPay y envía el comprobante para validar tu pago."
     />
-    <meta name="author" content="" />
+    <meta name="author" content="Hogar Sagrada Familia Bogotá" />
     <meta
       name="google-site-verification"
       content="By2rZWaZLf2Xuovgjv8kXofCQCemTecMpjyTbD8kAHU"
     />
+    <meta name="robots" content="index,follow" />
 
     <title>Pago en Línea PSE - Hogar Sagrada Familia</title>
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Pago en Línea PSE - Hogar Sagrada Familia"
+    />
+    <meta
+      property="og:description"
+      content="Sigue las instrucciones para realizar pagos en línea a través de PSE al Hogar Sagrada Familia y envía tu comprobante para validación."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.hogarsagradafamilia.org/pse.html"
+    />
+    <meta
+      property="og:image"
+      content="https://www.hogarsagradafamilia.org/assets/img/pse/pse.png"
+    />
+    <meta property="og:locale" content="es_CO" />
+
+    <!-- Canonical -->
+    <link
+      rel="canonical"
+      href="https://www.hogarsagradafamilia.org/pse.html"
+    />
 
     <!-- Favicon-->
     <link rel="icon" sizes="192x192" href="assets/icon.png" type="image/png" />
@@ -47,28 +74,53 @@
     <script>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
-        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
         var f = d.getElementsByTagName(s)[0],
           j = d.createElement(s),
-          dl = l != 'dataLayer' ? '&l=' + l : '';
+          dl = l != "dataLayer" ? "&l=" + l : "";
         j.async = true;
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
         f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-5739866R');
+      })(window, document, "script", "dataLayer", "GTM-5739866R");
     </script>
     <!-- End Google Tag Manager -->
+
+    <!-- Datos estructurados básicos -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Hogar Sagrada Familia",
+        "url": "https://www.hogarsagradafamilia.org",
+        "logo": "https://www.hogarsagradafamilia.org/assets/img/logo.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Carrera 6 # 45-22",
+          "addressLocality": "Bogotá D.C.",
+          "addressCountry": "CO"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+57-320-829-8546",
+          "contactType": "customer service",
+          "areaServed": "CO",
+          "availableLanguage": ["es"]
+        }
+      }
+    </script>
   </head>
 
   <body id="page-top" class="gothicFont">
     <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
+    <noscript>
+      <iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-5739866R"
         height="0"
         width="0"
         style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
+        title="Google Tag Manager"
+      ></iframe>
+    </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Google tag (gtag.js) -->
@@ -81,8 +133,8 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag('js', new Date());
-      gtag('config', 'G-M0MJPPMPGY');
+      gtag("js", new Date());
+      gtag("config", "G-M0MJPPMPGY");
     </script>
     <!-- End Google Tag (gtag.js) -->
 
@@ -92,15 +144,16 @@
       id="mainNav"
     >
       <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="index.html" title="Volver al inicio">
+        <a
+          class="navbar-brand"
+          href="index.html"
+          title="Ir a la página de inicio del Hogar Sagrada Familia"
+        >
           <picture>
-            <source
-              srcset="assets/img/webp/logo.webp"
-              type="image/webp"
-            />
+            <source srcset="assets/img/webp/logo.webp" type="image/webp" />
             <img
               src="assets/img/logo.png"
-              alt="Logo Hogar Sagrada Familia"
+              alt="Logo del Hogar Sagrada Familia"
               class="logo"
             />
           </picture>
@@ -112,14 +165,17 @@
           data-bs-target="#navbarResponsive"
           aria-controls="navbarResponsive"
           aria-expanded="false"
-          aria-label="Toggle navigation"
+          aria-label="Mostrar u ocultar menú de navegación"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto my-2 my-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html#inicio" title="Ir al inicio"
+              <a
+                class="nav-link"
+                href="index.html#inicio"
+                title="Ir a la sección Inicio"
                 >INICIO</a
               >
             </li>
@@ -128,20 +184,20 @@
                 class="nav-link"
                 href="index.html#somos"
                 title="Conoce quiénes somos"
-                >QUIENES SOMOS</a
+                >QUIÉNES SOMOS</a
               >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="index.html#servicios"
-                title="Ver servicios"
+                href="servicios.html"
+                title="Ir a la página de Servicios"
                 >SERVICIOS</a
               >
             </li>
             <li
               class="nav-item dropdown styleintitucional"
-              style="display: flex; align-items: center"
+              style="display: flex; align-items: center;"
             >
               <button
                 class="btn dropdown-toggle buttoninstitucional"
@@ -155,15 +211,16 @@
                   font-size: 0.9rem;
                   border: none;
                 "
+                title="Ver información institucional"
               >
                 INSTITUCIONAL
               </button>
-              <ul class="dropdown-menu" style="top: 43px">
+              <ul class="dropdown-menu" style="top: 43px;">
                 <li>
                   <a
                     class="dropdown-item"
                     href="hogar.html"
-                    title="Hogar Sagrada Familia"
+                    title="Conocer nuestro Hogar Sagrada Familia"
                     >Hogar Sagrada Familia</a
                   >
                 </li>
@@ -171,7 +228,7 @@
                   <a
                     class="dropdown-item"
                     href="institucional.html"
-                    title="Instituto de Religiosas de San José de Gerona"
+                    title="Conocer el Instituto de Religiosas de San José de Gerona"
                     >Instituto de Religiosas de San José de Gerona</a
                   >
                 </li>
@@ -179,16 +236,17 @@
                   <a
                     class="dropdown-item"
                     href="ideario.html"
-                    title="Ideario, misión, visión y valores"
-                    >Ideario, misión, visión, valores
-                  </a>
+                    title="Ver ideario, misión, visión y valores"
+                    >Ideario, misión, visión, valores</a
+                  >
                 </li>
                 <li>
                   <a
                     class="dropdown-item"
                     href="assets/pdf/IRSJG-Colombia-Politica-Tratamiento-Datos-Personales-2024.pdf"
                     target="_blank"
-                    title="Ver política de tratamiento de datos"
+                    rel="noopener"
+                    title="Ver política de tratamiento de datos personales (PDF)"
                     >Política de tratamiento de datos</a
                   >
                 </li>
@@ -197,7 +255,8 @@
                     class="dropdown-item"
                     href="assets/pdf/IRSJG-Colombia-Aviso-Privacidad-2024.pdf"
                     target="_blank"
-                    title="Ver aviso de privacidad"
+                    rel="noopener"
+                    title="Ver aviso de privacidad (PDF)"
                     >Aviso de privacidad</a
                   >
                 </li>
@@ -205,7 +264,7 @@
                   <a
                     class="dropdown-item"
                     href="ptee.html"
-                    title="Programa de Transparencia y Ética Empresarial"
+                    title="Ver Programa de Transparencia y Ética Empresarial"
                     >PTEE</a
                   >
                 </li>
@@ -216,8 +275,8 @@
               <a
                 class="nav-link"
                 href="galeria.html"
-                title="Ver galería de imágenes"
-                >GALERIA</a
+                title="Ver galería de imágenes del Hogar"
+                >GALERÍA</a
               >
             </li>
 
@@ -235,7 +294,8 @@
                 class="nav-link"
                 href="assets/pdf/Comunicado_proveedores_alimentos.pdf"
                 target="_blank"
-                title="Ver comunicados"
+                rel="noopener"
+                title="Ver comunicados para proveedores de alimentos (PDF)"
                 >COMUNICADOS</a
               >
             </li>
@@ -244,8 +304,8 @@
               <a
                 class="nav-link active"
                 href="pse.html"
-                style="color: #fff !important; background: #2b487f !important"
-                title="Pago en línea PSE"
+                style="color: #fff !important; background: #2b487f !important;"
+                title="Página de pago en línea PSE"
                 >PAGO EN LÍNEA</a
               >
             </li>
@@ -258,14 +318,18 @@
 
     <div class="container1">
       <!-- Inicio-->
-      <section id="inicio" style="margin-top: 150px"></section>
+      <section
+        id="inicio"
+        style="margin-top: 150px;"
+        aria-label="Instrucciones para pagos en línea a través de PSE"
+      ></section>
 
       <!-- Contenido PSE -->
-      <section id="historia" style="font-size: 1.2rem">
+      <section id="historia" style="font-size: 1.2rem;">
         <div class="container container-fluid p-0">
           <div
             class="text-center"
-            style="margin-top: 36px; margin-bottom: 26px"
+            style="margin-top: 36px; margin-bottom: 26px;"
           >
             <h1>¿CÓMO PAGAR EN LÍNEA?</h1>
           </div>
@@ -283,7 +347,7 @@
                 <div class="mt-3 text-justify px-5">
                   <h2
                     class="h4 mb-2 font-weight-title"
-                    style="margin-bottom: 20px"
+                    style="margin-bottom: 20px;"
                   ></h2>
 
                   <div class="row">
@@ -296,25 +360,27 @@
                       <br />
                       <ol class="custom-ol">
                         <li>
-                          <strong>Número de Referencia:</strong>
-                          <span style="color: var(--bs-secondary-color) !important"
-                            >Aquí debes colocar la cédula del
-                            residente.</span
+                          <strong>Número de referencia:</strong>
+                          <span
+                            style="color: var(--bs-secondary-color) !important;"
+                            >Aquí debes colocar la cédula del residente.</span
                           >
                         </li>
                         <li>
                           <strong>Detalle del pago:</strong>
-                          <span style="color: var(--bs-secondary-color) !important"
+                          <span
+                            style="color: var(--bs-secondary-color) !important;"
                             >Indica el servicio o producto que quieres
                             cancelar.</span
                           >
                         </li>
                         <li>
                           <strong>Recuerda:</strong>
-                          <span style="color: var(--bs-secondary-color) !important"
+                          <span
+                            style="color: var(--bs-secondary-color) !important;"
                             >Envía un pantallazo o foto de la página final del
                             pago realizado al correo
-                            <strong style="color: black">
+                            <strong style="color: black;">
                               <a
                                 href="mailto:recepcion.hogarsfamilia@irsjg.org"
                                 style="
@@ -322,13 +388,13 @@
                                   text-decoration: none;
                                   font-weight: bolder;
                                 "
-                                title="Enviar comprobante al correo"
+                                title="Enviar comprobante de pago al correo"
                               >
                                 recepcion.hogarsfamilia@irsjg.org
                               </a>
                             </strong>
-                            para que sea validado a tiempo y acorde al
-                            residente.</span
+                            para que sea validado a tiempo y asociado
+                            correctamente al residente.</span
                           >
                         </li>
                       </ol>
@@ -343,6 +409,7 @@
               <a
                 href="assets/pdf/MANUAL DE PAGO.pdf"
                 target="_blank"
+                rel="noopener"
                 title="Ver manual de pago en PDF"
               >
                 <picture>
@@ -352,8 +419,9 @@
                   />
                   <img
                     src="assets/img/pse/pdf.png"
-                    alt="Manual de pagos"
-                    style="max-width: 280px"
+                    alt="Icono para abrir el manual de pago en PDF"
+                    style="max-width: 280px;"
+                    loading="lazy"
                   />
                 </picture>
               </a>
@@ -361,7 +429,8 @@
               <a
                 href="https://www.avalpaycenter.com/wps/portal/portal-de-pagos/web/pagos-aval/resultado-busqueda/realizar-pago?idConv=00011626&origen=buscar"
                 target="_blank"
-                title="Ir a la plataforma de pagos PSE"
+                rel="noopener"
+                title="Ir a la plataforma de pagos PSE del Hogar Sagrada Familia"
               >
                 <picture>
                   <source
@@ -370,8 +439,9 @@
                   />
                   <img
                     src="assets/img/pse/pse.png"
-                    alt="Botón de pago PSE"
-                    style="max-width: 280px"
+                    alt="Botón para realizar el pago en línea con PSE"
+                    style="max-width: 280px;"
+                    loading="lazy"
                   />
                 </picture>
               </a>
@@ -384,7 +454,7 @@
       <section id="contacto">
         <div
           class="container page-section"
-          style="padding-bottom: 0; padding-top: 25px"
+          style="padding-bottom: 0; padding-top: 25px;"
         >
           <div class="container-contacto">
             <div class="columna-izquierda">
@@ -393,7 +463,7 @@
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7910314980422!2d-74.06584558899795!3d4.631336442234605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a2676f951cf%3A0xa59f490ccd038d20!2sCra.%206%20%2345-22%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1714364424734!5m2!1ses-419!2sco"
                   width="600"
                   height="450"
-                  style="border: 0"
+                  style="border: 0;"
                   allowfullscreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
@@ -402,7 +472,7 @@
               </div>
             </div>
 
-            <div class="columna-derecha" style="padding-top: 0">
+            <div class="columna-derecha" style="padding-top: 0;">
               <picture>
                 <source
                   srcset="assets/img/webp/logo.webp"
@@ -410,31 +480,37 @@
                 />
                 <img
                   src="assets/img/logo.png"
-                  alt="Logo Hogar Sagrada Familia"
+                  alt="Logo del Hogar Sagrada Familia"
                   class="logo"
-                  style="margin-bottom: 20px"
+                  style="margin-bottom: 20px;"
+                  loading="lazy"
                 />
               </picture>
               <br />
-              <p style="font-size: 1rem">
-                <span style="font-weight: bolder">PBX:</span> 745 19 19 - 288 31
-                14
+              <p style="font-size: 1rem;">
+                <span style="font-weight: bolder;">PBX:</span> 745 19 19 - 288
+                31 14
                 <br />
                 <i
                   class="fa fa-phone phone-icon"
-                  style="margin-right: 3px"
+                  style="margin-right: 3px;"
                 ></i>
-                <a href="tel:3208298546" class="hidden-link">3208298546</a>
+                <a
+                  href="tel:3208298546"
+                  class="hidden-link"
+                  title="Llamar al número celular del Hogar Sagrada Familia"
+                  >3208298546</a
+                >
                 <br />
                 <i
                   class="fa fa-envelope envelope-icon"
-                  style="margin-right: 3px"
+                  style="margin-right: 3px;"
                 ></i>
                 direccion.hogarsfamilia@irsjg.org
                 <br />
                 <i
                   class="fa fa-map-marker map-marker-icon"
-                  style="margin-right: 3px"
+                  style="margin-right: 3px;"
                 ></i>
                 Carrera 6 # 45-22, Bogotá D.C. – Colombia
               </p>
@@ -443,7 +519,8 @@
                 <a
                   href="https://www.irsjg.org/es"
                   target="_blank"
-                  title="Ir al sitio del Instituto de Religiosas de San José de Gerona"
+                  rel="noopener"
+                  title="Ir al sitio web del Instituto de Religiosas de San José de Gerona"
                 >
                   <picture>
                     <source
@@ -452,13 +529,14 @@
                     />
                     <img
                       src="assets/img/IRSJG-logo-transparente.png"
-                      alt="Logo Instituto de Religiosas de San José de Gerona"
-                      style="width: 270px"
+                      alt="Logo del Instituto de Religiosas de San José de Gerona"
+                      style="width: 270px;"
+                      loading="lazy"
                     />
                   </picture>
                 </a>
 
-                <p style="font-size: 1rem">
+                <p style="font-size: 1rem;">
                   <br />
                   © Instituto de Religiosas de San José de Gerona 2024
                 </p>
@@ -492,9 +570,10 @@
         id="whatsapp-link"
         class="whatsapp"
         target="_blank"
-        aria-label="Contactar por WhatsApp"
+        aria-label="Contactar al Hogar Sagrada Familia por WhatsApp"
+        title="Contactar al Hogar Sagrada Familia por WhatsApp"
       >
-        <i class="fa fa-whatsapp whatsapp-icon"></i>
+        <i class="fa fa-whatsapp whatsapp-icon" aria-hidden="true"></i>
       </a>
     </div>
 
@@ -516,22 +595,22 @@
         return /Mobi|Android/i.test(navigator.userAgent);
       }
 
-      const whatsappLink = document.getElementById('whatsapp-link');
-      const phoneNumber = '573148387523';
+      const whatsappLink = document.getElementById("whatsapp-link");
+      const phoneNumber = "573148387523";
       const message =
-        'Quisiera%20recibir%20información%20sobre%20sus%20servicios';
+        "Quisiera%20recibir%20información%20sobre%20sus%20servicios";
 
       if (isMobile()) {
         whatsappLink.href =
-          'https://api.whatsapp.com/send?phone=' +
+          "https://api.whatsapp.com/send?phone=" +
           phoneNumber +
-          '&text=' +
+          "&text=" +
           message;
       } else {
         whatsappLink.href =
-          'https://web.whatsapp.com/send?phone=' +
+          "https://web.whatsapp.com/send?phone=" +
           phoneNumber +
-          '&text=' +
+          "&text=" +
           message;
       }
     </script>
