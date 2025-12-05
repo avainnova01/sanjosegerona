@@ -216,104 +216,40 @@
     <div class="top_banner"></div>
 
     <main class="container1">
-      <!-- Hero Servicios -->
-      <section id="inicio" aria-label="Servicios para personas mayores">
-        <div
-          style="
-            position: relative;
-            overflow: hidden;
-            max-height: 420px;
-            border-radius: 0 0 24px 24px;
-          "
-        >
-          <picture>
-            <source srcset="assets/img/webp/servicios.webp" type="image/webp" />
-            <img
-              src="assets/img/servicios.jpg"
-              alt="Personas mayores recibiendo servicios en el Hogar Sagrada Familia"
-              style="width: 100%; object-fit: cover; min-height: 260px"
-            />
-          </picture>
+    <!-- Hero Servicios -->
+    <section id="inicio" aria-label="Servicios para personas mayores">
+        <div class="servicios-hero-wrapper">
+            <picture>
+                <source srcset="assets/img/webp/servicios.webp" type="image/webp" />
+                <img src="assets/img/servicios.jpg" alt="Personas mayores recibiendo servicios en el Hogar Sagrada Familia"
+                    class="servicios-hero-img" />
+            </picture>
 
-          <div
-            style="
-              position: absolute;
-              inset: 0;
-              background: linear-gradient(
-                120deg,
-                rgba(29, 47, 105, 0.88),
-                rgba(43, 72, 127, 0.75)
-              );
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              text-align: center;
-              color: #fff;
-              padding: 32px 16px;
-            "
-          >
-            <div style="max-width: 760px;">
-              <h1
-                style="
-                  font-size: clamp(1.8rem, 3vw, 2.4rem);
-                  font-weight: 700;
-                  margin-bottom: 12px;
-                "
-              >
-                Estancias a tu medida: permanentes, temporales o Centro de día
-              </h1>
-              <p
-                style="
-                  font-size: clamp(1rem, 1.2vw, 1.1rem);
-                  margin-bottom: 20px;
-                  font-weight: 300;
-                "
-              >
-                Cuidamos de las personas mayores con afecto, respeto y
-                profesionalismo, en un ambiente seguro y familiar en el corazón
-                de Bogotá.
-              </p>
-              <div
-                style="
-                  display: flex;
-                  gap: 10px;
-                  justify-content: center;
-                  flex-wrap: wrap;
-                "
-              >
-                <a
-                  href="#estancias"
-                  class="btn btn-light"
-                  style="
-                    border-radius: 999px;
-                    padding: 8px 22px;
-                    font-weight: 600;
-                    font-size: 0.95rem;
-                  "
-                  title="Ver información sobre estancias permanentes o temporales"
-                >
-                  <i class="bi bi-house-heart" style="margin-right: 4px;"></i>
-                  Estancias permanentes o temporales
-                </a>
-                <a
-                  href="#centro-dia"
-                  class="btn btn-outline-light"
-                  style="
-                    border-radius: 999px;
-                    padding: 8px 22px;
-                    font-weight: 600;
-                    font-size: 0.95rem;
-                  "
-                  title="Ver información sobre el Centro de día"
-                >
-                  <i class="bi bi-sun" style="margin-right: 4px;"></i>
-                  Centro de día
-                </a>
-              </div>
+            <div class="servicios-hero-overlay">
+                <div class="servicios-hero-content">
+                    <h1 class="servicios-hero-title">
+                        Estancias a tu medida: permanentes, temporales o Centro de día
+                    </h1>
+                    <p class="servicios-hero-subtitle">
+                        Cuidamos de las personas mayores con afecto, respeto y profesionalismo,
+                        en un ambiente seguro y familiar en el corazón de Bogotá.
+                    </p>
+                    <div class="servicios-hero-buttons">
+                        <a href="#estancias" class="btn btn-light"
+                            title="Ver información sobre estancias permanentes o temporales">
+                            <i class="bi bi-house-heart" style="margin-right: 4px;"></i>
+                            Estancias permanentes o temporales
+                        </a>
+                        <a href="#centro-dia" class="btn btn-outline-light" title="Ver información sobre el Centro de día">
+                            <i class="bi bi-sun" style="margin-right: 4px;"></i>
+                            Centro de día
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
+
 
       <!-- Intro servicios -->
       <section id="intro-servicios" style="padding: 40px 0 10px 0;">
