@@ -94,10 +94,7 @@
       <div class="container px-4 px-lg-5">
         <a class="navbar-brand" href="index.html" title="Ir a la página de inicio">
           <picture>
-            <source
-              srcset="assets/img/webp/logo.webp"
-              type="image/webp"
-            />
+            <source srcset="assets/img/webp/logo.webp" type="image/webp" />
             <img
               src="assets/img/logo.png"
               alt="Logo Hogar Sagrada Familia"
@@ -125,7 +122,6 @@
               <a class="nav-link" href="index.html#somos">QUIÉNES SOMOS</a>
             </li>
             <li class="nav-item">
-              <!-- ahora apunta a esta página -->
               <a class="nav-link active" href="servicios.html">SERVICIOS</a>
             </li>
             <li class="nav-item dropdown styleintitucional">
@@ -146,7 +142,9 @@
               </button>
               <ul class="dropdown-menu" style="top: 43px">
                 <li>
-                  <a class="dropdown-item" href="hogar.html">Hogar Sagrada Familia</a>
+                  <a class="dropdown-item" href="hogar.html"
+                    >Hogar Sagrada Familia</a
+                  >
                 </li>
                 <li>
                   <a class="dropdown-item" href="institucional.html"
@@ -211,24 +209,93 @@
     <div class="top_banner"></div>
 
     <div class="container1">
-      <!-- Cabecera -->
+      <!-- Hero Servicios -->
       <section id="inicio">
-        <div id="banner">
-          <div id="slides">
-            <div class="slide_new" style="display: block">
-              <div class="container_image">
-                <!-- Usa la imagen que prefieras para la cabecera de Servicios -->
-                <picture>
-                  <source
-                    srcset="assets/img/webp/servicios.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    class="img_banner"
-                    src="assets/img/servicios.jpg"
-                    alt="Personas mayores recibiendo servicios en el Hogar Sagrada Familia"
-                  />
-                </picture>
+        <div
+          style="
+            position: relative;
+            overflow: hidden;
+            max-height: 420px;
+            border-radius: 0 0 24px 24px;
+          "
+        >
+          <picture>
+            <source srcset="assets/img/webp/servicios.webp" type="image/webp" />
+            <img
+              src="assets/img/servicios.jpg"
+              alt="Personas mayores recibiendo servicios en el Hogar Sagrada Familia"
+              style="width: 100%; object-fit: cover; min-height: 260px"
+            />
+          </picture>
+
+          <!-- Capa de color + texto -->
+          <div
+            style="
+              position: absolute;
+              inset: 0;
+              background: linear-gradient(
+                120deg,
+                rgba(29, 47, 105, 0.88),
+                rgba(43, 72, 127, 0.75)
+              );
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+              color: #fff;
+              padding: 32px 16px;
+            "
+          >
+            <div style="max-width: 760px;">
+              <h1
+                style="
+                  font-size: clamp(1.8rem, 3vw, 2.4rem);
+                  font-weight: 700;
+                  margin-bottom: 12px;
+                "
+              >
+                Estancias a tu medida: permanentes, temporales o Centro de día
+              </h1>
+              <p
+                style="
+                  font-size: clamp(1rem, 1.2vw, 1.1rem);
+                  margin-bottom: 20px;
+                  font-weight: 300;
+                "
+              >
+                Cuidamos de las personas mayores con afecto, respeto y
+                profesionalismo, en un ambiente seguro y familiar en el corazón
+                de Bogotá.
+              </p>
+              <div style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+                <a
+                  href="#estancias"
+                  class="btn btn-light"
+                  style="
+                    border-radius: 999px;
+                    padding: 8px 22px;
+                    font-weight: 600;
+                    font-size: 0.95rem;
+                  "
+                  title="Ver información sobre estancias permanentes o temporales"
+                >
+                  <i class="bi bi-house-heart" style="margin-right: 4px;"></i>
+                  Estancias permanentes o temporales
+                </a>
+                <a
+                  href="#centro-dia"
+                  class="btn btn-outline-light"
+                  style="
+                    border-radius: 999px;
+                    padding: 8px 22px;
+                    font-weight: 600;
+                    font-size: 0.95rem;
+                  "
+                  title="Ver información sobre el Centro de día"
+                >
+                  <i class="bi bi-sun" style="margin-right: 4px;"></i>
+                  Centro de día
+                </a>
               </div>
             </div>
           </div>
@@ -236,36 +303,52 @@
       </section>
 
       <!-- Intro servicios -->
-      <section id="intro-servicios">
-        <div class="container container-fluid p-0">
-          <div class="text-center" style="margin-top: 36px; margin-bottom: 26px">
-            <h1>Estancias a tu medida: permanentes, temporales o Centro de día</h1>
+      <section id="intro-servicios" style="padding: 40px 0 10px 0;">
+        <div class="container px-4 px-lg-5">
+          <div class="text-center" style="margin-bottom: 20px;">
+            <h2
+              class="font-weight-title"
+              style="font-size: 1.6rem; font-weight: 700; color: #1d2f69;"
+            >
+              Cuidado integral para cada etapa
+            </h2>
           </div>
 
-          <div class="container px-4 px-lg-5">
-            <p class="text-muted mb-0 text-justify" style="font-size: 1.1rem">
-              En el Hogar Sagrada Familia de Bogotá, cuidamos de las personas
-              mayores con afecto, respeto y profesionalismo. Ofrecemos estancias
-              permanentes, temporales y en modalidad de Centro de día, con
-              servicios integrales que promueven la calidad de vida y el
-              acompañamiento personalizado.
-            </p>
-            <br />
-            <p class="text-muted mb-0 text-justify" style="font-size: 1.1rem">
-              Infórmate sobre el tipo de estancia que mejor se adapta a ti o a tu
-              ser querido. Estamos aquí para acompañarte.
-            </p>
-          </div>
+          <p
+            class="text-muted mb-0 text-justify"
+            style="font-size: 1.08rem; margin-bottom: 8px;"
+          >
+            En el Hogar Sagrada Familia de Bogotá, cuidamos de las personas
+            mayores con afecto, respeto y profesionalismo. Ofrecemos estancias
+            permanentes, temporales y en modalidad de Centro de día, con
+            servicios integrales que promueven la calidad de vida y el
+            acompañamiento personalizado.
+          </p>
+          <br />
+          <p
+            class="text-muted mb-0 text-justify"
+            style="font-size: 1.08rem;"
+          >
+            Infórmate sobre el tipo de estancia que mejor se adapta a ti o a tu
+            ser querido. Estamos aquí para acompañarte y ayudarte a tomar la
+            mejor decisión para su bienestar.
+          </p>
         </div>
       </section>
 
       <!-- Estancias permanentes o temporales -->
-      <section id="estancias" style="margin-top: 40px; margin-bottom: 40px">
+      <section
+        id="estancias"
+        style="margin-top: 30px; margin-bottom: 40px; background:#f5f7fb;"
+      >
         <div class="container container-fluid p-0">
           <div class="row g-0">
             <div class="col-lg-6 col-md-6">
-              <div class="mt-5 text-justify px-4 px-lg-5">
-                <h2 class="h4 mb-2 font-weight-title titulos_size">
+              <div class="mt-5 text-justify px-4 px-lg-5" style="padding-bottom:30px;">
+                <h2
+                  class="h4 mb-2 font-weight-title titulos_size"
+                  style="color:#1d2f69;"
+                >
                   Estancias permanentes o temporales
                 </h2>
 
@@ -278,48 +361,46 @@
                 <br />
                 <p class="text-muted mb-0" style="font-size: 1.05rem">
                   Contamos con programas que se adaptan a las necesidades de
-                  cuidado, protección y calidad de vida de tus seres más queridos.
-                  Nuestras estancias pueden ser permanentes o por períodos
-                  temporales, según las necesidades de cada familia.
+                  cuidado, protección y calidad de vida de tus seres más
+                  queridos. Nuestras estancias pueden ser permanentes o por
+                  períodos temporales, según las necesidades de cada familia.
                 </p>
 
                 <br />
-                <h3 class="h5 font-weight-title">Incluye:</h3>
-                <ul style="font-size: 1.05rem">
-                  <li>Habitaciones con baño privado</li>
-                  <li>Wifi y televisión por cable</li>
-                  <li>Sistema de llamado por habitación</li>
-                  <li>
-                    Lavandería, aseo, mantenimiento, capilla, gimnasio y salón de
-                    actividades
-                  </li>
-                  <li>Zonas de descanso y lectura</li>
-                  <li>Alimentación y cuidado nutricional</li>
-                  <li>Apoyo emocional y acompañamiento psicosocial</li>
-                  <li>Estimulación cognitiva y sensorial</li>
-                  <li>Ejercicio físico integral adaptado a cada residente</li>
-                  <li>Actividades ocupacionales, arte y manualidades</li>
-                  <li>
-                    Rosario, eucaristía, pastoral de la salud y apoyo espiritual
-                  </li>
-                  <li>
-                    Sacramento de reconciliación y unción de los enfermos, para
-                    quien lo solicite
-                  </li>
-                  <li>Cuidados básicos de la vida diaria</li>
-                  <li>Control periódico de signos vitales</li>
-                  <li>Administración de medicamentos</li>
-                  <li>Actividades lúdicas y recreativas</li>
+                <h3 class="h5 font-weight-title" style="color:#1d2f69;">
+                  Incluye:
+                </h3>
+                <ul style="font-size: 1.05rem; list-style: none; padding-left: 0;">
+                  <li><i class="bi bi-check-circle" style="color:#1d2f69;"></i> Habitaciones con baño privado</li>
+                  <li><i class="bi bi-check-circle" style="color:#1d2f69;"></i> Wifi y televisión por cable</li>
+                  <li><i class="bi bi-check-circle" style="color:#1d2f69;"></i> Sistema de llamado por habitación</li>
+                  <li><i class="bi bi-check-circle" style="color:#1d2f69;"></i> Lavandería, aseo, mantenimiento, capilla, gimnasio y salón de actividades</li>
+                  <li><i class="bi bi-check-circle" style="color:#1d2f69;"></i> Zonas de descanso y lectura</li>
+                  <li><i class="bi bi-check-circle" style="color:#1d2f69;"></i> Alimentación y cuidado nutricional</li>
+                  <li><i class="bi bi-check-circle" style="color:#1d2f69;"></i> Apoyo emocional y acompañamiento psicosocial</li>
+                  <li><i class="bi bi-check-circle" style="color:#1d2f69;"></i> Estimulación cognitiva y sensorial</li>
+                  <li><i class="bi bi-check-circle" style="color:#1d2f69;"></i> Ejercicio físico integral adaptado a cada residente</li>
+                  <li><i class="bi bi-check-circle" style="color:#1d2f69;"></i> Actividades ocupacionales, arte y manualidades</li>
+                  <li><i class="bi bi-check-circle" style="color:#1d2f69;"></i> Rosario, eucaristía, pastoral de la salud y apoyo espiritual</li>
+                  <li><i class="bi bi-check-circle" style="color:#1d2f69;"></i> Sacramento de reconciliación y unción de los enfermos, para quien lo solicite</li>
+                  <li><i class="bi bi-check-circle" style="color:#1d2f69;"></i> Cuidados básicos de la vida diaria</li>
+                  <li><i class="bi bi-check-circle" style="color:#1d2f69;"></i> Control periódico de signos vitales</li>
+                  <li><i class="bi bi-check-circle" style="color:#1d2f69;"></i> Administración de medicamentos</li>
+                  <li><i class="bi bi-check-circle" style="color:#1d2f69;"></i> Actividades lúdicas y recreativas</li>
                 </ul>
 
-                <h3 class="h5 font-weight-title">Requisitos:</h3>
+                <h3 class="h5 font-weight-title" style="color:#1d2f69;">
+                  Requisitos:
+                </h3>
                 <p class="text-muted mb-0" style="font-size: 1.05rem">
                   Afiliación a EPS y emergencias médicas; valoración geriátrica
                   integral.
                 </p>
 
                 <br />
-                <h3 class="h5 font-weight-title">Horario de visitas familiares:</h3>
+                <h3 class="h5 font-weight-title" style="color:#1d2f69;">
+                  Horario de visitas familiares:
+                </h3>
                 <p class="text-muted mb-0" style="font-size: 1.05rem">
                   Lunes a domingo, de 8:30 a.m. a 7:00 p.m.
                 </p>
@@ -345,9 +426,9 @@
 
             <div
               class="col-lg-6 col-md-6"
-              style="display: flex; align-items: center; justify-content: center"
+              style="display: flex; align-items: center; justify-content: center; background:#e5f0fb;"
             >
-              <div style="padding: 20px; width: 100%">
+              <div style="padding: 30px 20px; width: 100%; max-width: 520px; margin:auto;">
                 <picture>
                   <source
                     srcset="assets/img/webp/estanciapermanente.webp"
@@ -356,7 +437,7 @@
                   <img
                     src="assets/img/estanciapermanente.png"
                     alt="Habitación y espacios para estancias permanentes o temporales"
-                    style="width: 100%"
+                    style="width: 100%; border-radius: 16px;"
                     loading="lazy"
                   />
                 </picture>
@@ -367,14 +448,17 @@
       </section>
 
       <!-- Centro de día -->
-      <section id="centro-dia" style="margin-top: 20px; margin-bottom: 40px">
+      <section
+        id="centro-dia"
+        style="margin-top: 0; margin-bottom: 40px;"
+      >
         <div class="container container-fluid p-0">
           <div class="row g-0">
             <div
               class="col-lg-6 col-md-6 order-lg-2"
-              style="display: flex; align-items: center; justify-content: center"
+              style="display: flex; align-items: center; justify-content: center; background:#f0f4ff;"
             >
-              <div style="padding: 20px; width: 100%">
+              <div style="padding: 30px 20px; width: 100%; max-width: 520px; margin:auto;">
                 <picture>
                   <source
                     srcset="assets/img/webp/centrodia_min.webp"
@@ -383,7 +467,7 @@
                   <img
                     src="assets/img/centrodia_min.png"
                     alt="Personas mayores participando en el Centro de día"
-                    style="width: 100%"
+                    style="width: 100%; border-radius: 16px;"
                     loading="lazy"
                   />
                 </picture>
@@ -391,8 +475,11 @@
             </div>
 
             <div class="col-lg-6 col-md-6 order-lg-1">
-              <div class="mt-5 text-justify px-4 px-lg-5">
-                <h2 class="h4 mb-2 font-weight-title titulos_size">
+              <div class="mt-5 text-justify px-4 px-lg-5" style="padding-bottom:30px;">
+                <h2
+                  class="h4 mb-2 font-weight-title titulos_size"
+                  style="color:#1d2f69;"
+                >
                   Centro de día
                 </h2>
                 <p class="text-muted mb-0" style="font-size: 1.05rem">
@@ -409,24 +496,27 @@
                 </p>
 
                 <br />
-                <h3 class="h5 font-weight-title">Incluye:</h3>
-                <ul style="font-size: 1.05rem">
-                  <li>Zonas de descanso y lectura</li>
-                  <li>Alimentación durante la jornada</li>
-                  <li>Apoyo emocional y acompañamiento psicosocial</li>
-                  <li>Estimulación cognitiva</li>
-                  <li>Ejercicio físico integral adaptado</li>
-                  <li>Actividades ocupacionales, arte y manualidades</li>
-                  <li>Rosario y eucaristía</li>
-                  <li>Control de signos vitales</li>
-                  <li>Administración de medicamentos</li>
+                <h3 class="h5 font-weight-title" style="color:#1d2f69;">Incluye:</h3>
+                <ul style="font-size: 1.05rem; list-style:none; padding-left:0;">
+                  <li><i class="bi bi-check-circle" style="color:#1d2f69;"></i> Zonas de descanso y lectura</li>
+                  <li><i class="bi bi-check-circle" style="color:#1d2f69;"></i> Alimentación durante la jornada</li>
+                  <li><i class="bi bi-check-circle" style="color:#1d2f69;"></i> Apoyo emocional y acompañamiento psicosocial</li>
+                  <li><i class="bi bi-check-circle" style="color:#1d2f69;"></i> Estimulación cognitiva</li>
+                  <li><i class="bi bi-check-circle" style="color:#1d2f69;"></i> Ejercicio físico integral adaptado</li>
+                  <li><i class="bi bi-check-circle" style="color:#1d2f69;"></i> Actividades ocupacionales, arte y manualidades</li>
+                  <li><i class="bi bi-check-circle" style="color:#1d2f69;"></i> Rosario y eucaristía</li>
+                  <li><i class="bi bi-check-circle" style="color:#1d2f69;"></i> Control de signos vitales</li>
+                  <li><i class="bi bi-check-circle" style="color:#1d2f69;"></i> Administración de medicamentos</li>
                   <li>
+                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
                     Actividades lúdicas y recreativas: juegos de mesa, bingo,
                     serenatas, talleres, entre otros.
                   </li>
                 </ul>
 
-                <h3 class="h5 font-weight-title">Horario del Centro de día:</h3>
+                <h3 class="h5 font-weight-title" style="color:#1d2f69;">
+                  Horario del Centro de día:
+                </h3>
                 <p class="text-muted mb-0" style="font-size: 1.05rem">
                   Lunes a viernes, de 9:00 a.m. a 4:00 p.m.
                 </p>
@@ -453,7 +543,7 @@
         </div>
       </section>
 
-      <!-- Bloque final: mapa + contacto (igual a otras páginas) -->
+      <!-- Bloque final: mapa + contacto -->
       <section id="contacto">
         <div
           class="container page-section"
