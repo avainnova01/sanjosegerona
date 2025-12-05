@@ -463,52 +463,153 @@
             <!-- Galery-->
             <section id="galery" style="margin-top: 30px;">
                 <div class="container px-4 px-lg-5 page-section"
-                     style="border-radius: 10px 10px 0px 0px; background: #1d2f69; color: white;">
-                    <div style="margin-bottom: 10px; font-weight: bolder;">
-                        <h2 class="text-center mt-0">NUESTRAS HABITACIONES</h2>
+                     style="border-radius: 16px 16px 0 0; background: #1d2f69; color: white; padding: 32px 20px 36px 20px;">
+                    <div class="text-center" style="margin-bottom: 16px; font-weight: bolder;">
+                        <h2 class="mt-0" style="letter-spacing: 1px;">NUESTRAS HABITACIONES</h2>
                     </div>
-                    <p style="font-weight:100">
-                        Contamos con habitaciones de diversos ambientes y dimensiones. Incluyen closet, baño privado y
+                    <p style="
+                        font-weight:100;
+                        max-width: 780px;
+                        margin: 0 auto 24px auto;
+                        text-align: center;
+                    ">
+                        Contamos con habitaciones de diversos ambientes y dimensiones. Incluyen clóset, baño privado y
                         se entregan sin mobiliario, permitiendo que cada residente decore la suya a su gusto y se sienta
                         como en casa.
                     </p>
 
                     <div class="container-fluid p-0">
-                        <div class="container-galeria">
-                            <div class="columna-izquierda" style="padding-top: 15px;">
-                                <img style="max-width: 100%;"
-                                     src="assets/img/habitaciones/HPP_0245.jpg"
-                                     alt="Habitación amplia con cama individual para persona mayor"
-                                     loading="lazy" />
+                        <!-- grid 2x2 de tarjetas -->
+                        <div class="row row-cols-1 row-cols-md-2 g-3">
+                            <!-- Tarjeta 1 -->
+                            <div class="col">
+                                <article style="
+                                    background:#ffffff;
+                                    border-radius:16px;
+                                    overflow:hidden;
+                                    box-shadow:0 6px 18px rgba(0,0,0,0.12);
+                                    height:100%;
+                                    display:flex;
+                                    flex-direction:column;
+                                ">
+                                    <div style="
+                                        width:100%;
+                                        aspect-ratio: 4 / 3;
+                                        overflow:hidden;
+                                    ">
+                                        <img
+                                            src="assets/img/habitaciones/HPP_0245.jpg"
+                                            alt="Habitación amplia y luminosa lista para personalizar"
+                                            loading="lazy"
+                                            style="width:100%; height:100%; object-fit:cover; display:block;"
+                                        />
+                                    </div>
+                                    <div style="padding:10px 16px 14px 16px; color:#1d2f69; font-size:0.95rem;">
+                                        Espacios amplios y luminosos para que cada residente pueda crear su propio ambiente.
+                                    </div>
+                                </article>
                             </div>
-                            <div class="columna-derecha" style="padding: 17px;">
-                                <img style="max-width: 96%;"
-                                     src="assets/img/habitaciones/HPP_0240.jpg"
-                                     alt="Habitación con baño privado en el Hogar Sagrada Familia"
-                                     loading="lazy" />
+
+                            <!-- Tarjeta 2 -->
+                            <div class="col">
+                                <article style="
+                                    background:#ffffff;
+                                    border-radius:16px;
+                                    overflow:hidden;
+                                    box-shadow:0 6px 18px rgba(0,0,0,0.12);
+                                    height:100%;
+                                    display:flex;
+                                    flex-direction:column;
+                                ">
+                                    <div style="
+                                        width:100%;
+                                        aspect-ratio: 4 / 3;
+                                        overflow:hidden;
+                                    ">
+                                        <img
+                                            src="assets/img/habitaciones/HPP_0240.jpg"
+                                            alt="Baño privado y accesible en la habitación"
+                                            loading="lazy"
+                                            style="width:100%; height:100%; object-fit:cover; display:block;"
+                                        />
+                                    </div>
+                                    <div style="padding:10px 16px 14px 16px; color:#1d2f69; font-size:0.95rem;">
+                                        Baños privados, accesibles y adaptados para la seguridad de las personas mayores.
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Tarjeta 3 -->
+                            <div class="col">
+                                <article style="
+                                    background:#ffffff;
+                                    border-radius:16px;
+                                    overflow:hidden;
+                                    box-shadow:0 6px 18px rgba(0,0,0,0.12);
+                                    height:100%;
+                                    display:flex;
+                                    flex-direction:column;
+                                ">
+                                    <div style="
+                                        width:100%;
+                                        aspect-ratio: 4 / 3;
+                                        overflow:hidden;
+                                    ">
+                                        <img
+                                            src="assets/img/habitaciones/HPP_0235.jpg"
+                                            alt="Habitación decorada con cama doble y luz natural"
+                                            loading="lazy"
+                                            style="width:100%; height:100%; object-fit:cover; display:block;"
+                                        />
+                                    </div>
+                                    <div style="padding:10px 16px 14px 16px; color:#1d2f69; font-size:0.95rem;">
+                                        Habitaciones decoradas con detalles que aportan calidez, confort y tranquilidad.
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Tarjeta 4 -->
+                            <div class="col">
+                                <article style="
+                                    background:#ffffff;
+                                    border-radius:16px;
+                                    overflow:hidden;
+                                    box-shadow:0 6px 18px rgba(0,0,0,0.12);
+                                    height:100%;
+                                    display:flex;
+                                    flex-direction:column;
+                                ">
+                                    <div style="
+                                        width:100%;
+                                        aspect-ratio: 4 / 3;
+                                        overflow:hidden;
+                                    ">
+                                        <img
+                                            src="assets/img/habitaciones/RETABLO_JUAN.jpg"
+                                            alt="Habitación personalizada con objetos significativos"
+                                            loading="lazy"
+                                            style="width:100%; height:100%; object-fit:cover; display:block;"
+                                        />
+                                    </div>
+                                    <div style="padding:10px 16px 14px 16px; color:#1d2f69; font-size:0.95rem;">
+                                        Detalles personales y objetos significativos para que cada residente se sienta verdaderamente en casa.
+                                    </div>
+                                </article>
                             </div>
                         </div>
 
-                        <div class="container-galeria-main">
-                            <div>
-                                <img style="max-width: 100%;"
-                                     src="assets/img/habitaciones/HPP_0235.jpg"
-                                     alt="Habitación luminosa y cómoda para adulto mayor"
-                                     loading="lazy" />
-                            </div>
-                            <div>
-                                <img style="max-width: 100%;"
-                                     src="assets/img/habitaciones/RETABLO_JUAN.jpg"
-                                     alt="Detalle decorativo religioso en habitación del Hogar Sagrada Familia"
-                                     loading="lazy" />
-                            </div>
+                        <!-- Botón a la galería completa -->
+                        <div style="text-align:center; margin-top:24px;">
+                            <a href="galeria.html"
+                               class="btn btn-outline-light"
+                               style="border-radius:999px; padding:8px 26px; font-weight:bold; border-width:2px;">
+                                Ver más fotografías de nuestras instalaciones
+                            </a>
                         </div>
-
                     </div>
-
                 </div>
 
-                <div class="container" style="padding: 0px;">
+                <div class="container" style="padding: 0;">
                     <a href="pse.html" target="_blank"
                        title="Ir a la página de pagos en línea PSE del Hogar Sagrada Familia">
                         <img style="max-width: 100%;"
@@ -517,8 +618,8 @@
                              loading="lazy" />
                     </a>
                 </div>
-
             </section>
+
 
             <!-- Contacto-->
             <section id="contacto">
