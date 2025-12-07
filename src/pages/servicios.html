@@ -17,17 +17,42 @@
     />
     <meta name="robots" content="index,follow" />
 
-    <title>Servicios para personas mayores - Hogar Sagrada Familia Bogotá</title>
+    <title>
+      Servicios para personas mayores - Hogar Sagrada Familia Bogotá
+    </title>
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Servicios para personas mayores - Hogar Sagrada Familia Bogotá" />
-    <meta property="og:description" content="Estancias permanentes, temporales y Centro de día para personas mayores en Bogotá, con cuidado integral y ambiente familiar." />
+    <meta
+      property="og:title"
+      content="Servicios para personas mayores - Hogar Sagrada Familia Bogotá"
+    />
+    <meta
+      property="og:description"
+      content="Estancias permanentes, temporales y Centro de día para personas mayores en Bogotá, con cuidado integral y ambiente familiar."
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/img/servicios.jpg" />
+    <meta
+      property="og:url"
+      content="https://www.hogarsagradafamilia.org/servicios.html"
+    />
+    <meta
+      property="og:image"
+      content="https://www.hogarsagradafamilia.org/assets/img/servicios.jpg"
+    />
     <meta property="og:locale" content="es_CO" />
+
+    <!-- Canonical -->
+    <link
+      rel="canonical"
+      href="https://www.hogarsagradafamilia.org/servicios.html"
+    />
 
     <!-- Favicon-->
     <link rel="icon" sizes="192x192" href="assets/icon.png" type="image/png" />
+
+    <!-- Preconnect para mejorar tiempos de carga -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin />
 
     <!-- Bootstrap Icons-->
     <link
@@ -35,14 +60,8 @@
       rel="stylesheet"
     />
 
-    <!-- SimpleLightbox plugin CSS-->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css"
-      rel="stylesheet"
-    />
-
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/styles.min.css" rel="stylesheet" />
 
     <!-- WhatsApp Icon -->
     <link
@@ -65,6 +84,30 @@
       })(window, document, "script", "dataLayer", "GTM-5739866R");
     </script>
     <!-- End Google Tag Manager -->
+
+    <!-- Datos estructurados básicos -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Hogar Sagrada Familia",
+        "url": "https://www.hogarsagradafamilia.org",
+        "logo": "https://www.hogarsagradafamilia.org/assets/img/logo.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Carrera 6 # 45-22",
+          "addressLocality": "Bogotá D.C.",
+          "addressCountry": "CO"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+57-320-829-8546",
+          "contactType": "customer service",
+          "areaServed": "CO",
+          "availableLanguage": ["es"]
+        }
+      }
+    </script>
   </head>
   <body id="page-top" class="gothicFont">
     <!-- Google Tag Manager (noscript) -->
@@ -99,15 +142,17 @@
       id="mainNav"
     >
       <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="index.html" title="Ir a la página de inicio">
-          <picture>
-            <source srcset="assets/img/webp/logo.webp" type="image/webp" />
-            <img
-              src="assets/img/logo.png"
-              alt="Logo Hogar Sagrada Familia en Bogotá"
-              class="logo"
-            />
-          </picture>
+        <a
+          class="navbar-brand"
+          href="index.html"
+          title="Ir a la página de inicio del Hogar Sagrada Familia"
+        >
+          <img
+            src="assets/img/logo.png"
+            alt="Logo Hogar Sagrada Familia en Bogotá"
+            class="logo"
+            height="50"
+          />
         </a>
         <button
           class="navbar-toggler navbar-toggler-right"
@@ -116,22 +161,40 @@
           data-bs-target="#navbarResponsive"
           aria-controls="navbarResponsive"
           aria-expanded="false"
-          aria-label="Toggle navigation"
+          aria-label="Mostrar u ocultar menú de navegación"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto my-2 my-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html#inicio">INICIO</a>
+              <a
+                class="nav-link"
+                href="index.html#inicio"
+                title="Ir a la sección Inicio"
+                >INICIO</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html#somos">QUIÉNES SOMOS</a>
+              <a
+                class="nav-link"
+                href="index.html#somos"
+                title="Ir a la sección Quiénes somos"
+                >QUIÉNES SOMOS</a
+              >
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="servicios.html" title="Ir a la página de Servicios">SERVICIOS</a>
+              <a
+                class="nav-link active"
+                href="servicios.html"
+                title="Ir a la página de servicios para personas mayores"
+                >SERVICIOS</a
+              >
             </li>
-            <li class="nav-item dropdown styleintitucional">
+            <li
+              class="nav-item dropdown styleintitucional"
+              style="display: flex; align-items: center;"
+            >
               <button
                 class="btn dropdown-toggle buttoninstitucional"
                 data-bs-toggle="dropdown"
@@ -144,22 +207,32 @@
                   font-size: 0.9rem;
                   border: none;
                 "
+                title="Ver información institucional"
               >
                 INSTITUCIONAL
               </button>
-              <ul class="dropdown-menu" style="top: 43px">
+              <ul class="dropdown-menu" style="top: 43px;">
                 <li>
-                  <a class="dropdown-item" href="hogar.html"
+                  <a
+                    class="dropdown-item"
+                    href="hogar.html"
+                    title="Conocer nuestro Hogar Sagrada Familia"
                     >Hogar Sagrada Familia</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="institucional.html"
+                  <a
+                    class="dropdown-item"
+                    href="institucional.html"
+                    title="Conocer el Instituto de Religiosas de San José de Gerona"
                     >Instituto de Religiosas de San José de Gerona</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="ideario.html"
+                  <a
+                    class="dropdown-item"
+                    href="ideario.html"
+                    title="Ver ideario, misión, visión y valores"
                     >Ideario, misión, visión, valores</a
                   >
                 </li>
@@ -168,6 +241,8 @@
                     class="dropdown-item"
                     href="assets/pdf/IRSJG-Colombia-Politica-Tratamiento-Datos-Personales-2024.pdf"
                     target="_blank"
+                    rel="noopener"
+                    title="Ver Política de tratamiento de datos personales (PDF)"
                     >Política de tratamiento de datos</a
                   >
                 </li>
@@ -176,34 +251,53 @@
                     class="dropdown-item"
                     href="assets/pdf/IRSJG-Colombia-Aviso-Privacidad-2024.pdf"
                     target="_blank"
+                    rel="noopener"
+                    title="Ver Aviso de privacidad (PDF)"
                     >Aviso de privacidad</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="ptee.html">PTEE</a>
+                  <a
+                    class="dropdown-item"
+                    href="ptee.html"
+                    title="Ver Programa de Transparencia y Ética Empresarial"
+                    >PTEE</a
+                  >
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="galeria.html">GALERÍA</a>
+              <a
+                class="nav-link"
+                href="galeria.html"
+                title="Ver galería fotográfica del Hogar"
+                >GALERÍA</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contacto.html">CONTACTO</a>
+              <a
+                class="nav-link"
+                href="contacto.html"
+                title="Ir a la página de contacto"
+                >CONTACTO</a
+              >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link"
                 href="assets/pdf/Comunicado_proveedores_alimentos.pdf"
                 target="_blank"
+                rel="noopener"
+                title="Ver comunicados para proveedores de alimentos (PDF)"
+                >COMUNICADOS</a
               >
-                COMUNICADOS
-              </a>
             </li>
             <li class="nav-item margin_left_pse">
               <a
                 class="nav-link"
                 href="pse.html"
-                style="color: white !important; background: #2b487f !important"
+                style="color: white !important; background: #2b487f !important;"
+                title="Ir a la página de pago en línea PSE"
               >
                 PAGO EN LÍNEA
               </a>
@@ -215,41 +309,23 @@
 
     <div class="top_banner"></div>
 
-    <main class="container1">
-    <!-- Hero Servicios -->
-    <section id="inicio" aria-label="Servicios para personas mayores">
+    <div class="container1">
+      <!-- Hero Servicios -->
+      <section id="inicio" aria-label="Servicios para personas mayores">
         <div class="servicios-hero-wrapper">
-            <picture>
-                <source srcset="assets/img/webp/servicios.webp" type="image/webp" />
-                <img src="assets/img/servicios.jpg" alt="Personas mayores recibiendo servicios en el Hogar Sagrada Familia"
-                    class="servicios-hero-img" />
-            </picture>
-
-            <div class="servicios-hero-overlay">
-                <div class="servicios-hero-content">
-                    <h1 class="servicios-hero-title">
-                        Estancias a tu medida: permanentes, temporales o Centro de día
-                    </h1>
-                    <p class="servicios-hero-subtitle">
-                        Cuidamos de las personas mayores con afecto, respeto y profesionalismo,
-                        en un ambiente seguro y familiar en el corazón de Bogotá.
-                    </p>
-                    <div class="servicios-hero-buttons">
-                        <a href="#estancias" class="btn btn-light"
-                            title="Ver información sobre estancias permanentes o temporales">
-                            <i class="bi bi-house-heart" style="margin-right: 4px;"></i>
-                            Estancias permanentes o temporales
-                        </a>
-                        <a href="#centro-dia" class="btn btn-outline-light" title="Ver información sobre el Centro de día">
-                            <i class="bi bi-sun" style="margin-right: 4px;"></i>
-                            Centro de día
-                        </a>
-                    </div>
-                </div>
-            </div>
+          <picture>
+            <source
+              srcset="assets/img/webp/servicios.webp"
+              type="image/webp"
+            />
+            <img
+              src="assets/img/servicios.jpg"
+              alt="Personas mayores recibiendo servicios en el Hogar Sagrada Familia"
+              class="img_banner"
+            />
+          </picture>
         </div>
-    </section>
-
+      </section>
 
       <!-- Intro servicios -->
       <section id="intro-servicios" style="padding: 40px 0 10px 0;">
@@ -288,7 +364,7 @@
       <!-- Bloque doble: Estancias / Centro de día -->
       <section
         aria-label="Detalles de servicios"
-        style="margin-top: 30px; margin-bottom: 40px; background:#f5f7fb;"
+        style="margin-top: 30px; margin-bottom: 40px; background: #f5f7fb;"
       >
         <div class="container container-fluid p-0">
           <div class="row g-0">
@@ -297,23 +373,23 @@
               <article
                 id="estancias"
                 class="mt-5 text-justify px-4 px-lg-5"
-                style="padding-bottom:30px;"
+                style="padding-bottom: 30px;"
               >
                 <h2
                   class="h4 mb-2 font-weight-title titulos_size"
-                  style="color:#1d2f69;"
+                  style="color: #1d2f69;"
                 >
                   Estancias permanentes o temporales
                 </h2>
 
-                <p class="text-muted mb-0" style="font-size: 1.05rem">
+                <p class="text-muted mb-0" style="font-size: 1.05rem;">
                   Estamos comprometidos con la dignificación de las personas
                   mayores a través de la prestación de servicios integrales y
                   humanizados que promueven su bienestar físico y emocional, la
                   participación social y el apoyo espiritual.
                 </p>
                 <br />
-                <p class="text-muted mb-0" style="font-size: 1.05rem">
+                <p class="text-muted mb-0" style="font-size: 1.05rem;">
                   Contamos con programas que se adaptan a las necesidades de
                   cuidado, protección y calidad de vida de tus seres más
                   queridos. Nuestras estancias pueden ser permanentes o por
@@ -321,7 +397,7 @@
                 </p>
 
                 <br />
-                <h3 class="h5 font-weight-title" style="color:#1d2f69;">
+                <h3 class="h5 font-weight-title" style="color: #1d2f69;">
                   Incluye:
                 </h3>
                 <ul
@@ -332,86 +408,86 @@
                   "
                 >
                   <li>
-                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
+                    <i class="bi bi-check-circle" style="color: #1d2f69;"></i>
                     Habitaciones con baño privado
                   </li>
                   <li>
-                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
+                    <i class="bi bi-check-circle" style="color: #1d2f69;"></i>
                     Wifi y televisión por cable
                   </li>
                   <li>
-                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
+                    <i class="bi bi-check-circle" style="color: #1d2f69;"></i>
                     Sistema de llamado por habitación
                   </li>
                   <li>
-                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
+                    <i class="bi bi-check-circle" style="color: #1d2f69;"></i>
                     Lavandería, aseo, mantenimiento, capilla, gimnasio y salón
                     de actividades
                   </li>
                   <li>
-                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
+                    <i class="bi bi-check-circle" style="color: #1d2f69;"></i>
                     Zonas de descanso y lectura
                   </li>
                   <li>
-                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
+                    <i class="bi bi-check-circle" style="color: #1d2f69;"></i>
                     Alimentación y cuidado nutricional
                   </li>
                   <li>
-                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
+                    <i class="bi bi-check-circle" style="color: #1d2f69;"></i>
                     Apoyo emocional y acompañamiento psicosocial
                   </li>
                   <li>
-                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
+                    <i class="bi bi-check-circle" style="color: #1d2f69;"></i>
                     Estimulación cognitiva y sensorial
                   </li>
                   <li>
-                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
+                    <i class="bi bi-check-circle" style="color: #1d2f69;"></i>
                     Ejercicio físico integral adaptado a cada residente
                   </li>
                   <li>
-                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
+                    <i class="bi bi-check-circle" style="color: #1d2f69;"></i>
                     Actividades ocupacionales, arte y manualidades
                   </li>
                   <li>
-                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
+                    <i class="bi bi-check-circle" style="color: #1d2f69;"></i>
                     Rosario, eucaristía, pastoral de la salud y apoyo espiritual
                   </li>
                   <li>
-                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
+                    <i class="bi bi-check-circle" style="color: #1d2f69;"></i>
                     Sacramento de reconciliación y unción de los enfermos, para
                     quien lo solicite
                   </li>
                   <li>
-                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
+                    <i class="bi bi-check-circle" style="color: #1d2f69;"></i>
                     Cuidados básicos de la vida diaria
                   </li>
                   <li>
-                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
+                    <i class="bi bi-check-circle" style="color: #1d2f69;"></i>
                     Control periódico de signos vitales
                   </li>
                   <li>
-                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
+                    <i class="bi bi-check-circle" style="color: #1d2f69;"></i>
                     Administración de medicamentos
                   </li>
                   <li>
-                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
+                    <i class="bi bi-check-circle" style="color: #1d2f69;"></i>
                     Actividades lúdicas y recreativas
                   </li>
                 </ul>
 
-                <h3 class="h5 font-weight-title" style="color:#1d2f69;">
+                <h3 class="h5 font-weight-title" style="color: #1d2f69;">
                   Requisitos:
                 </h3>
-                <p class="text-muted mb-0" style="font-size: 1.05rem">
+                <p class="text-muted mb-0" style="font-size: 1.05rem;">
                   Afiliación a EPS y emergencias médicas; valoración geriátrica
                   integral.
                 </p>
 
                 <br />
-                <h3 class="h5 font-weight-title" style="color:#1d2f69;">
+                <h3 class="h5 font-weight-title" style="color: #1d2f69;">
                   Horario de visitas familiares:
                 </h3>
-                <p class="text-muted mb-0" style="font-size: 1.05rem">
+                <p class="text-muted mb-0" style="font-size: 1.05rem;">
                   Lunes a domingo, de 8:30 a.m. a 7:00 p.m.
                 </p>
               </article>
@@ -420,92 +496,90 @@
             <!-- Centro de día -->
             <div
               class="col-lg-6 col-md-6"
-              style="
-                background:#e5f0fb;
-              "
+              style="background: #e5f0fb;"
             >
               <article
                 id="centro-dia"
                 class="mt-5 text-justify px-4 px-lg-5"
-                style="padding-bottom:30px;"
+                style="padding-bottom: 30px;"
               >
                 <h2
                   class="h4 mb-2 font-weight-title titulos_size"
-                  style="color:#1d2f69;"
+                  style="color: #1d2f69;"
                 >
                   Centro de día
                 </h2>
-                <p class="text-muted mb-0" style="font-size: 1.05rem">
+                <p class="text-muted mb-0" style="font-size: 1.05rem;">
                   Nuestro Centro de día ofrece un programa de desarrollo integral
                   para personas mayores que les permite socializar, mantener sus
                   capacidades y disfrutar de un entorno seguro y acompañante,
                   regresando a casa al finalizar la jornada.
                 </p>
                 <br />
-                <p class="text-muted mb-0" style="font-size: 1.05rem">
+                <p class="text-muted mb-0" style="font-size: 1.05rem;">
                   Es una excelente opción para familias que desean que sus seres
                   queridos estén activos y acompañados durante el día, pero que
                   duerman en su hogar.
                 </p>
 
                 <br />
-                <h3 class="h5 font-weight-title" style="color:#1d2f69;">
+                <h3 class="h5 font-weight-title" style="color: #1d2f69;">
                   Incluye:
                 </h3>
                 <ul
                   style="
                     font-size: 1.05rem;
-                    list-style:none;
-                    padding-left:0;
+                    list-style: none;
+                    padding-left: 0;
                   "
                 >
                   <li>
-                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
+                    <i class="bi bi-check-circle" style="color: #1d2f69;"></i>
                     Zonas de descanso y lectura
                   </li>
                   <li>
-                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
+                    <i class="bi bi-check-circle" style="color: #1d2f69;"></i>
                     Alimentación durante la jornada
                   </li>
                   <li>
-                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
+                    <i class="bi bi-check-circle" style="color: #1d2f69;"></i>
                     Apoyo emocional y acompañamiento psicosocial
                   </li>
                   <li>
-                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
+                    <i class="bi bi-check-circle" style="color: #1d2f69;"></i>
                     Estimulación cognitiva
                   </li>
                   <li>
-                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
+                    <i class="bi bi-check-circle" style="color: #1d2f69;"></i>
                     Ejercicio físico integral adaptado
                   </li>
                   <li>
-                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
+                    <i class="bi bi-check-circle" style="color: #1d2f69;"></i>
                     Actividades ocupacionales, arte y manualidades
                   </li>
                   <li>
-                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
+                    <i class="bi bi-check-circle" style="color: #1d2f69;"></i>
                     Rosario y eucaristía
                   </li>
                   <li>
-                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
+                    <i class="bi bi-check-circle" style="color: #1d2f69;"></i>
                     Control de signos vitales
                   </li>
                   <li>
-                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
+                    <i class="bi bi-check-circle" style="color: #1d2f69;"></i>
                     Administración de medicamentos
                   </li>
                   <li>
-                    <i class="bi bi-check-circle" style="color:#1d2f69;"></i>
+                    <i class="bi bi-check-circle" style="color: #1d2f69;"></i>
                     Actividades lúdicas y recreativas: juegos de mesa, bingo,
                     serenatas, talleres, entre otros.
                   </li>
                 </ul>
 
-                <h3 class="h5 font-weight-title" style="color:#1d2f69;">
+                <h3 class="h5 font-weight-title" style="color: #1d2f69;">
                   Horario del Centro de día:
                 </h3>
-                <p class="text-muted mb-0" style="font-size: 1.05rem">
+                <p class="text-muted mb-0" style="font-size: 1.05rem;">
                   Lunes a viernes, de 9:00 a.m. a 4:00 p.m.
                 </p>
 
@@ -574,7 +648,7 @@
       <section id="contacto">
         <div
           class="container page-section"
-          style="padding-bottom: 0px; padding-top: 25px"
+          style="padding-bottom: 0px; padding-top: 25px;"
         >
           <div class="container-contacto">
             <div class="columna-izquierda">
@@ -583,7 +657,7 @@
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7910314980422!2d-74.06584558899795!3d4.631336442234605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a2676f951cf%3A0xa59f490ccd038d20!2sCra.%206%20%2345-22%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1714364424734!5m2!1ses-419!2sco"
                   width="600"
                   height="450"
-                  style="border: 0"
+                  style="border: 0;"
                   allowfullscreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
@@ -591,7 +665,7 @@
                 ></iframe>
               </div>
             </div>
-            <div class="columna-derecha" style="padding-top: 0px">
+            <div class="columna-derecha" style="padding-top: 0px;">
               <picture>
                 <source
                   srcset="assets/img/webp/logo.webp"
@@ -601,36 +675,46 @@
                   src="assets/img/logo.png"
                   alt="Logo del Hogar Sagrada Familia"
                   class="logo"
-                  style="margin-bottom: 20px"
+                  style="margin-bottom: 20px;"
                   loading="lazy"
                 />
               </picture>
               <br />
-              <p style="font-size: 1rem">
-                <span style="font-weight: bolder">PBX:</span> 745 19 19 - 288 31
-                14
+              <p style="font-size: 1rem;">
+                <span style="font-weight: bolder;">PBX:</span> 745 19 19 - 288
+                31 14
                 <br />
                 <i
                   class="fa fa-phone phone-icon"
-                  style="margin-right: 3px"
+                  style="margin-right: 3px;"
                 ></i>
-                <a href="tel:3208298546" class="hidden-link">3208298546</a>
+                <a
+                  href="tel:3208298546"
+                  class="hidden-link"
+                  title="Llamar al número celular del Hogar Sagrada Familia"
+                  >3208298546</a
+                >
                 <br />
                 <i
                   class="fa fa-envelope envelope-icon"
-                  style="margin-right: 3px"
+                  style="margin-right: 3px;"
                 ></i>
                 direccion.hogarsfamilia@irsjg.org
                 <br />
                 <i
                   class="fa fa-map-marker map-marker-icon"
-                  style="margin-right: 3px"
+                  style="margin-right: 3px;"
                 ></i>
                 Carrera 6 # 45-22, Bogotá D.C. – Colombia
               </p>
               <br />
               <div>
-                <a href="https://www.irsjg.org/es" target="_blank">
+                <a
+                  href="https://www.irsjg.org/es"
+                  target="_blank"
+                  rel="noopener"
+                  title="Ir al sitio web del Instituto de Religiosas de San José de Gerona"
+                >
                   <picture>
                     <source
                       srcset="assets/img/webp/IRSJG-logo-transparente.webp"
@@ -639,13 +723,13 @@
                     <img
                       src="assets/img/IRSJG-logo-transparente.png"
                       alt="Logo del Instituto de Religiosas de San José de Gerona"
-                      style="width: 270px"
+                      style="width: 270px;"
                       loading="lazy"
                     />
                   </picture>
                 </a>
 
-                <p style="font-size: 1rem">
+                <p style="font-size: 1rem;">
                   <br />
                   © Instituto de Religiosas de San José de Gerona 2024
                 </p>
@@ -680,44 +764,20 @@
         class="whatsapp"
         target="_blank"
         title="Contactar al Hogar Sagrada Familia por WhatsApp"
+        aria-label="Contactar al Hogar Sagrada Familia por WhatsApp"
       >
         <i class="fa fa-whatsapp whatsapp-icon"></i>
+        <span class="visually-hidden">Escríbenos por WhatsApp</span>
       </a>
-    </main>
+    </div>
 
     <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- SimpleLightbox plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <!-- SB Forms JS-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
 
-    <script>
-      // Detectar si es un dispositivo móvil
-      function isMobile() {
-        return /Mobi|Android/i.test(navigator.userAgent);
-      }
-
-      const whatsappLink = document.getElementById("whatsapp-link");
-      const phoneNumber = "573148387523";
-      const message =
-        "Quisiera%20recibir%20información%20sobre%20sus%20servicios";
-
-      if (isMobile()) {
-        whatsappLink.href =
-          "https://api.whatsapp.com/send?phone=" +
-          phoneNumber +
-          "&text=" +
-          message;
-      } else {
-        whatsappLink.href =
-          "https://web.whatsapp.com/send?phone=" +
-          phoneNumber +
-          "&text=" +
-          message;
-      }
-    </script>
+    <!-- Core theme JS (minificado, incluye lógica WhatsApp, menú, etc.) -->
+    <script src="js/scripts.min.js" defer></script>
   </body>
 </html>

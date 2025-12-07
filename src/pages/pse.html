@@ -46,7 +46,16 @@
     />
 
     <!-- Favicon-->
-    <link rel="icon" sizes="192x192" href="assets/icon.png" type="image/png" />
+    <link
+      rel="icon"
+      sizes="192x192"
+      href="assets/icon.png"
+      type="image/png"
+    />
+
+    <!-- Preconnect para mejorar tiempos de carga -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin />
 
     <!-- Bootstrap Icons-->
     <link
@@ -54,14 +63,8 @@
       rel="stylesheet"
     />
 
-    <!-- SimpleLightbox plugin CSS-->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css"
-      rel="stylesheet"
-    />
-
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap) -->
+    <link href="css/styles.min.css" rel="stylesheet" />
 
     <!-- WhatsApp Icon -->
     <link
@@ -155,6 +158,7 @@
               src="assets/img/logo.png"
               alt="Logo del Hogar Sagrada Familia"
               class="logo"
+              height="50"
             />
           </picture>
         </a>
@@ -317,11 +321,11 @@
     <div class="top_banner"></div>
 
     <div class="container1">
-      <!-- Inicio-->
+      <!-- Inicio (se deja solo como ancla, el espacio lo maneja top_banner) -->
       <section
         id="inicio"
-        style="margin-top: 150px;"
         aria-label="Instrucciones para pagos en línea a través de PSE"
+        style="margin-top: 150px;"
       ></section>
 
       <!-- Contenido PSE -->
@@ -420,7 +424,6 @@
                   <img
                     src="assets/img/pse/pdf.png"
                     alt="Icono para abrir el manual de pago en PDF"
-                    style="max-width: 280px;"
                     loading="lazy"
                   />
                 </picture>
@@ -440,7 +443,6 @@
                   <img
                     src="assets/img/pse/pse.png"
                     alt="Botón para realizar el pago en línea con PSE"
-                    style="max-width: 280px;"
                     loading="lazy"
                   />
                 </picture>
@@ -574,45 +576,17 @@
         title="Contactar al Hogar Sagrada Familia por WhatsApp"
       >
         <i class="fa fa-whatsapp whatsapp-icon" aria-hidden="true"></i>
+        <span class="visually-hidden">Escríbenos por WhatsApp</span>
       </a>
     </div>
 
     <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
 
-    <!-- SimpleLightbox plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-
-    <!-- SB Forms JS-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-
-    <script>
-      // Detectar si es un dispositivo móvil
-      function isMobile() {
-        return /Mobi|Android/i.test(navigator.userAgent);
-      }
-
-      const whatsappLink = document.getElementById("whatsapp-link");
-      const phoneNumber = "573148387523";
-      const message =
-        "Quisiera%20recibir%20información%20sobre%20sus%20servicios";
-
-      if (isMobile()) {
-        whatsappLink.href =
-          "https://api.whatsapp.com/send?phone=" +
-          phoneNumber +
-          "&text=" +
-          message;
-      } else {
-        whatsappLink.href =
-          "https://web.whatsapp.com/send?phone=" +
-          phoneNumber +
-          "&text=" +
-          message;
-      }
-    </script>
+    <!-- Core theme JS minificado (incluye lógica de WhatsApp y menú activo) -->
+    <script src="js/scripts.min.js" defer></script>
   </body>
 </html>

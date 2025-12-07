@@ -18,6 +18,67 @@ body {
     height: 100%;
 }
 
+/* contacto.html */
+.htmlcontacto, .bodycontacto {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.containercontacto {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%;
+}
+
+.containercontacto iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+/* Enlace "Saltar al contenido" para accesibilidad */
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+}
+
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    z-index: 999;
+    background: #ffffff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Texto solo para lectores de pantalla */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 .top_banner{
     margin-top: 77px;
 }
@@ -104,6 +165,7 @@ p{
 
 .imgsomos{
     height: 110px ;
+    width: 110px;
 }
 
 .imgservices{
@@ -228,7 +290,10 @@ p{
     margin-bottom: 0;
     display: flex;
     align-items: center;
+    margin-right: 5px;
 }
+
+
 
 a.hidden-link {
     text-decoration: none; /* Eliminar subrayado */
@@ -320,16 +385,18 @@ a.video-link:hover {
     margin-right: 20px;
 }
 
+/* Contenedor de enlaces (PDF / PSE, etc.) */
 .link-container {
     display: flex;
     justify-content: center; /* Centra los enlaces horizontalmente */
     align-items: center;     /* Centra los elementos verticalmente */
     gap: 20px;               /* Espacio entre las imágenes */
     padding: 20px;           /* Espacio alrededor del contenedor */
+    flex-wrap: wrap;         /* Permite que se acomoden en varias filas en pantallas pequeñas */
 }
 
 .link-container img {
-    max-width: 150px;        /* Ajusta el tamaño máximo de las imágenes */
+    max-width: 250px;        /* Ajusta el tamaño máximo de las imágenes */
     height: auto;            /* Mantiene la proporción de las imágenes */
     cursor: pointer;         /* Cambia el cursor a "mano" sobre la imagen */
 }
@@ -347,7 +414,6 @@ a.video-link:hover {
     position: relative;
     overflow: hidden;
     max-height: 420px;
-    border-radius: 0 0 24px 24px;
 }
 
 .servicios-hero-img {
@@ -453,9 +519,24 @@ a.video-link:hover {
         width: 100%;
         max-width: 320px;
     }
+
+    /* Apilar mapa + bloque de contacto (pse, ptee, servicios, institucional) */
+    .container-contacto {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .columna-izquierda,
+    .columna-derecha {
+        width: 100%;
+    }
+
+    .mapa-responsive iframe {
+        width: 100%;
+        height: 280px;
+    }
 }
-
-
 
 @media (max-width: 597px) {
  .servicios-hero-buttons{
@@ -522,6 +603,30 @@ a.video-link:hover {
 
     .galery{
         justify-content: center;
+    }
+
+    /* Menos padding lateral en secciones con id="historia" (PSE, PTEE, etc.) */
+    #historia .px-5 {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+    }
+
+    /* En móvil, que los botones PDF / PSE se apilen y ocupen el ancho cómodo */
+    .link-container {
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .link-container a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .link-container img {
+        width: 100%;
+        max-width: 220px;
     }
 
 }

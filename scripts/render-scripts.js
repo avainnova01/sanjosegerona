@@ -1,26 +1,43 @@
 'use strict';
+
+const path = require('path');
 const fs = require('fs');
-const packageJSON = require('../package.json');
-const upath = require('upath');
-const sh = require('shelljs');
+const { minify } = require('terser');
 
-module.exports = function renderScripts() {
+function renderScripts() {
+  const srcPath = path.resolve('src', 'js', 'scripts.js');
+  const outDir = path.resolve('dist', 'js');
+  const outFile = path.join(outDir, 'scripts.min.js');
 
-    const sourcePath = upath.resolve(upath.dirname(__filename), '../src/js');
-    const destPath = upath.resolve(upath.dirname(__filename), '../dist/.');
-    
-    sh.cp('-R', sourcePath, destPath)
+  // Asegurar que exista el directorio destino
+  if (!fs.existsSync(outDir)) {
+    fs.mkdirSync(outDir, { recursive: true });
+  }
 
-    const sourcePathScriptsJS = upath.resolve(upath.dirname(__filename), '../src/js/scripts.js');
-    const destPathScriptsJS = upath.resolve(upath.dirname(__filename), '../dist/js/scripts.js');
-    
-    const copyright = `/*!
-* Start Bootstrap - ${packageJSON.title} v${packageJSON.version} (${packageJSON.homepage})
-* Copyright 2013-${new Date().getFullYear()} ${packageJSON.author}
-* Licensed under ${packageJSON.license} (https://github.com/StartBootstrap/${packageJSON.name}/blob/master/LICENSE)
-*/
-`
-    const scriptsJS = fs.readFileSync(sourcePathScriptsJS);
-    
-    fs.writeFileSync(destPathScriptsJS, copyright + scriptsJS);
-};
+  // Leer JS fuente
+  const code = fs.readFileSync(srcPath, 'utf8');
+
+  // Minificar con Terser
+  return minify(code, {
+    compress: true,
+    mangle: true,
+  })
+    .then((result) => {
+      if (result.error) {
+        throw result.error;
+      }
+      fs.writeFileSync(outFile, result.code, 'utf8');
+      console.log('JS minificado en:', outFile);
+    })
+    .catch((err) => {
+      console.error('Error al minificar scripts:', err);
+      process.exit(1);
+    });
+}
+
+module.exports = renderScripts;
+
+// Permite ejecutar este archivo directamente si quieres
+if (require.main === module) {
+  renderScripts();
+}
