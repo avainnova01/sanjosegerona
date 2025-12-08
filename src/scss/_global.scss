@@ -18,29 +18,6 @@ body {
     height: 100%;
 }
 
-/* contacto.html */
-.htmlcontacto, .bodycontacto {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.containercontacto {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 2%;
-}
-
-.containercontacto iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
 
 /* Enlace "Saltar al contenido" para accesibilidad */
 .skip-link {
@@ -170,6 +147,7 @@ p{
 
 .imgservices{
     height: 100%;
+    width: 100%;
 }
 
 .imgservices_movil{
@@ -207,15 +185,6 @@ p{
 
 .font-weight-title{
     font-weight: bold !important;
-}
-
-.section-image-ppal{
-    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.2) 0%, rgba(92, 77, 66, 0.2) 100%), url(/assets/img/banner.jpg);
-    background-repeat: round;
-    background-attachment: scroll;
-    background-size: cover;
-    margin-top: 71px;
-    height: 70vh;
 }
 
 .carousel {
@@ -472,9 +441,6 @@ a.video-link:hover {
         max-width: 166px;
     }
 
-    .section-image-ppal{
-        height: 36vh;
-    }
 
     .habilitadosmargin{
         margin-left: 0px;
@@ -570,10 +536,6 @@ a.video-link:hover {
 
     .footer-content .showhorizontal{
         display: none;
-    }
-
-    .section-image-ppal{
-        height: 26vh;
     }
 
     .habilitadosmargingallegyleft{
@@ -678,4 +640,14 @@ a.video-link:hover {
         text-align: left !important;
     }
 
+}
+
+/* Override para Font Awesome: forzar font-display: swap */
+@font-face {
+  font-family: "FontAwesome";
+  src: url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0")
+      format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
