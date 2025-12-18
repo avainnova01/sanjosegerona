@@ -18,7 +18,6 @@ body {
     height: 100%;
 }
 
-
 /* Enlace "Saltar al contenido" para accesibilidad */
 .skip-link {
     position: absolute;
@@ -145,15 +144,29 @@ p{
     width: 110px;
 }
 
+/* ✅ CAMBIO CLAVE: NO usar height:100% en imágenes de contenido */
 .imgservices{
-    height: 100%;
     width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ✅ OPCIONAL: para imágenes que deban llenar un contenedor con alto fijo */
+.imgservices-cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .imgservices_movil{
     height: 100%;
     display: none;
 }
+
+/* ✅ NUEVO: Bienestar desktop (1 imagen) vs móvil (2 imágenes) */
+.bienestar-desktop { display: block; }
+.bienestar-mobile  { display: none; }
 
 .text-justify{
     text-align: justify !important;
@@ -261,8 +274,6 @@ p{
     align-items: center;
     margin-right: 5px;
 }
-
-
 
 a.hidden-link {
     text-decoration: none; /* Eliminar subrayado */
@@ -441,7 +452,6 @@ a.video-link:hover {
         max-width: 166px;
     }
 
-
     .habilitadosmargin{
         margin-left: 0px;
         margin-right: 0px;
@@ -463,6 +473,10 @@ a.video-link:hover {
 
 /* Ajuste específico para el hero de servicios en móvil/tablet */
 @media (max-width: 768px) {
+
+    /* ✅ Bienestar: en móvil muestra bloque móvil (2 imgs) */
+    .bienestar-desktop { display: none; }
+    .bienestar-mobile  { display: block; }
 
     .servicios-hero-wrapper {
         max-height: none;
@@ -509,8 +523,6 @@ a.video-link:hover {
     display: none;
  }
 }
-
-
 
 @media (max-width: 575px) {
 
@@ -593,8 +605,6 @@ a.video-link:hover {
 
 }
 
-
-
 @media (max-width: 548px) {
 
     .titulos_size {
@@ -615,8 +625,6 @@ a.video-link:hover {
     }
 
 }
-
-
 
 @media (max-width: 414px) {
 

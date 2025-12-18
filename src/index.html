@@ -20,21 +20,20 @@
     <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
     <link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com" />
     <link rel="dns-prefetch" href="//use.typekit.net" />
+    <link rel="dns-prefetch" href="//www.google.com" />
 
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link rel="preconnect" href="https://stackpath.bootstrapcdn.com" crossorigin />
     <link rel="preconnect" href="https://use.typekit.net" crossorigin />
+    <link rel="preconnect" href="https://www.google.com" crossorigin />
 
     <!-- Preload de la imagen LCP en WebP -->
     <link
       rel="preload"
       as="image"
       href="assets/img/webp/banner1-800.webp"
-      imagesrcset="
-        assets/img/webp/banner1-800.webp 800w,
-        assets/img/webp/banner1-1600.webp 1600w
-      "
+      imagesrcset="assets/img/webp/banner1-800.webp 800w, assets/img/webp/banner1-1600.webp 1600w"
       imagesizes="(max-width: 768px) 100vw, 1600px"
     />
 
@@ -250,10 +249,7 @@
                 <div class="container_image">
                   <picture>
                     <source
-                      srcset="
-                        assets/img/webp/banner1-800.webp 800w,
-                        assets/img/webp/banner1-1600.webp 1600w
-                      "
+                      srcset="assets/img/webp/banner1-800.webp 800w, assets/img/webp/banner1-1600.webp 1600w"
                       sizes="(max-width: 768px) 100vw, 1600px"
                       type="image/webp"
                     />
@@ -270,21 +266,18 @@
                 </div>
               </div>
 
-              <!-- SLIDE 2: banner2 -->
+              <!-- SLIDE 2: banner2 (fallback liviano en src) -->
               <div class="slide_new">
                 <div class="container_image">
                   <picture>
                     <source
-                      srcset="
-                        assets/img/webp/banner2-800.webp 800w,
-                        assets/img/webp/banner2-1600.webp 1600w
-                      "
+                      srcset="assets/img/webp/banner2-800.webp 800w, assets/img/webp/banner2-1600.webp 1600w"
                       sizes="(max-width: 768px) 100vw, 1600px"
                       type="image/webp"
                     />
                     <img
                       class="img_banner"
-                      src="assets/img/webp/banner2-1600.webp"
+                      src="assets/img/webp/banner2-800.webp"
                       alt="Actividades y acompañamiento para personas mayores en el Hogar Sagrada Familia"
                       loading="lazy"
                       width="1600"
@@ -295,21 +288,18 @@
                 </div>
               </div>
 
-              <!-- SLIDE 3: banner3 -->
+              <!-- SLIDE 3: banner3 (fallback liviano en src) -->
               <div class="slide_new">
                 <div class="container_image">
                   <picture>
                     <source
-                      srcset="
-                        assets/img/webp/banner3-800.webp 800w,
-                        assets/img/webp/banner3-1600.webp 1600w
-                      "
+                      srcset="assets/img/webp/banner3-800.webp 800w, assets/img/webp/banner3-1600.webp 1600w"
                       sizes="(max-width: 768px) 100vw, 1600px"
                       type="image/webp"
                     />
                     <img
                       class="img_banner"
-                      src="assets/img/webp/banner3-1600.webp"
+                      src="assets/img/webp/banner3-800.webp"
                       alt="Instalaciones cómodas y seguras para personas mayores"
                       loading="lazy"
                       width="1600"
@@ -320,21 +310,18 @@
                 </div>
               </div>
 
-              <!-- SLIDE 4: banner4 -->
+              <!-- SLIDE 4: banner4 (fallback liviano en src) -->
               <div class="slide_new">
                 <div class="container_image">
                   <picture>
                     <source
-                      srcset="
-                        assets/img/webp/banner4-800.webp 800w,
-                        assets/img/webp/banner4-1600.webp 1600w
-                      "
+                      srcset="assets/img/webp/banner4-800.webp 800w, assets/img/webp/banner4-1600.webp 1600w"
                       sizes="(max-width: 768px) 100vw, 1600px"
                       type="image/webp"
                     />
                     <img
                       class="img_banner"
-                      src="assets/img/webp/banner4-1600.webp"
+                      src="assets/img/webp/banner4-800.webp"
                       alt="Espacios de cuidado y bienestar integral para adultos mayores"
                       loading="lazy"
                       width="1600"
@@ -525,13 +512,9 @@
         <section id="servicios">
           <div class="container container-fluid p-0">
             <div class="row g-0">
-              <!-- ✅ UNA sola imagen responsiva (evita descargar desktop + móvil a la vez) -->
               <picture>
-                <!-- móvil -->
                 <source media="(max-width: 768px)" srcset="assets/img/servicios_home_movil.jpg" />
-                <!-- desktop webp -->
                 <source srcset="assets/img/webp/servicios_home.webp" type="image/webp" />
-                <!-- fallback -->
                 <img
                   src="assets/img/servicios_home.jpg"
                   alt="Servicios del Hogar Sagrada Familia para personas mayores"
@@ -546,15 +529,9 @@
 
             <div>
               <div class="row g-0">
-                <!-- BLOQUE ESTANCIAS PERMANENTES / TEMPORALES -->
                 <div
                   class="col-lg-6 col-md-6"
-                  style="
-                    background: #d0e7f7;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                  "
+                  style="background: #d0e7f7; display: flex; flex-direction: column; justify-content: space-between;"
                 >
                   <div class="mt-5 text-justify px-5">
                     <h2 class="h4 mb-2 font-weight-title titulos_size">ESTANCIAS</h2>
@@ -583,23 +560,13 @@
                         "
                       >
                         Más información
-                        <span class="visually-hidden">
-                          sobre estancias permanentes o temporales para personas mayores
-                        </span>
+                        <span class="visually-hidden">sobre estancias permanentes o temporales para personas mayores</span>
                       </a>
                     </div>
                   </div>
                 </div>
 
-                <!-- BLOQUE CENTRO DE DÍA -->
-                <div
-                  class="col-lg-6 col-md-6"
-                  style="
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                  "
-                >
+                <div class="col-lg-6 col-md-6" style="display: flex; flex-direction: column; justify-content: space-between;">
                   <div class="mt-5 text-justify px-4">
                     <h2 class="h4 mb-2 font-weight-title titulos_size">CENTRO DE DÍA</h2>
                     <h2 class="h4 mb-2 font-weight-title titulos_size">JORNADA COMPLETA O PARCIAL</h2>
@@ -658,24 +625,40 @@
             </div>
 
             <div class="row g-0" style="padding-left: 11px; padding-right: 11px">
-              <!-- ✅ UNA sola imagen para móvil (necesitas crear este archivo para no bajar 2 móviles) -->
-              <picture>
-                <!-- móvil (recomendado: crea assets/img/webp/bienestar_mapa_movil.webp o cambia a tu ruta real) -->
-                <source media="(max-width: 768px)" srcset="assets/img/webp/bienestar_mapa_movil.webp" type="image/webp" />
-                <source media="(max-width: 768px)" srcset="assets/img/bienestar_mapa_movil.png" />
-                <!-- desktop -->
-                <source srcset="assets/img/webp/bienestar_mapa.webp" type="image/webp" />
-                <img
-                  src="assets/img/bienestar_mapa.png"
-                  alt="Mapa del programa de bienestar multidimensional para personas mayores"
-                  class="imgservices"
-                  loading="lazy"
-                  width="1600"
-                  height="900"
-                  decoding="async"
-                />
-              </picture>
+                <!-- DESKTOP (solo 1 imagen) -->
+                <div class="bienestar-desktop">
+                    <picture>
+                        <source srcset="assets/img/webp/bienestar_mapa.webp" type="image/webp" />
+                        <img src="assets/img/bienestar_mapa.png"
+                            alt="Mapa del programa de bienestar multidimensional para personas mayores" class="imgservices"
+                            loading="lazy" width="1600" height="900" decoding="async"
+                            style="width:100%;height:auto;display:block;" />
+                    </picture>
+                </div>
+
+                <!-- MÓVIL (se ven LAS DOS) -->
+                <div class="bienestar-mobile">
+                    <picture>
+                        <!-- Solo carga en móvil -->
+                        <source media="(max-width: 768px)" srcset="assets/img/bienestar_mapa_movil1.png" />
+                        <!-- En desktop cae a un placeholder mínimo (para que NO descargue la imagen móvil) -->
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+                            alt="Mapa del programa de bienestar multidimensional - parte 1" class="imgservices" loading="lazy"
+                            width="1600" height="900" decoding="async" style="width:100%;height:auto;display:block;" />
+                    </picture>
+
+                    <picture>
+                        <!-- Solo carga en móvil -->
+                        <source media="(max-width: 768px)" srcset="assets/img/bienestar_mapa_movil2.png" />
+                        <!-- Placeholder mínimo en desktop -->
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+                            alt="Mapa del programa de bienestar multidimensional - parte 2" class="imgservices" loading="lazy"
+                            width="1600" height="900" decoding="async" style="width:100%;height:auto;display:block;" />
+                    </picture>
+                </div>
             </div>
+
+
             <br />
           </div>
         </section>
@@ -861,10 +844,7 @@
           <a href="pse.html" target="_blank" title="Ir a la página de pagos en línea PSE del Hogar Sagrada Familia">
             <picture>
               <source
-                srcset="
-                  assets/img/webp/pse_big-800.webp 800w,
-                  assets/img/webp/pse_big-1200.webp 1200w
-                "
+                srcset="assets/img/webp/pse_big-800.webp 800w, assets/img/webp/pse_big-1200.webp 1200w"
                 sizes="(max-width: 768px) 100vw, 1200px"
                 type="image/webp"
               />
@@ -919,11 +899,7 @@
                   <span style="font-weight: bolder">PBX:</span> 745 19 19 - 288 31 14
                   <br />
                   <i class="fa fa-phone phone-icon" style="margin-right: 3px"></i>
-                  <a
-                    href="tel:3208298546"
-                    class="hidden-link"
-                    title="Llamar al número celular del Hogar Sagrada Familia"
-                  >
+                  <a href="tel:3208298546" class="hidden-link" title="Llamar al número celular del Hogar Sagrada Familia">
                     3208298546
                   </a>
                   <br />
@@ -1000,3 +976,4 @@
     <script src="js/scripts.min.js" defer></script>
   </body>
 </html>
+
