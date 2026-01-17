@@ -18,13 +18,11 @@
     <!-- DNS Prefetch / Preconnect para recursos externos -->
     <link rel="dns-prefetch" href="//www.googletagmanager.com" />
     <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
-    <link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com" />
     <link rel="dns-prefetch" href="//use.typekit.net" />
     <link rel="dns-prefetch" href="//www.google.com" />
 
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-    <link rel="preconnect" href="https://stackpath.bootstrapcdn.com" crossorigin />
     <link rel="preconnect" href="https://use.typekit.net" crossorigin />
     <link rel="preconnect" href="https://www.google.com" crossorigin />
 
@@ -55,16 +53,14 @@
       <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     </noscript>
 
-    <!-- Font Awesome: carga diferida -->
+    <!-- (OPCIONAL) Preload del WOFF2 de Bootstrap Icons (mejora estabilidad visual) -->
     <link
       rel="preload"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/fonts/bootstrap-icons.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
-    <noscript>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    </noscript>
 
     <!-- Adobe Typekit: carga diferida -->
     <link
@@ -346,7 +342,15 @@
                   <div class="mb-2">
                     <picture>
                       <source srcset="assets/img/webp/calidadhumana.webp" type="image/webp" />
-                      <img src="assets/img/calidadhumana.png" alt="Ícono de calidad humana en el cuidado de personas mayores" class="imgsomos" loading="lazy" width="260" height="260" decoding="async" />
+                      <img
+                        src="assets/img/calidadhumana.png"
+                        alt="Ícono de calidad humana en el cuidado de personas mayores"
+                        class="imgsomos"
+                        loading="lazy"
+                        width="260"
+                        height="260"
+                        decoding="async"
+                      />
                     </picture>
                   </div>
                   <h3 class="h4 mb-2 font-weight-title">Calidad humana</h3>
@@ -359,7 +363,15 @@
                   <div class="mb-2">
                     <picture>
                       <source srcset="assets/img/webp/calorhogar.webp" type="image/webp" />
-                      <img src="assets/img/calorhogar.png" alt="Ícono que representa el calor de hogar" class="imgsomos" loading="lazy" width="260" height="260" decoding="async" />
+                      <img
+                        src="assets/img/calorhogar.png"
+                        alt="Ícono que representa el calor de hogar"
+                        class="imgsomos"
+                        loading="lazy"
+                        width="260"
+                        height="260"
+                        decoding="async"
+                      />
                     </picture>
                   </div>
                   <h3 class="h4 mb-2 font-weight-title">Calor de hogar</h3>
@@ -372,7 +384,15 @@
                   <div class="mb-2">
                     <picture>
                       <source srcset="assets/img/webp/bienestar.webp" type="image/webp" />
-                      <img src="assets/img/bienestar.png" alt="Ícono de bienestar integral para personas mayores" class="imgsomos" loading="lazy" width="260" height="260" decoding="async" />
+                      <img
+                        src="assets/img/bienestar.png"
+                        alt="Ícono de bienestar integral para personas mayores"
+                        class="imgsomos"
+                        loading="lazy"
+                        width="260"
+                        height="260"
+                        decoding="async"
+                      />
                     </picture>
                   </div>
                   <h3 class="h4 mb-2 font-weight-title">Bienestar integral</h3>
@@ -385,7 +405,15 @@
                   <div class="mb-2 font-weight-title">
                     <picture>
                       <source srcset="assets/img/webp/actividadestimulacion.webp" type="image/webp" />
-                      <img src="assets/img/actividadestimulacion.png" alt="Ícono de actividades de estimulación para adultos mayores" class="imgsomos" loading="lazy" width="260" height="260" decoding="async" />
+                      <img
+                        src="assets/img/actividadestimulacion.png"
+                        alt="Ícono de actividades de estimulación para adultos mayores"
+                        class="imgsomos"
+                        loading="lazy"
+                        width="260"
+                        height="260"
+                        decoding="async"
+                      />
                     </picture>
                   </div>
                   <h3 class="h4 mb-2 font-weight-title">Actividades de estimulación</h3>
@@ -398,7 +426,15 @@
                   <div class="mb-2 font-weight-title">
                     <picture>
                       <source srcset="assets/img/webp/entretenimiento.webp" type="image/webp" />
-                      <img src="assets/img/entretenimiento.png" alt="Ícono de entretenimiento para personas mayores" class="imgsomos" loading="lazy" width="260" height="260" decoding="async" />
+                      <img
+                        src="assets/img/entretenimiento.png"
+                        alt="Ícono de entretenimiento para personas mayores"
+                        class="imgsomos"
+                        loading="lazy"
+                        width="260"
+                        height="260"
+                        decoding="async"
+                      />
                     </picture>
                   </div>
                   <h3 class="h4 mb-2 font-weight-title">Entretenimiento</h3>
@@ -411,7 +447,15 @@
                   <div class="mb-2 font-weight-title">
                     <picture>
                       <source srcset="assets/img/webp/atencionreligiosa.webp" type="image/webp" />
-                      <img src="assets/img/atencionreligiosa.png" alt="Ícono de atención espiritual y religiosa" class="imgsomos" loading="lazy" width="260" height="260" decoding="async" />
+                      <img
+                        src="assets/img/atencionreligiosa.png"
+                        alt="Ícono de atención espiritual y religiosa"
+                        class="imgsomos"
+                        loading="lazy"
+                        width="260"
+                        height="260"
+                        decoding="async"
+                      />
                     </picture>
                   </div>
                   <h3 class="h4 mb-2 font-weight-title">Atención espiritual y religiosa</h3>
@@ -735,13 +779,25 @@
                 <p style="font-size: 1rem">
                   <span style="font-weight: bolder">PBX:</span> 745 19 19 - 288 31 14
                   <br />
-                  <i class="fa fa-phone phone-icon" style="margin-right: 3px"></i>
+
+                  <!-- Antes: Font Awesome -->
+                  <!-- <i class="fa fa-phone phone-icon" style="margin-right: 3px"></i> -->
+                  <!-- Ahora: Bootstrap Icons -->
+                  <i class="bi bi-telephone-fill phone-icon" style="margin-right: 3px" aria-hidden="true"></i>
                   <a href="tel:3208298546" class="hidden-link" title="Llamar al número celular del Hogar Sagrada Familia">3208298546</a>
                   <br />
-                  <i class="fa fa-envelope envelope-icon" style="margin-right: 3px"></i>
+
+                  <!-- Antes: Font Awesome -->
+                  <!-- <i class="fa fa-envelope envelope-icon" style="margin-right: 3px"></i> -->
+                  <!-- Ahora: Bootstrap Icons -->
+                  <i class="bi bi-envelope-fill envelope-icon" style="margin-right: 3px" aria-hidden="true"></i>
                   direccion.hogarsfamilia@irsjg.org
                   <br />
-                  <i class="fa fa-map-marker map-marker-icon" style="margin-right: 3px"></i>
+
+                  <!-- Antes: Font Awesome -->
+                  <!-- <i class="fa fa-map-marker map-marker-icon" style="margin-right: 3px"></i> -->
+                  <!-- Ahora: Bootstrap Icons -->
+                  <i class="bi bi-geo-alt-fill map-marker-icon" style="margin-right: 3px" aria-hidden="true"></i>
                   Carrera 6 # 45-22, Bogotá D.C. – Colombia
                 </p>
 
@@ -784,7 +840,10 @@
 
         <!-- Icono WhatsApp flotante -->
         <a href="#" id="whatsapp-link" class="whatsapp" target="_blank" title="Contactar al Hogar Sagrada Familia por WhatsApp" aria-label="Contactar al Hogar Sagrada Familia por WhatsApp">
-          <i class="fa fa-whatsapp whatsapp-icon" aria-hidden="true"></i>
+          <!-- Antes: Font Awesome -->
+          <!-- <i class="fa fa-whatsapp whatsapp-icon" aria-hidden="true"></i> -->
+          <!-- Ahora: Bootstrap Icons -->
+          <i class="bi bi-whatsapp whatsapp-icon" aria-hidden="true"></i>
           <span class="visually-hidden">Escríbenos por WhatsApp</span>
         </a>
       </div>
