@@ -590,79 +590,54 @@
       </section>
 
 
-     <!-- Bloque general Contáctanos -->
-     <section
-        aria-label="Contáctanos para más información"
-      >
-        <div class="container container-fluid p-0">
-          <div class="row g-0">
+ <!-- Bloque general Contáctanos (ESTILO BANNER COMO LA 2DA IMAGEN) -->
+<section class="cta-banner" aria-label="Para más información">
+  <div class="container px-4 px-lg-5">
+    <div class="cta-banner__wrap">
 
-            <!-- Contáctanos -->
-            <div
-              class="col-lg-12 col-md-12"
-            >
-              <article
-                id="centro-dia"
-              >
-                <div style="display: flex; justify-content: center;">
-                  <div
-                    onclick="window.location.href='contacto.html'"
-                    style="
-                      cursor: pointer;
-                      background-color: #1d2f69;
-                      color: white;
-                      border-radius: 10px;
-                      padding: 20px 37px 12px;
-                    "
-                    title="Ir a la página de contacto para solicitar más información"
-                  >
-                    <h4
-                      style="
-                        margin-top: 5px;
-                        text-align: center;
-                        font-weight: bolder;
-                      "
-                    >
-                      Contáctanos y te informamos sin compromiso
-                    </h4>
-                    <div style="display: flex; justify-content: center;">
-                      <div>
-                        <p style="font-size: 1rem; text-align: center;">
-                          <span style="font-weight: 100;">Llama al </span>
-                          <a
-                            href="tel:3208298546"
-                            style="
-                              color: white;
-                              text-decoration: none;
-                              font-weight: bolder;
-                              font-size: larger;
-                            "
-                            >3208298546</a
-                          >
-                          <span style="font-weight: 100;">
-                            o <br />
-                            envía un email a
-                          </span>
-                          <a
-                            href="mailto:recepcion.hogarsfamilia@irsjg.org"
-                            style="
-                              color: white;
-                              text-decoration: none;
-                              font-weight: bolder;
-                            "
-                            >recepcion.hogarsfamilia@irsjg.org</a
-                          >
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <br />
-              </article>
-            </div>
-          </div>
+      <!-- Imagen izquierda -->
+      <div class="cta-banner__left">
+        <img
+          src="assets/img/informacion_picture.png"
+          alt="Para más información"
+          class="cta-banner__photo"
+          loading="lazy"
+        />
+      </div>
+
+      <!-- Centro: título + botón -->
+      <div class="cta-banner__center">
+        <div class="cta-banner__title">
+          <div>PARA MÁS</div>
+          <div>INFORMACIÓN</div>
         </div>
-      </section>
+
+        <a href="contacto.html" class="cta-banner__btn" title="Ir a contacto">
+          Click aquí
+          <span class="cta-banner__btnIcon" aria-hidden="true">✴</span>
+        </a>
+      </div>
+
+      <!-- Separador vertical -->
+      <div class="cta-banner__divider" aria-hidden="true"></div>
+
+      <!-- Derecha: teléfono + correo -->
+      <div class="cta-banner__right">
+        <p class="cta-banner__rightText">
+          ó llámanos al
+          <a class="cta-banner__phone" href="tel:3208298546">320 829 8546</a>
+          <br />
+          o envíanos un email a
+          <a class="cta-banner__email" href="mailto:recepcion.hogarsfamilia@irsjg.org">
+            recepcion.hogarsfamilia@irsjg.org
+          </a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
       <!-- Bloque final: mapa + contacto -->
       <section id="contacto">

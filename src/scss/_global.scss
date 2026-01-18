@@ -444,6 +444,171 @@ a.video-link:hover {
 
 /* ----------------- FIN HERO SERVICIOS ------------- */
 
+
+/* -------------------------------------------------- */
+/* CTA BANNER (como la 2da imagen)                    */
+/* -------------------------------------------------- */
+
+.cta-banner {
+  padding: 34px 0 26px 0; /* separa del contenido de arriba/abajo */
+}
+
+.cta-banner__wrap {
+  background: #163a7a; /* azul base */
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 150px;
+  display: flex;
+  align-items: stretch;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* ----------- Left (foto) ----------- */
+.cta-banner__left {
+  width: 28%;
+  min-width: 260px;
+  display: flex;
+  align-items: stretch;
+}
+
+.cta-banner__photo {
+  object-fit: cover;
+  display: block;
+}
+
+/* ----------- Center (título + botón) ----------- */
+.cta-banner__center {
+  width: 33%;
+  padding: 22px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cta-banner__title {
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 1.02;
+  font-size: clamp(1.6rem, 2.4vw, 2.2rem);
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.cta-banner__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  background: #f5c400; /* amarillo */
+  color: #1d2f69;
+  font-weight: 800;
+  text-decoration: none;
+
+  padding: 10px 22px;
+  border-radius: 10px;
+  border: 2px solid rgba(0,0,0,0.08);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+
+  font-size: 1.25rem;
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.cta-banner__btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.03);
+}
+
+.cta-banner__btnIcon {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+/* ----------- Divider ----------- */
+.cta-banner__divider {
+  width: 2px;
+  margin: 20px 0;
+  background: rgba(255,255,255,0.35);
+}
+
+/* ----------- Right (texto contacto) ----------- */
+.cta-banner__right {
+  width: 34%;
+  padding: 22px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-banner__rightText {
+  margin: 0;
+  color: rgba(255,255,255,0.95);
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  line-height: 1.35;
+  text-align: left;
+  font-weight: 500;
+}
+
+.cta-banner__phone {
+  color: #fff;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  font-weight: 900;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.cta-banner__email {
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.cta-banner__email:hover,
+.cta-banner__phone:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ---------------- Responsive CTA Banner ---------------- */
+@media (max-width: 991px) {
+  .cta-banner__wrap {
+    flex-direction: column;
+  }
+
+  /* ✅ OCULTAR IMAGEN IZQUIERDA EN MÓVIL/TABLET */
+  .cta-banner__left {
+    display: none;
+  }
+
+  .cta-banner__center,
+  .cta-banner__right {
+    width: 100%;
+  }
+
+  /* Divider horizontal (ya que no hay 3 columnas) */
+  .cta-banner__divider {
+    width: 90%;
+    height: 2px;
+    margin: 0 auto;
+  }
+
+  .cta-banner__rightText {
+    text-align: center;
+  }
+}
+
+
+/* ----------------- FIN CTA BANNER ---------------- */
+
+
+/* -------------------------------------------------- */
+/* MEDIA QUERIES EXISTENTES                           */
+/* -------------------------------------------------- */
+
 @media (max-width: 991.2px) {
 
     .margin_left_pse{
