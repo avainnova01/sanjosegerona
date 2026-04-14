@@ -202,7 +202,153 @@ p{
     margin-left: 4px;
 }
 
+/* ===== SERVICIOS CARDS ===== */
+.servicio-card {
+    display: flex;
+    flex-direction: column;
+}
 
+.servicio-estancia {
+    background-color: #1a3a6b;
+    color: #ffffff;
+}
+
+.servicio-centrodia {
+    background-color: #e7c176;
+    color: #1a3a6b;
+}
+
+.servicio-card-content {
+    padding: 2rem 2rem 1rem 2rem;
+    flex: 1;
+}
+
+.servicio-titulo-principal {
+    font-family: century-gothic, sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.servicio-titulo-centrodia {
+    font-size: 2.4rem;
+    margin-bottom: 0.2rem;
+}
+
+.servicio-subtitulo-jornada {
+    font-family: century-gothic, sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+}
+
+.servicio-banner-horario {
+    background-color: #1a3a6b;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.servicio-banner-horario .horario-texto {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.servicio-descripcion {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.servicio-descripcion-cd {
+    color: #333333;
+}
+
+.servicio-subtitulo {
+    font-weight: 900;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.servicio-subtitulo-cd {
+    color: #1a3a6b;
+}
+
+.servicio-lista {
+    list-style: disc;
+    padding-left: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.servicio-lista li {
+    margin-bottom: 0.15rem;
+}
+
+.servicio-lista-cd {
+    color: #333333;
+}
+
+.servicio-lista-cd li {
+    color: #333333;
+}
+
+.servicio-destacado {
+    font-weight: 900;
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
+
+.servicio-actividades {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.servicio-imagen-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.servicio-imagen {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.servicio-banner-visitas {
+    background-color: #2854a0;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    color: #ffffff;
+}
+
+.servicio-banner-visitas .visitas-titulo {
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+
+.servicio-banner-visitas .visitas-horario {
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+    text-decoration: underline;
+}
+
+.servicio-banner-visitas .visitas-requisito {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
 
 
   @media (max-width: 991px) {
