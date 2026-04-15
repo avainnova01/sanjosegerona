@@ -209,13 +209,13 @@ p{
 }
 
 .servicio-estancia {
-    background-color: #1a3a6b;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #0D4285;
 }
 
 .servicio-centrodia {
     background-color: #e7c176;
-    color: #1a3a6b;
+    color: #0D4285;
 }
 
 .servicio-card-content {
@@ -246,7 +246,7 @@ p{
 }
 
 .servicio-banner-horario {
-    background-color: #1a3a6b;
+    background-color: #0D4285;
     color: #ffffff;
     padding: 0.5rem 1rem;
     margin-bottom: 1rem;
@@ -278,7 +278,7 @@ p{
 }
 
 .servicio-subtitulo-cd {
-    color: #1a3a6b;
+    color: #0D4285;
 }
 
 .servicio-lista {
@@ -312,6 +312,11 @@ p{
     text-decoration: underline;
 }
 
+.servicio-imagen-wrapper {
+    position: relative;
+    width: 100%;
+}
+
 .servicio-imagen-container {
     width: 100%;
     overflow: hidden;
@@ -325,28 +330,34 @@ p{
 }
 
 .servicio-banner-visitas {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #2854a0;
     text-align: center;
-    padding: 1rem 1.5rem;
+    padding: 0.8rem 2rem;
     color: #ffffff;
+    width: 85%;
+    border-radius: 8px 8px 0 0;
 }
 
 .servicio-banner-visitas .visitas-titulo {
     font-weight: 900;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 0;
     text-decoration: underline;
 }
 
 .servicio-banner-visitas .visitas-horario {
     font-weight: 900;
-    font-size: 1.2rem;
-    margin-bottom: 0.3rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
     text-decoration: underline;
 }
 
 .servicio-banner-visitas .visitas-requisito {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     margin-bottom: 0;
 }
 
