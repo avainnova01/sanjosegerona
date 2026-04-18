@@ -19,7 +19,7 @@ body {
 }
 
 
-p{
+p {
     font-size: 1.1rem;
 }
 
@@ -33,26 +33,27 @@ p{
     color: fade-out($white, 0.25) !important;
 }
 
-.logo{
-   height: 50px;
+.logo {
+    height: 50px;
 }
 
-.imgsomos{
-    height: 100% ;
-}
-
-.imgservices{
+.imgsomos {
     height: 100%;
 }
 
-.text-justify{
+.imgservices {
+    height: 100%;
+}
+
+.text-justify {
     text-align: justify !important;
 }
 
 /* --- SERVICIOS HABILITADOS BANNER --- */
 .sh-container {
     margin: 2rem auto;
-    max-width: 1140px; /* Ampliado para que las columnas sean más anchas */
+    max-width: 1140px;
+    /* Ampliado para que las columnas sean más anchas */
     color: white;
 }
 
@@ -65,18 +66,27 @@ p{
     text-transform: uppercase;
 }
 
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
 .sh-subheading {
     font-family: century-gothic, sans-serif;
     font-size: 1.05rem;
-    font-weight: 900; /* Títulos más gruesos */
+    font-weight: 900;
+    /* Títulos más gruesos */
     color: white;
     text-transform: uppercase;
-    margin-bottom: 0.3rem; /* Menos separación entre título y viñetas */
+    margin-bottom: 0.3rem;
+    /* Menos separación entre título y viñetas */
     line-height: 1.3;
 }
 
 .sh-subheading-light {
-    font-weight: 600; /* Subtítulo de columna un poco más grueso también */
+    font-weight: 600;
+    /* Subtítulo de columna un poco más grueso también */
 }
 
 .sh-list-col {
@@ -94,30 +104,50 @@ p{
     padding-left: 1rem;
     margin-bottom: 0.5rem;
     font-size: 0.95rem;
-    font-weight: 700;
+    font-weight: 500;
+    /* En la imagen es letra normal, no negrita */
     line-height: 1.4;
-    text-transform: uppercase;
+    /* text-transform removido para permitir "Sentense case" como en la imagen */
 }
 
 .sh-list li::before {
-    content: ""; /* Bullet point */
+    content: "•";
+    /* En la imagen son puntos estándar */
     position: absolute;
     left: 0;
-    top: 0.45rem;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%; /* Hecho punto */
-    background-color: white;
+    top: 0;
+    font-size: 1.1rem;
+    /* Tamaño del punto */
+    line-height: inherit;
+    color: white;
+}
+
+
+.list-section h5 {
+    font-weight: 700;
+}
+
+.border-separator {
+    border-left: 2px solid white;
+}
+
+.columna-derecha {
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 /* For md and above, add the side borders */
 @media (min-width: 768px) {
     .sh-border-left {
         border-left: 2px solid white;
-        padding-left: 1.5rem !important; /* Menos separación horizontal */
+        padding-left: 1.5rem !important;
+        /* Menos separación horizontal */
     }
+
     .sh-title-col {
-        padding-right: 1.5rem !important; /* Menos separación entre el título principal y la línea */
+        padding-right: 1.5rem !important;
+        /* Menos separación entre el título principal y la línea */
     }
 }
 
@@ -127,6 +157,7 @@ p{
         margin-bottom: 1.5rem;
         text-align: center;
     }
+
     .sh-border-left {
         border-left: none;
         border-top: 1px dashed rgba(255, 255, 255, 0.5);
@@ -134,11 +165,13 @@ p{
         padding-top: 1.5rem;
         padding-left: 0rem !important;
     }
+
     .sh-list li {
         text-align: center;
         padding-left: 0;
         display: block;
     }
+
     .sh-list li::before {
         display: none;
     }
@@ -148,15 +181,15 @@ p{
     display: flex;
 }
 
-.footer-content .showhorizontal{
+.footer-content .showhorizontal {
     display: block;
 }
 
-.font-weight-title{
+.font-weight-title {
     font-weight: bold !important;
 }
 
-.section-image-ppal{
+.section-image-ppal {
     background: linear-gradient(to bottom, rgba(92, 77, 66, 0.2) 0%, rgba(92, 77, 66, 0.2) 100%), url(/assets/img/banner.png);
     background-repeat: round;
     background-attachment: scroll;
@@ -173,58 +206,58 @@ p{
     margin-top: 75px;
 }
 
-.section_banner{
+.section_banner {
     height: 70vh;
 }
 
-.serviciosleftimage{
+.serviciosleftimage {
     padding-right: 1rem !important;
 }
 
-  .habilitadosmargingallegyleft{
+.habilitadosmargingallegyleft {
     margin-left: 7px;
     margin-bottom: 15px;
 }
 
-.habilitadosmargingallegyright{
+.habilitadosmargingallegyright {
     margin-right: 7px;
     margin-bottom: 15px;
 }
 
 .whatsapp {
-    position:fixed;
-    width:60px;
-    height:60px;
-    bottom:40px;
-    right:40px;
-    background-color:#25d366;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    font-size:30px;
-    z-index:100;
-  }
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+}
 
-  .whatsapp-icon {
-    margin-top:13px;
-  }
+.whatsapp-icon {
+    margin-top: 13px;
+}
 
-  .pic1{
+.pic1 {
     margin-right: 10px;
     margin-top: 10px;
     cursor: pointer;
-  }
+}
 
-  .jardinesWidth{
+.jardinesWidth {
     width: 190px;
-  }
+}
 
-  .styleintitucional{
+.styleintitucional {
     margin-top: 0;
     margin-bottom: 0;
-  }
+}
 
-  .custom-ol {
+.custom-ol {
     counter-reset: list-counter;
     padding-left: 11px;
 }
@@ -232,8 +265,10 @@ p{
 .custom-ol li {
     position: relative;
     margin-bottom: 32px;
-    list-style: none; /* Elimina las viñetas predeterminadas */
-    padding-left: 40px; /* Espacio para el círculo numerado */
+    list-style: none;
+    /* Elimina las viñetas predeterminadas */
+    padding-left: 40px;
+    /* Espacio para el círculo numerado */
 }
 
 .custom-ol li:before {
@@ -255,19 +290,26 @@ p{
 
 .link-container {
     display: flex;
-    justify-content: center; /* Centra los enlaces horizontalmente */
-    align-items: center;     /* Centra los elementos verticalmente */
-    gap: 20px;               /* Espacio entre las imágenes */
-    padding: 20px;           /* Espacio alrededor del contenedor */
+    justify-content: center;
+    /* Centra los enlaces horizontalmente */
+    align-items: center;
+    /* Centra los elementos verticalmente */
+    gap: 20px;
+    /* Espacio entre las imágenes */
+    padding: 20px;
+    /* Espacio alrededor del contenedor */
 }
 
 .link-container img {
-    max-width: 150px;        /* Ajusta el tamaño máximo de las imágenes */
-    height: auto;            /* Mantiene la proporción de las imágenes */
-    cursor: pointer;         /* Cambia el cursor a "mano" sobre la imagen */
+    max-width: 150px;
+    /* Ajusta el tamaño máximo de las imágenes */
+    height: auto;
+    /* Mantiene la proporción de las imágenes */
+    cursor: pointer;
+    /* Cambia el cursor a "mano" sobre la imagen */
 }
 
-.margin_left_pse{
+.margin_left_pse {
     margin-left: 4px;
 }
 
@@ -423,7 +465,8 @@ p{
 .servicio-imagen-wrapper {
     position: relative;
     width: 100%;
-    margin-top: auto; /* Push to bottom */
+    margin-top: auto;
+    /* Push to bottom */
     flex: 0 0 400px;
 }
 
@@ -472,73 +515,76 @@ p{
 }
 
 
-  @media (max-width: 991px) {
-     .section-image-ppal{
+@media (max-width: 991px) {
+    .section-image-ppal {
         height: 36vh;
-      }
+    }
 
-      .habilitadosmargin{
+    .habilitadosmargin {
         margin-left: 0px;
         margin-right: 0px;
-      }
-      .styleintitucional{
+    }
+
+    .styleintitucional {
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
-      }
-      .buttoninstitucional{
-        color: #6c757d;
-      }
-      .section_banner{
-        height: 36vh;
-      }
-
-  }
-
-
-  @media (max-width: 767px) {
-
-      .serviciosleftimage{
-        padding-right: 0rem !important;
-      }
-
-      .jardinesWidth{
-        width: 150px;
-      }
-  }
-
-
-
-  @media (max-width: 575px) {
-
-
-    .jardinesWidth{
-        width: 100px;
-      }
-
-    .footer-content {
-      flex-direction: column;
     }
 
-     .footer-content .showhorizontal{
-       display: none;
-     }
+    .buttoninstitucional {
+        color: #6c757d;
+    }
 
-     .section-image-ppal{
+    .section_banner {
+        height: 36vh;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .serviciosleftimage {
+        padding-right: 0rem !important;
+    }
+
+    .jardinesWidth {
+        width: 150px;
+    }
+}
+
+
+
+@media (max-width: 575px) {
+
+
+    .jardinesWidth {
+        width: 100px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-content .showhorizontal {
+        display: none;
+    }
+
+    .section-image-ppal {
         height: 26vh;
-      }
+    }
 
-      .habilitadosmargingallegyleft{
+    .habilitadosmargingallegyleft {
         margin-left: 0px;
         margin-bottom: 0px;
     }
 
-    .habilitadosmargingallegyright{
+    .habilitadosmargingallegyright {
         margin-right: 0px;
         margin-bottom: 0px;
     }
 
-    .section_banner{
+    .section_banner {
         height: 26vh;
-      }
+    }
 
-  }
+}
