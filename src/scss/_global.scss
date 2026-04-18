@@ -247,19 +247,56 @@ p{
     text-transform: uppercase;
 }
 
-.servicio-banner-horario {
-    background-color: #0D4285;
-    color: #ffffff;
-    padding: 0.5rem 1rem;
-    margin-bottom: 1rem;
-    display: inline-block;
+.servicio-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
 
-.servicio-banner-horario .horario-texto {
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.meta-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(13, 66, 133, 0.1);
+    color: #0D4285;
+    font-size: 1.3rem;
+}
+
+.meta-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.meta-text .label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #666;
     margin: 0;
-    font-size: 0.95rem;
-    font-weight: 600;
-    line-height: 1.4;
+    line-height: 1.2;
+}
+
+.meta-text .value {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0D4285;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.servicio-centrodia .meta-text .label {
+    color: #5b4618;
 }
 
 .servicio-descripcion {
