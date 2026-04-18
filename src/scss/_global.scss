@@ -318,11 +318,13 @@ p{
     position: relative;
     width: 100%;
     margin-top: auto; /* Push to bottom */
+    flex: 0 0 400px;
 }
 
 .servicio-imagen-container {
     width: 100%;
     height: 400px;
+    flex: 0 0 400px;
     overflow: hidden;
 }
 

@@ -17,7 +17,7 @@
     <!-- SimpleLightbox plugin CSS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css?v=2" rel="stylesheet" />
+    <link href="css/styles.css?v=3" rel="stylesheet" />
     <!-- WhatsApp Icon -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
@@ -204,11 +204,28 @@
                 <div>
                     <div class="row g-0">
                         <!-- ESTANCIA PERMANENTE O TEMPORAL -->
-                        <div class="col-lg-6 col-md-6 servicio-card servicio-estancia">
-                            <div class="servicio-card-content">
+                        <div class="col-lg-6 col-md-6 servicio-card servicio-estancia d-flex flex-column h-100 justify-content-between"
+                            style="height: auto !important;">
+                            <div class="servicio-card-content flex-grow-1">
                                 <h1 class="servicio-titulo-principal">ESTANCIA PERMANENTE<br>O TEMPORAL</h1>
-                                <p class="servicio-descripcion">Nuestras instalaciones cuentan con habitaciones individuales
-                                    que incluyen baño privado y se entregan sin mobiliario, permitiendo que cada residente
+
+                                <!-- <div class="servicio-banner-visitas">
+                                    <p class="visitas-titulo">VISITAS: Lunes a domingo</p>
+                                    <p class="visitas-horario">Hora: 7:00 a.m. a 7:00 p.m.</p>
+                                    <p class="visitas-requisito">Requisito:<br>Afiliación a EPS y emergencia medica</p>
+                                </div> -->
+
+                                <div class="servicio-banner-horario">
+                                    <p class="horario-texto">VISITAS: Lunes a Sábado de<br><strong>Horario: 7:00 a.m. a
+                                            7
+                                            p.m.</strong></p>
+                                    <p class="visitas-requisito">Requisito:<br>Afiliación a EPS y emergencia medica</p>
+                                </div>
+
+                                <p class="servicio-descripcion">Nuestras instalaciones cuentan con habitaciones
+                                    individuales
+                                    que incluyen baño privado y se entregan sin mobiliario, permitiendo que cada
+                                    residente
                                     la decore a su gusto y se sienta como en casa.</p>
 
                                 <h5 class="servicio-subtitulo">INCLUYE:</h5>
@@ -227,30 +244,30 @@
                                     <li>Rosario</li>
                                     <li>
                                         <strong class="servicio-actividades">Actividades Grupales</strong><br>
-                                        (Gimnasia, Taller Cognitivo, Equilibrio, Pintura, Bingo, Viejoteca, Lotería y más)
+                                        (Gimnasia, Taller Cognitivo, Equilibrio, Pintura, Bingo, Viejoteca, Lotería y
+                                        más)
                                     </li>
                                 </ul>
                             </div>
                             <div class="servicio-imagen-wrapper">
                                 <div class="servicio-imagen-container">
-                                    <img src="assets/img/estancia_premium.png" class="servicio-imagen" alt="Pareja de adultos mayores">
-                                </div>
-                                <div class="servicio-banner-visitas">
-                                    <p class="visitas-titulo">VISITAS: Lunes a domingo</p>
-                                    <p class="visitas-horario">Hora: 7:00 a.m. a 7:00 p.m.</p>
-                                    <p class="visitas-requisito">Requisito:<br>Afiliación a EPS y emergencia medica</p>
+                                    <img src="assets/img/estancia_premium.jpg" class="servicio-imagen"
+                                        alt="Pareja de adultos mayores">
                                 </div>
                             </div>
                         </div>
                         <!-- CENTRO DÍA -->
-                        <div class="col-lg-6 col-md-6 servicio-card servicio-centrodia">
-                            <div class="servicio-card-content">
+                        <div
+                            class="col-lg-6 col-md-6 servicio-card servicio-centrodia d-flex flex-column h-100 justify-content-between">
+                            <div class="servicio-card-content flex-grow-1">
                                 <h1 class="servicio-titulo-principal servicio-titulo-centrodia">CENTRO DÍA</h1>
                                 <h2 class="servicio-subtitulo-jornada">JORNADA COMPLETA O PARCIAL</h2>
                                 <div class="servicio-banner-horario">
-                                    <p class="horario-texto">Lunes a Sábado de<br><strong>Horario: 8:00 a.m. a 5 p.m.</strong></p>
+                                    <p class="horario-texto">Lunes a Sábado de<br><strong>Horario: 8:00 a.m. a 5
+                                            p.m.</strong></p>
                                 </div>
-                                <p class="servicio-descripcion servicio-descripcion-cd">Contamos con un programa de desarrollo integral que permite
+                                <p class="servicio-descripcion servicio-descripcion-cd">Contamos con un programa de
+                                    desarrollo integral que permite
                                     al adulto mayor tener una participación social, ocupación de su tiempo libre, elevar
                                     su calidad de vida con diversas actividades de entretenimiento y recreación en un
                                     ambiente seguro y tranquilo para que conviva con personas de su misma edad e
@@ -270,12 +287,16 @@
                                     <li>Rosario</li>
                                     <li>
                                         <strong class="servicio-actividades">Actividades Grupales</strong><br>
-                                        (Gimnasia, Taller Cognitivo, Equilibrio, Pintura, Bingo, Viejoteca, Lotería y más)
+                                        (Gimnasia, Taller Cognitivo, Equilibrio, Pintura, Bingo, Viejoteca, Lotería y
+                                        más)
                                     </li>
                                 </ul>
                             </div>
-                            <div class="servicio-imagen-container">
-                                <img src="assets/img/centrodia_premium.png" class="servicio-imagen" alt="Actividades centro día">
+                            <div class="servicio-imagen-wrapper mt-auto">
+                                <div class="servicio-imagen-container">
+                                    <img src="assets/img/centrodia_premium.jpg" class="servicio-imagen"
+                                        alt="Actividades centro día">
+                                </div>
                             </div>
                         </div>
                     </div>
